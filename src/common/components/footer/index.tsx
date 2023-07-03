@@ -5,6 +5,7 @@ import Link from "next/link";
 // Font Awesome
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { FooterAccordion } from "./accordion";
 
 export const Footer: FC = () => {
 
@@ -118,391 +119,411 @@ export const Footer: FC = () => {
                     </div>
                     <div className="flex flex-row justify-between">
                         <div className="flex flex-col w-full phablet:flex-row gap-12px justify-between tablet:gap-36px">
-                            <div className="flex flex-col gap-12px phablet:gap-16px bg-background-dark-tertiary phablet:bg-transparent rounded-8px px-20px py-8px phablet:p-0">
-                                <button className="flex flex-row justify-between items-center">
-                                    <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
-                                        Product
-                                    </div>
-                                    <div className="flex items-center phablet:hidden transition-transform duration-200">
-                                        <svg height={15} width={32} className="icon-tertiary">
-                                            <FontAwesomeIcon icon={faChevronDown} />
-                                        </svg>
-                                    </div>
-                                </button>
-                                <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/changelog"
-                                    >
-                                        Changelog
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/customers"
-                                    >
-                                        Customer stories
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/security"
-                                    >
-                                        Security
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://chrome.google.com/webstore/detail/attio/legacbojjmajoedfolbjlekjjkepadph/"
-                                    >
-                                        Chrome extension
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                            <FooterAccordion
+                                key={1}
+                                id="footer-accordion-1"
+                                header={
+                                    <button className="flex flex-row justify-between items-center">
+                                        <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
+                                            Product
+                                        </div>
+                                        <div className="btn-icon flex items-center phablet:hidden transition-transform duration-200">
+                                            <svg height={15} width={32} className="icon-tertiary">
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                }
+                                body={
+                                    <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px">
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/changelog"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
-                                                    />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://apps.apple.com/gb/app/attio/id1511545395"
-                                    >
-                                        iOS app
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                            Changelog
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/customers"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
-                                                    />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://play.google.com/store/apps/details?id=com.attio&gl=GB"
-                                    >
-                                        Android app
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                            Customer stories
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/security"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
-                                                    />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://zapier.com/apps/attio/integrations"
-                                    >
-                                        Zapier
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                            Security
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://chrome.google.com/webstore/detail/attio/legacbojjmajoedfolbjlekjjkepadph/"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
+                                            Chrome extension
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
                                                     />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://www.integromat.com/en/integrations/attio"
-                                    >
-                                        Integromat
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://apps.apple.com/gb/app/attio/id1511545395"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
+                                            iOS app
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
                                                     />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex flex-col gap-12px phablet:gap-16px bg-background-dark-tertiary phablet:bg-transparent rounded-8px px-20px py-8px phablet:p-0">
-                                <button className="flex flex-row justify-between items-center">
-                                    <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
-                                        Company
-                                    </div>
-                                    <div className="flex items-center phablet:hidden transition-transform duration-200">
-                                        <svg height={15} width={32} className="icon-tertiary">
-                                            <FontAwesomeIcon icon={faChevronDown} />
-                                        </svg>
-                                    </div>
-                                </button>
-                                <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/about"
-                                    >
-                                        About
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/careers"
-                                    >
-                                        Careers
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/blog"
-                                    >
-                                        Blog
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/startups"
-                                    >
-                                        Startup program
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex flex-col gap-12px phablet:gap-16px bg-background-dark-tertiary phablet:bg-transparent rounded-8px px-20px py-8px phablet:p-0">
-                                <button className="flex flex-row justify-between items-center">
-                                    <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
-                                        Attio for
-                                    </div>
-                                    <div className="flex items-center phablet:hidden transition-transform duration-200">
-                                        <svg height={15} width={32} className="icon-tertiary">
-                                            <FontAwesomeIcon icon={faChevronDown} />
-                                        </svg>
-                                    </div>
-                                </button>
-                                <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
-                                    <Link
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/solution/startup-crm"
-                                    >
-                                        Startups
-                                    </Link>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/solution/deal-flow-management-software"
-                                    >
-                                        Deal flow
-                                    </a>
-                                </div>
-                            </div>
-                            <div className="flex flex-col gap-12px phablet:gap-16px bg-background-dark-tertiary phablet:bg-transparent rounded-8px px-20px py-8px phablet:p-0">
-                                <button className="flex flex-row justify-between items-center">
-                                    <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
-                                        Support
-                                    </div>
-                                    <div className="flex items-center phablet:hidden transition-transform duration-200">
-                                        <svg height={32} width={32} className="icon-tertiary">
-                                            <use
-                                                href="/build/_assets/chevron-down-B4U2TPCL.svg#icon"
-                                                height={32}
-                                                width={32}
-                                            />
-                                        </svg>
-                                    </div>
-                                </button>
-                                <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="/help"
-                                    >
-                                        Help center
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        href="mailto:support@attio.com"
-                                    >
-                                        Talk to support
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="/developers/introduction"
-                                    >
-                                        API docs
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://play.google.com/store/apps/details?id=com.attio&gl=GB"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
+                                            Android app
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
                                                     />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                    <a
-                                        className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                        target="_blank"
-                                        href="https://status.attio.com/"
-                                    >
-                                        System status
-                                        <svg
-                                            width={17}
-                                            height={21}
-                                            viewBox="0 0 17 21"
-                                            fill="none"
-                                            xmlns="http://www.w3.org/2000/svg"
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://zapier.com/apps/attio/integrations"
                                         >
-                                            <g clipPath="url(#clip0_458_54632)">
-                                                <path
-                                                    d="M3.59998 13.2204L9.59998 7.22037"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                                <path
-                                                    d="M4.09996 7.22037H9.59996V12.7204"
-                                                    stroke="currentColor"
-                                                    strokeWidth="1.3"
-                                                />
-                                            </g>
-                                            <defs>
-                                                <clipPath id="clip0_458_54632">
-                                                    <rect
-                                                        width={16}
-                                                        height={20}
-                                                        fill="currentColor"
-                                                        transform="translate(0.599976 0.220398)"
+                                            Zapier
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
                                                     />
-                                                </clipPath>
-                                            </defs>
-                                        </svg>
-                                    </a>
-                                </div>
-                            </div>
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://www.integromat.com/en/integrations/attio"
+                                        >
+                                            Integromat
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                }
+                            />
+                            <FooterAccordion
+                                key={2}
+                                id="footer-accordion-2"
+                                header={
+                                    <button className="flex flex-row justify-between items-center">
+                                        <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
+                                            Company
+                                        </div>
+                                        <div className="btn-icon flex items-center phablet:hidden transition-transform duration-200">
+                                            <svg height={15} width={32} className="icon-tertiary">
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                }
+                                body={
+                                    <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/about"
+                                        >
+                                            About
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/careers"
+                                        >
+                                            Careers
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/blog"
+                                        >
+                                            Blog
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/startups"
+                                        >
+                                            Startup program
+                                        </a>
+                                    </div>
+                                }
+                            />
+                            <FooterAccordion
+                                key={3}
+                                id="footer-accordion-3"
+                                header={
+                                    <button className="flex flex-row justify-between items-center">
+                                        <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
+                                            Attio for
+                                        </div>
+                                        <div className="btn-icon flex items-center phablet:hidden transition-transform duration-200">
+                                            <svg height={15} width={32} className="icon-tertiary">
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                }
+                                body={
+                                    <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
+                                        <Link
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/solution/startup-crm"
+                                        >
+                                            Startups
+                                        </Link>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/solution/deal-flow-management-software"
+                                        >
+                                            Deal flow
+                                        </a>
+                                    </div>
+                                }
+                            />
+                            <FooterAccordion
+                                key={4}
+                                id="footer-accordion-4"
+                                header={
+                                    <button className="flex flex-row justify-between items-center">
+                                        <div className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-category py-8px phablet:p-0">
+                                            Support
+                                        </div>
+                                        <div className="btn-icon flex items-center phablet:hidden transition-transform duration-200">
+                                            <svg height={15} width={32} className="icon-tertiary">
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </div>
+                                    </button>
+                                }
+                                body={
+                                    <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="/help"
+                                        >
+                                            Help center
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            href="mailto:support@attio.com"
+                                        >
+                                            Talk to support
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="/developers/introduction"
+                                        >
+                                            API docs
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                        <a
+                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
+                                            target="_blank"
+                                            href="https://status.attio.com/"
+                                        >
+                                            System status
+                                            <svg
+                                                width={17}
+                                                height={21}
+                                                viewBox="0 0 17 21"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <g clipPath="url(#clip0_458_54632)">
+                                                    <path
+                                                        d="M3.59998 13.2204L9.59998 7.22037"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                    <path
+                                                        d="M4.09996 7.22037H9.59996V12.7204"
+                                                        stroke="currentColor"
+                                                        strokeWidth="1.3"
+                                                    />
+                                                </g>
+                                                <defs>
+                                                    <clipPath id="clip0_458_54632">
+                                                        <rect
+                                                            width={16}
+                                                            height={20}
+                                                            fill="currentColor"
+                                                            transform="translate(0.599976 0.220398)"
+                                                        />
+                                                    </clipPath>
+                                                </defs>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                }
+                            />
                             <div className="hidden tablet:flex flex-col gap-16px max-tablet:w-full max-tablet:flex-none">
                                 <p className="typography-p5-medium text-[#9098A0]">Ready to build?</p>
                                 <div className="flex flex-row tablet:flex-col gap-12px">
