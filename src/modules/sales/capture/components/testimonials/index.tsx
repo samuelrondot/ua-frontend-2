@@ -70,8 +70,8 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Best Value for Lead Scrapping tool in the market right now!"
-                                                I love using Artemis as the lead scrapping tool using Linkedin. It saves me tons of time to verify and find email addresses. It is highly recommended!
+                                            &quot;Best Value for Lead Scrapping tool in the market right now!
+                                                I love using Artemis as the lead scrapping tool using Linkedin. It saves me tons of time to verify and find email addresses. It is highly recommended!&quot;
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">
                                                 10:01 PM · Apr 7, 2022
@@ -104,8 +104,8 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Best software for b2b lead"
-                                                I am happy to leave a 5-star review for useArtemis on G2! As a sales professional, I have struggled in the past with finding accurate B2B contact information for my outreach efforts. But since I started using useArtemis, my search for lead generation has ended.
+                                            &quot;Best software for b2b lead
+                                                I am happy to leave a 5-star review for useArtemis on G2! As a sales professional, I have struggled in the past with finding accurate B2B contact information for my outreach efforts. But since I started using useArtemis, my search for lead generation has ended.&quot;
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">
                                                 1:03 PM · Mar 3, 2023
@@ -143,8 +143,8 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Fantastic Lead Generation Tool That Is Continually Improving. Highly Recommend!"
-                                                What I like best about Artemis is its ease of use. The UX is intuitive and is continually improving. Knowing the development team continues to improve the product is a great comfort.
+                                            &quot;Fantastic Lead Generation Tool That Is Continually Improving. Highly Recommend!
+                                                What I like best about Artemis is its ease of use. The UX is intuitive and is continually improving. Knowing the development team continues to improve the product is a great comfort.&quot;
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">
                                                 9:46 PM · Jul 25, 2022
@@ -172,8 +172,8 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Easily can view thousands of emails to target"
-                                                But what really sets UseArtemis apart is its effectiveness. Since using this software, I have seen a significant increase in the number of leads I generate, and I've been able to close more deals as a result. I love how customizable the software is, allowing me to tailor my emails to each individual recipient and increasing the likelihood of a positive response.
+                                            &quot;Easily can view thousands of emails to target
+                                                But what really sets UseArtemis apart is its effectiveness. Since using this software, I have seen a significant increase in the number of leads I generate, and I&apos;ve been able to close more deals as a result. I love how customizable the software is, allowing me to tailor my emails to each individual recipient and increasing the likelihood of a positive response.&quot;
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">
                                                 6:57 PM · Dec 1, 2022
@@ -210,8 +210,8 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Target Multiple Niche Professionals & Get Hyper-Focused Results!"
-                                                Simplicity is essential; a user will not use any software if over-complicated. I find this to be incredibly simple to use, straight to the point, and able to focus on fine-tuning your search.
+                                            &quot;Target Multiple Niche Professionals & Get Hyper-Focused Results!
+                                                Simplicity is essential; a user will not use any software if over-complicated. I find this to be incredibly simple to use, straight to the point, and able to focus on fine-tuning your search.&quot;
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">
                                                 4:05 PM · Jan 9, 2023
@@ -247,7 +247,7 @@ export const Testimonials: FC = () => {
                                         </div>
                                         <div className="flex flex-col gap-[14px]">
                                             <p className="typography-p5-medium text-[#BCC3CE]">
-                                                "Good for Email Enrichment"
+                                            &quot;Good for Email Enrichment&quot;
 
                                             </p>
                                             <p className="typography-c1-medium text-[#505967]">

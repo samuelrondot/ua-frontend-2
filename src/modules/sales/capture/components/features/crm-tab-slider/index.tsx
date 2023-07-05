@@ -668,8 +668,8 @@ export const CrmTabSlider: FC = () => {
                         />
                         <div className="mt-24px tablet:mt-0 col-start-5 col-end-11">
                             <p className="max-w-[530px] typography-p2-strong tablet:typography-h5 tablet:!leading-120 text-typography-light-tertiary">
-                            "Best Value for Lead Scrapping tool in the market right now!
-                            I love using useArtemis to scrape Linkedin. It saves me tons of time to verify and find email addresses."
+                            &quot;Best Value for Lead Scrapping tool in the market right now!
+                            I love using useArtemis to scrape Linkedin. It saves me tons of time to verify and find email addresses.&quot;
                             </p>
                         </div>
                         <div className="mt-24px tablet:mt-0 order-2 col-start-5 col-end-11 flex items-center gap-[18px]">
