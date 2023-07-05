@@ -19,7 +19,7 @@ export const BannerRaises: FC<OwnProps> = (props) => {
                         </span>
                         <a
                             className="typography-c1-strong text-[#FFFFFF] underline"
-                            href="https://attio.com/blog/series-a-round"
+                            href="https://app.useartemis.co/register"
                         >
                            Request access
                         </a>
