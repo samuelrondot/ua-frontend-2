@@ -4,6 +4,7 @@ import Head from "next/head";
 // Modules Components
 import { CrmStartupLandingPage } from "modules/crm/startup/components/landing-page";
 
+
 export default function StartupCrm() {
     return (
         <>

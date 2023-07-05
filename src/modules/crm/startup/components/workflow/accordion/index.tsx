@@ -41,7 +41,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                                 data-state={`${activeAccordion === 0 ? 'open' : 'closed'}`}
                             >
                                 <h3 className="typography-p4-medium text-left transition-colors text-typography-light-secondary group-data-[state=open]:text-brand-light-primary">
-                                    Create the perfect sales workflow.
+                                Export leads
                                 </h3>
                                 <svg
                                     height={15}
@@ -62,8 +62,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                         >
                             <p className="typography-p5-medium text-typography-light-quaternary pr-[30px]"
                                 style={{ display: `${activeAccordion === 0 ? 'block' : 'none'}` }}>
-                                Use Attio’s powerful templates or building blocks to design your perfect
-                                workflow.
+                                 Leverage useArtemis&apos;s Chrome extension to extract lead from LinkedIn or Sales Navigator.
                             </p>
                         </div>
                     </div>
@@ -91,7 +90,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                                 data-state={`${activeAccordion === 1 ? 'open' : 'closed'}`}
                             >
                                 <h3 className="typography-p4-medium text-left transition-colors text-typography-light-secondary group-data-[state=open]:text-brand-light-primary">
-                                    Powerful intel on every deal.
+                                Clean data
                                 </h3>
                                 <svg
                                     height={15}
@@ -112,8 +111,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                         >
                             <p className="typography-p5-medium text-typography-light-quaternary pr-[30px]"
                                 style={{ display: `${activeAccordion === 1 ? 'block' : 'none'}` }}>
-                                Get instant visibility into each prospect’s communications and
-                                interactions with your company.
+                                Stop spending hours to sanitize your lead list. Get clean and ready to use data in just a click.
                             </p>
                         </div>
                     </div>
@@ -141,7 +139,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                                 data-state={`${activeAccordion === 2 ? 'open' : 'closed'}`}
                             >
                                 <h3 className="typography-p4-medium text-left transition-colors text-typography-light-secondary group-data-[state=open]:text-brand-light-primary">
-                                    Collaborative notes for everyone.
+                                Automatic enrichment
                                 </h3>
                                 <svg
                                     height={15}
@@ -163,8 +161,7 @@ export const CrmStartupWorkflowAccordion: FC<OwnProps> = (props) => {
                             <p className="typography-p5-medium text-typography-light-quaternary pr-[30px]"
                                 style={{ display: `${activeAccordion === 2 ? 'block' : 'none'}` }}
                             >
-                                Keep your team up-to-date on every part of the customer lifecycle,
-                                from discovery to customer success and more.
+                                Automatically find verified professional emails of your exported leads.
                             </p>
                         </div>
                     </div>

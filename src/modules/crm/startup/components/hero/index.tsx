@@ -1,5 +1,6 @@
 // React
 import { FC } from "react"
+import Salesnav from 'assets/images/salesnavexport.png'
 
 export const CrmStartupHero: FC = () => {
 
@@ -22,7 +23,7 @@ export const CrmStartupHero: FC = () => {
                             </div>
                             <div className="flex flex-row items-center tablet:items-start gap-12px tablet:gap-20px max-tablet:px-24px w-full max-w-[700px] tablet:self-start">
                                 <a
-                                    href="https://app.attio.com/welcome/sign-in"
+                                    href="https://app.useartemis.co/register"
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity max-tablet:flex-1 text-center"
                                 >
                                     <span className="z-1 relative">14-day free trial</span>
@@ -39,27 +40,25 @@ export const CrmStartupHero: FC = () => {
                                 </button>
                             </div>
                         </header>
-                        <picture className="relative z-10 w-auto max-desktop:max-w-[80vw] max-desktop:max-h-full desktop:w-[590px] desktop:h-[437px] hidden tablet:block desktop:mr-[60px] flex-grow-none">
+
+                       
+                        
+                        <picture className="relative z-10 w-auto max-desktop:max-w-[80vw] max-desktop:max-h-full desktop:w-[590px] desktop:h-[437px] hidden tablet:block desktop:mr-[60px] flex-grow-none ">
                             <source
-                                srcSet="https://attio.com//build/_assets/hero-desktop-YSI3JNA5.webp"
+                                srcSet="/assets/salesnavexport2.png"
                                 media="(min-width:992px)"
                                 type="image/webp"
                                 width={1331}
                                 height={1222}
                             />
-                            <source
-                                srcSet="https://attio.com//build/_assets/hero-desktop-XMRXFLBE.png"
-                                media="(min-width:992px)"
-                                type="image/png"
-                                width={1331}
-                                height={1222}
-                            />
+                           
                             <img
                                 src=""
                                 alt="Attio's product, showing an activity view of a user's contact. It includes a recent email from the contact, a status change in the Deal Flow pipeline, and an upcoming calendar meeting."
-                                className="max-h-[500px] max-phablet:hidden w-auto"
+                                className="max-h-[500px] max-phablet:hidden w-auto salesnav"
                             />
                         </picture>
+
                         <div className="hidden tablet:block absolute top-0 bottom-0 right-0 z-0">
                             <svg
                                 width={1427}

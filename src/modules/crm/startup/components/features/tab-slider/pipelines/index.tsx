@@ -25,7 +25,7 @@ export const CrmStartupFeaturesTabSliderPipelines: FC = () => {
                 </picture>
                 <picture className="relative inset-0 z-0 w-full h-full">
                     <source
-                        srcSet="https://attio.com/build/_assets/pipelines-desktop-AZ74TXWQ.webp"
+                        srcSet="/assets/salesnavlist.png"
                         media="(min-width:992px)"
                         type="image/webp"
                     />

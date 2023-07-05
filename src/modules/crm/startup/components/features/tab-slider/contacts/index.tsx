@@ -25,7 +25,7 @@ export const CrmStartupFeaturesTabSliderContacts: FC = () => {
                 </picture>
                 <picture className="relative inset-0 z-0 w-full h-full">
                     <source
-                        srcSet="https://attio.com/build/_assets/contacts-desktop-TYNL2AUJ.webp"
+                        srcSet="/assets/linkedinlist.png"
                         media="(min-width:992px)"
                         type="image/webp"
                     />
