@@ -114,24 +114,24 @@ export const Footer: FC = () => {
                                 }
                                 body={
                                     <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px">
-                                        <a
+                                        <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
                                             href="/linkedin-scraper"
                                         >
                                             LinkedIn Scraper
-                                        </a>
+                                        </Link>
                                         <a
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                            href="/linkedin-scraper"
+                                            href="/email-finder"
                                         >
                                             Email Finder
                                         </a>
-                                        <a
+                                        <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                            href="/linkedin-scraper"
+                                            href="/multichannel-outreach"
                                         >
                                             Multichannel outreach
-                                        </a>
+                                        </Link>
                                        
                                         <a
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
