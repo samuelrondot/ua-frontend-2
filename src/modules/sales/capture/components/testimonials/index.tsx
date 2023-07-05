@@ -10,18 +10,19 @@ export const Testimonials: FC = () => {
                 <div className="max-w-full tablet:max-w-[1156px] px-24px tablet:px-8px flex items-stretch flex-1 z-[1]">
                     <div className="flex flex-col flex-1 w-full">
                         <div className="typography-h4-strong tablet:typography-h2-strong pb-[16px] text-typography-dark-quaternary">
-                            Loved by <span className="text-typography-dark-primary">Sales.</span>
+                            Loved by <span className="text-typography-dark-primary">Entrepreneurs.</span>
                         </div>
                         <div className="typography-p4-medium tablet:typography-p2-medium text-typography-dark-secondary pb-[60px] tablet:pb-[80px]">
-                            Attio is the customer relationship management tool
-                            <br className="hidden tablet:inline" /> for everyone who values
-                            collaboration.
+                        With an average rating of 4.9 / 5, useArtemis is the favorite tools of entrepreneurs 
+                            <br className="hidden tablet:inline" /> that need to scale their lead
+                            aquisition.
                             <div className="pt-[32px]">
                                 <a
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-secondaryOnDark hover:text-white enabled:active:text-white focus:text-white disabled:text-buttonNew-secondaryOnDark-disabled enabled:active:bg-buttonNew-secondaryOnDark-active focus:bg-buttonNew-secondaryOnDark-active border-[1px] border-buttonNew-secondaryOnDark hover:border-white enabled:active:border-white focus:border-white disabled:border-buttonNew-secondaryOnDark-disabled disabled shadow-none focus:shadow-buttonNew-secondaryOnDark-focus disabled:opacity-25"
-                                    href="/customers"
+                                    target="blank"
+                                    href="https://www.g2.com/products/useartemis/reviews"
                                 >
-                                    <span className="z-1 relative">More reviews</span>
+                                    <span className="z-1 relative">More reviews on G2</span>
                                 </a>
                             </div>
                         </div>

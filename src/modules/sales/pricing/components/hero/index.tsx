@@ -322,12 +322,12 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                 <div className="absolute bg-gradient-radial w-full top-[80px] h-full max-h-[100%]" />
                 <div className="flex flex-col items-center z-10 tablet:pt-80px relative px-[10px] tablet:px-24px ">
                     <h1 className="font-gilroy font-bold text-40px leading-120 -tracking-0.3px tablet:typography-h1-strong text-typography-light-primary pb-8px tablet:pb-16px">
-                        From zero to IPO.
+                        Start Your Lead Machine Today
                     </h1>
                     <h2 className="typography-p4-medium tablet:typography-p2-medium text-typography-light-tertiary text-center">
-                        Designed for every stage of your journey.
+                        Pick up the plan that fit your needs.
                         <br />
-                        Start today, no credit card required.
+                        Cancel at any time.
                         <br />
                     </h2>
                     <div className="h-40px desktop:h-[60px]" />
@@ -372,17 +372,22 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col gap-12px pb-4px">
-                                    <h3 className="typography-p1-strong">Free</h3>
+                                    <h3 className="typography-p1-strong">Starter</h3>
                                     <div>
-                                        <div className="flex flex-row items-start gap-8px">
+                                    <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
-                                                    <div className="relative">€0</div>
-                                                    <div className="opacity-0 top-0 absolute" />
+                                                    {billingPeriod === 'monthly' ? (
+                                                        <div className="relative">$49</div>
+                                                    ) : (
+                                                        <div className="relative">$39</div>
+                                                    )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
-                                                <p className="text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200" />
+                                                <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200 ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
+                                                    -20%
+                                                </p>
                                             </div>
                                         </div>
                                         <div className="text-[11px] leading-120 font-medium text-typography-light-tertiary">
@@ -394,7 +399,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     <div className="relative"> annually</div>
                                                 )}
                                             </div>
+                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="text-typography-light-secondary">
@@ -414,7 +421,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Real-time contact syncing
+                                            2000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -430,7 +437,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Automatic data enrichment
+                                            4 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -446,8 +453,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Up to 3 seats
+                                            10 campaign actions / day
                                         </li>
+                                       
                                     </ul>
                                 </div>
                                 <button
@@ -503,15 +511,15 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
                                                     {billingPeriod === 'monthly' ? (
-                                                        <div className="relative">€34</div>
+                                                        <div className="relative">$99</div>
                                                     ) : (
-                                                        <div className="relative">€29</div>
+                                                        <div className="relative">$79</div>
                                                     )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
                                                 <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200 ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
-                                                    -15%
+                                                    -20%
                                                 </p>
                                             </div>
                                         </div>
@@ -525,6 +533,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                 )}
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="text-typography-light-secondary">
@@ -544,7 +553,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Private lists
+                                            7000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -560,7 +569,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Enhanced email sending
+                                           6 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -576,8 +585,25 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            No seat limits
+                                            30 campaign actions / day
                                         </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                           AI for LinkedIn Invites
+                                        </li>
+                                      
                                     </ul>
                                 </div>
                                 <button
@@ -633,15 +659,15 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
                                                     {billingPeriod === 'monthly' ? (
-                                                        <div className="relative">€69</div>
+                                                        <div className="relative">$139</div>
                                                     ) : (
-                                                        <div className="relative">€59</div>
+                                                        <div className="relative">$115</div>
                                                     )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
                                                 <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] translate-x-8px transition duration-200 delay-200 text-white bg-[#2D7EEE] ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
-                                                    -15%
+                                                    -20%
                                                 </p>
                                             </div>
                                         </div>
@@ -676,7 +702,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Fully adjustable permissions
+                                            35 000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
@@ -692,7 +718,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Advanced data enrichment
+                                            15 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
@@ -708,7 +734,23 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Priority support
+                                            70 campaign actions / day
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-03"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            AI for LinkedIn Invites
                                         </li>
                                     </ul>
                                 </div>
@@ -761,7 +803,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                         <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
-                                                    <div className="relative">€119</div>
+                                                    <div className="relative">$259</div>
                                                     <div className="opacity-0 top-0 absolute" />
                                                 </div>
                                             </div>
@@ -770,9 +812,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                         </div>
                                         <div className="text-[11px] leading-120 font-medium text-typography-light-tertiary">
-                                            per user/month, billed{" "}
+                                            per user/month, billed monthly
                                             <div className="relative inline-block">
-                                                <div className="relative">annually</div>
+                                               
                                                 <div className="opacity-0 top-0 absolute" />
                                             </div>
                                         </div>
@@ -797,7 +839,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Unlimited reporting
+                                            Unlimited enrichment
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -813,7 +855,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            SAML and SSO
+                                            50 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -829,7 +871,24 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Custom billing
+                                           500 campaign actions / day
+                                        </li>
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                          AI for LinkedIn Invites
                                         </li>
                                     </ul>
                                 </div>

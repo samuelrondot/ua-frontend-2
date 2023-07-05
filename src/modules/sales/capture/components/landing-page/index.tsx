@@ -24,7 +24,7 @@ export const LandingPage: FC<OwnProps> = (props) => {
                 <Brands />
                 <Features />
                
-                <Features2 />
+               { /* <Features2 /> */   }
                 <Testimonials />
                 <CrmStartupCallToActions />
             </Layout>

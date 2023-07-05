@@ -668,8 +668,8 @@ export const CrmTabSlider: FC = () => {
                         />
                         <div className="mt-24px tablet:mt-0 col-start-5 col-end-11">
                             <p className="max-w-[530px] typography-p2-strong tablet:typography-h5 tablet:!leading-120 text-typography-light-tertiary">
-                            Best Value for Lead Scrapping tool in the market right now!
-                            I love using useArtemis to scrape Linkedin. It saves me tons of time to verify and find email addresses.
+                            "Best Value for Lead Scrapping tool in the market right now!
+                            I love using useArtemis to scrape Linkedin. It saves me tons of time to verify and find email addresses."
                             </p>
                         </div>
                         <div className="mt-24px tablet:mt-0 order-2 col-start-5 col-end-11 flex items-center gap-[18px]">
@@ -690,9 +690,10 @@ export const CrmTabSlider: FC = () => {
                         <div className="mt-[30px] tablet:mt-0 col-start-2 col-end-5 self-end tablet:mb-[6px]">
                             <a
                                 className="typography-p5-strong text-attio-blue-main tablet:text-typography-light-tertiary group w-fit flex items-center gap-4px rounded-8px focus:shadow-[0px_0px_0px_2px_#FAFAFA,_0px_0px_0px_5px_rgba(38,_109,_240,_0.5)] focus:bg-[#FAFAFA]"
-                                href="/customers/pallet"
+                                target="blank"
+                                href="https://www.g2.com/products/useartemis/reviews"
                             >
-                                Read the full story
+                                Read more reviews
                                 <svg
                                     className="mt-[2px] opacity-0 -translate-x-[3px] group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-x-0 group-focus:translate-x-0 transition-all"
                                     width={18}

@@ -79,7 +79,7 @@ export const CrmStartupFeaturesTabSlider: FC = () => {
                                     </svg>
                                 </div>
                                 <div className={`typography-p6-strong desktop:typography-p5-strong transition-all ${activeTab === 'contacts' ? 'text-brand-light-primary' : 'text-greyscale-light-08'}`}>
-                                    Contacts
+                                    LinkedIn
                                 </div>
                             </div>
                             <div
@@ -107,10 +107,10 @@ export const CrmStartupFeaturesTabSlider: FC = () => {
                         </button>
                         <button
                             data-active={activeTab === "pipelines"}
-                            className="group h-40px flex flex-col justify-center flex-none first-of-type:ml-24px last-of-type:mr-24px w-[130px]"
+                            className="group h-40px flex flex-col justify-center flex-none first-of-type:ml-24px last-of-type:mr-24px w-[150px]"
                             onClick={() => setActiveTab("pipelines")}
                         >
-                            <div className="flex flex-row gap-8px flex-1 items-center">
+                            <div className="flex flex-row gap-8px flex-1 items-center ">
                                 <div className="w-[22px] h-[24px] flex-shrink-0">
                                     <svg
                                         viewBox="0 0 22 25"
@@ -168,8 +168,8 @@ export const CrmStartupFeaturesTabSlider: FC = () => {
                                         </defs>
                                     </svg>
                                 </div>
-                                <div className={`typography-p6-strong desktop:typography-p5-strong transition-all ${activeTab === 'pipelines' ? 'text-brand-light-primary' : 'text-greyscale-light-08'}`}>
-                                    Pipelines
+                                <div className={`typography-p6-strong  desktop:typography-p5-strong transition-all ${activeTab === 'pipelines' ? 'text-brand-light-primary' : 'text-greyscale-light-08'} width-fit-content`}>
+                                    Sales Navigator
                                 </div>
                             </div>
                             <div

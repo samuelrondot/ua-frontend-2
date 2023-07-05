@@ -27,8 +27,8 @@ export const Hero: FC<OwnProps> = (props) => {
                                 <span className="h-[26px] align-middle p-[3px_9px_3px_10px] rounded-20px bg-greyscale-light-12 text-greyscale-light-01">
                                     New
                                 </span>
-                                <div className="flex items-center">
-                                    Start multichannel campaigns
+                                <div className="flex items-center ">
+                                    Auto write Invite notes with ChatGPT
                                     <svg
                                         className="group-hover:translate-x-[3px] group-focus:translate-x-[3px] transition-transform duration-500 ease-out"
                                         width={18}
@@ -50,7 +50,7 @@ export const Hero: FC<OwnProps> = (props) => {
                         </a>
                         <h1 className="typography-h0-mobile max-tablet:px-24px tablet:pt-25px tablet:typography-h0-strong text-typography-light-primary text-center slide-down [font-kerning:none]">
                             Magic 
-                            <br />lead machine.
+                            <br /> <span className="">lead machine</span>.
                         </h1>
                         <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px] text-center slide-down animation-delay-[300ms]">
                         Supercharge your outreach efforts, extract and enrich leads then start multichannel campaigns through Linkedin and Emails.
@@ -658,6 +658,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                     src={Screenshot.src}
                                     className="w-full h-full"
                                 />
+                                
                                 {isVideoPlaying && (
                                     <Video />
                                 )}

@@ -13,15 +13,15 @@ export const CrmStartupCallToActions: FC<OwnProps> = (props) => {
                 <div className="group transition-colors border-l border-attio-blue-02 overflow-hidden isolate w-full flex flex-col desktop:flex-row justify-between desktop:items-end desktop:h-[346px] relative max-w-[1440px]">
                     <div className="z-10 w-full p-24px desktop:pb-[40px] desktop:pl-[40px] desktop:w-2/3 tablet:w-1/2 flex flex-col gap-32px desktop:gap-[20px] tablet:self-center tablet:pt-[80px] min-[1440px]:pl-[142px]">
                         <h2 className="typography-h4-strong desktop:typography-h2-strong text-[#A0C2FF] pt-4px">
-                            Ready to build your <br className="hidden tablet:inline" /> team&apos;s
-                            <span className="text-white"> dream CRM?</span>
+                        Ready to start your <br className="hidden tablet:inline" /> 
+                            <span className="text-white">Lead Machine?</span>
                         </h2>
                         <div className="flex flex-col desktop:flex-row gap-12px">
                             <a
                                 href="https://app.attio.com/welcome/sign-in"
                                 className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primaryOnBlue hover:text-buttonNew-primaryOnBlue-hover active:text-buttonNew-primaryOnBlue-active focus:text-buttonNew-primaryOnBlue-focus disabled:text-buttonNew-primaryOnBlue-disabled bg-buttonNew-primaryOnBlue hover:bg-buttonNew-primaryOnBlue active:bg-buttonNew-primaryOnBlue-active focus:bg-white disabled:bg-buttonNew-primaryOnBlue-disabled border-[1px] border-buttonNew-primaryOnBlue hover:border-buttonNew-primaryOnBlue-hover active:border-buttonNew-primaryOnBlue-active disabled:border-buttonNew-primaryOnBlue-disabled shadow-none hover:shadow-buttonNew-primaryOnBlue-hover active:shadow-none focus:shadow-buttonNew-primaryOnBlue-focus disabled:shadow-buttonNew-primaryOnBlue-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnBlue before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity"
                             >
-                                <span className="z-1 relative">Start for free</span>
+                                <span className="z-1 relative">Start 14-day free trial</span>
                             </a>
                             <button
                                 type="button"
@@ -34,158 +34,7 @@ export const CrmStartupCallToActions: FC<OwnProps> = (props) => {
                                 <span className="z-1 relative">Talk to sales</span>
                             </button>
                         </div>
-                        <div className="desktop:hidden contents">
-                            <svg
-                                xmlns="http://www.w3.org/2000/svg"
-                                className="w-full"
-                                fill="none"
-                                viewBox="0 0 294 240"
-                            >
-                                <g clipPath="url(#clip0_1640_38791)">
-                                    <path
-                                        fill="#266DF0"
-                                        d="M0 0H294V239H0z"
-                                        transform="translate(0 .53)"
-                                    />
-                                    <path
-                                        stroke="#4B8BFF"
-                                        d="M.5 87.13c0-1.69 0-2.925.08-3.9.08-.97.234-1.638.52-2.198a5.5 5.5 0 012.403-2.403c.56-.285 1.227-.44 2.197-.52.975-.08 2.212-.08 3.9-.08h273.8c1.688 0 2.925 0 3.9.08.97.08 1.637.235 2.197.52a5.504 5.504 0 012.404 2.403c.285.56.44 1.228.519 2.197.08.976.08 2.212.08 3.9v141.8c0 1.689 0 2.925-.08 3.9-.079.97-.234 1.638-.519 2.197a5.503 5.503 0 01-2.404 2.404c-.56.285-1.227.44-2.197.519-.975.08-2.212.08-3.9.08H9.6c-1.688 0-2.925 0-3.9-.08-.97-.079-1.637-.234-2.197-.519a5.499 5.499 0 01-2.404-2.404c-.285-.559-.44-1.227-.519-2.197-.08-.975-.08-2.211-.08-3.9v-141.8z"
-                                    />
-                                    <path
-                                        stroke="#4B8BFF"
-                                        strokeMiterlimit={10}
-                                        d="M30 194.529h263M30 149.529h263M147 149.529v89M98 55.53v182.999M49 149.529v89M196 149.529v89M245 149.529v89M53 149.529v89"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M278.319 102.461l-9.478-15.167-7.507-12.01-.527-.852-1.493-2.394a11.109 11.109 0 00-9.414-5.218h-39.585a11.094 11.094 0 00-9.405 5.218l-19.225 30.423a10.985 10.985 0 00-1.671 6.2c.04 1.931.6 3.846 1.671 5.551l8.789 14.071 10.217 16.36a11.124 11.124 0 009.413 5.218h39.577c3.822 0 7.385-1.98 9.414-5.218l1.477-2.37.032-.048 9.787-15.67 7.928-12.335a11.095 11.095 0 000-11.759zm-35.787-14.063l8.821-13.966-17.707 28.037 8.886-14.071z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M181.686 102.461l19.208-30.423a11.098 11.098 0 019.414-5.218h39.585c3.83 0 7.384 1.972 9.413 5.218l19.006 30.423a11.099 11.099 0 010 11.759l-19.201 30.423a11.096 11.096 0 01-9.413 5.218h-39.585c-3.83 0-7.385-1.972-9.414-5.218l-10.225-16.36-8.788-14.063a11.095 11.095 0 010-11.759z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M257.74 136.26l15.07-23.866c1.533-2.451 1.533-5.632 0-8.091l-15.102-24.166"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M257.74 136.26l15.07-23.866c1.533-2.451 1.533-5.632 0-8.091l-15.102-24.166"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M248.407 83.74l-12.895 20.636a7.742 7.742 0 00.033 8.091l13.3 21.277"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M248.407 83.74l-12.895 20.636a7.742 7.742 0 00.033 8.091l13.3 21.277"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M263.923 90.118l-7.499-12.002c-.673-1.08-1.793-1.193-2.247-1.193-.455 0-1.575.114-2.248 1.193l-4.269 6.833"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M263.923 90.118l-7.499-12.002c-.673-1.08-1.793-1.193-2.247-1.193-.455 0-1.575.114-2.248 1.193l-4.269 6.833"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M243.725 125.541l8.22 13.154c.666 1.071 1.721 1.185 2.143 1.185.421 0 1.468-.114 2.142-1.185l9.494-15.021"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M243.725 125.541l8.22 13.154c.666 1.071 1.721 1.185 2.143 1.185.421 0 1.468-.114 2.142-1.185l9.494-15.021"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M43.483 232.974l-30.555-48.45 98.647-160.193h67.22l30.118 50.633-102.576 158.01H43.483z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M115.215 228.462l-1.946 3.126a14.657 14.657 0 01-12.412 6.876H48.681a14.656 14.656 0 01-12.411-6.876L22.8 210.024l-11.589-18.55a14.366 14.366 0 01-2.2-7.321"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M115.215 228.462l-1.946 3.126a14.657 14.657 0 01-12.412 6.876H48.681a14.656 14.656 0 01-12.411-6.876L22.8 210.024l-11.589-18.55a14.366 14.366 0 01-2.2-7.321"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M9.01 184.153a14.428 14.428 0 012.2-8.17l93.463-149.577a14.62 14.62 0 0112.402-6.877h52.185c5.044 0 9.739 2.598 12.412 6.877l1.964 3.154"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M9.01 184.153a14.428 14.428 0 012.2-8.17l93.463-149.577a14.62 14.62 0 0112.402-6.877h52.185c5.044 0 9.739 2.598 12.412 6.877l1.964 3.154"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        d="M183.635 29.561l10.598 16.955L206.73 66.51a14.616 14.616 0 010 15.5L128.163 207.74l-12.903 20.648-.047.076"
-                                    />
-                                    <path
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M183.635 29.561l10.598 16.955L206.73 66.51a14.616 14.616 0 010 15.5L128.163 207.74l-12.903 20.648-.047.076"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        d="M108.184 223.578c-.576 0-2.002-.16-2.918-1.615l-11.26-18.031-8.585-13.431-1.596-2.541c-.992-1.587-1.55-3.41-1.587-5.242a10.446 10.446 0 011.587-5.904l41.994-67.204 46.755-74.883c.916-1.474 2.361-1.634 2.937-1.634.576 0 2.022.16 2.938 1.624l.68 1.087 20.789 32.88a10.595 10.595 0 010 11.154l-88.758 142.04-.038.076c-.916 1.464-2.343 1.615-2.919 1.615l-.019.009z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeMiterlimit={10}
-                                        strokeWidth="0.8"
-                                        d="M49.743 32.409a6.44 6.44 0 100-12.88 6.44 6.44 0 000 12.88zM28.59 32.409a6.44 6.44 0 100-12.88 6.44 6.44 0 000 12.88zM7.44 32.41a6.44 6.44 0 100-12.88 6.44 6.44 0 000 12.88z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeLinejoin="round"
-                                        strokeWidth="0.8"
-                                        d="M257.511 210.83l-7.295 17.829c-1.761 3.498-6.695 3.668-8.684.292l-17.625-36.225c-1.794-3.035 1.014-6.711 4.414-5.786l39.293 10.355c3.295.892 3.53 5.469.357 6.711l-10.444 6.824h-.016z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeLinejoin="round"
-                                        strokeWidth="0.8"
-                                        d="M217 168.673v10.468a9.72 9.72 0 001.079 4.447l22.901 44.447-.446-19.468L217 168.673zM257.511 195.266v15.564l-7.555 18.284-.487-17.886 8.042-15.962z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeLinejoin="round"
-                                        strokeWidth="0.8"
-                                        d="M282.91 183.759l-1.688 14.006a5.16 5.16 0 01-3.059 4.107l-20.653 8.95v-15.564l25.4-11.499z"
-                                    />
-                                    <path
-                                        fill="#266DF0"
-                                        stroke="#6B9FFF"
-                                        strokeLinejoin="round"
-                                        strokeWidth="0.8"
-                                        d="M257.511 195.267l-7.296 14.517c-1.761 3.498-6.695 3.668-8.683.293l-23.972-40.616c-1.793-3.035 1.015-6.711 4.415-5.786l58.331 15.865c3.295.892 3.53 5.469.357 6.711l-23.152 9.016z"
-                                    />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_1640_38791">
-                                        <path
-                                            fill="#fff"
-                                            d="M0 0H294V239H0z"
-                                            transform="translate(0 .53)"
-                                        />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                        </div>
+                       
                     </div>
                     <div className="hidden desktop:contents relative">
                         <svg
