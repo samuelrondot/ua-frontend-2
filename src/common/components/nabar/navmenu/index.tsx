@@ -9,25 +9,20 @@ const navTree = {
     items: [
         {
             sortOrder: 1,
-            name: 'Customers',
-            url: '#/customers'
+            name: 'LinkedIn Scraper',
+            url: '/linkedin-scraper'
         },
         {
             sortOrder: 2,
-            name: 'Changelog',
-            url: '#/changelog'
+            name: 'Email Finder',
+            url: 'email-finder'
         },
         {
             sortOrder: 3,
-            name: 'Help center',
-            url: '#/help'
+            name: 'Multichannel',
+            url: '/multichannel-outreach'
         },
-        {
-            sortOrder: 4,
-            name: 'Careers',
-            url: '#/careers',
-            badge: '4'
-        },
+       
         {
             sortOrder: 5,
             name: 'Pricing',
