@@ -11,9 +11,7 @@ export const CrmStartupFeatures: FC = () => {
                 <header className="flex flex-col items-center gap-24px">
                     <div className="px-24px flex flex-col tablet:items-center gap-12px">
                         <div className="flex flex-col items-center gap-24px">
-                            <p className="border font-inter font-semibold text-12px leading-130 rounded-[30px] px-[10px] tablet:px-12px py-4px tablet:py-[6px] uppercase flex-grow-0 border-brand-light-primary text-brand-light-primary ">
-                                From Zero to One
-                            </p>
+                           
                             <h2 className="typography-h4 tablet:typography-h2-strong text-center text-typography-light-primary px-[10px] phablet:max-desktop:max-w-[800px]">
                             Become a <span className="brandcolor">Lead Generation</span> Machine.
                             </h2>

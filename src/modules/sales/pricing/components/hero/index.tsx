@@ -2,6 +2,7 @@
 import { FC, useEffect, useState } from "react"
 // Components
 import { SalesPricingBillingSelector } from "../billing-selector"
+import Router, { useRouter } from 'next/router'
 
 const annualDiscountActiveClass = 'opacity-1 translate-x-0'
 const annualDiscountInactiveClass = 'opacity-0 translate-x-8px'
@@ -23,6 +24,31 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
         props.onChange(billingPeriod)
     }, [billingPeriod])
 
+    const router = useRouter()
+    
+    useEffect(() => {
+   
+        Paddle.Setup({ 
+          vendor: 153221,
+          eventCallback: function(data: any) {
+    
+            console.log(data)
+            //...
+            if (data.event === 'Checkout.Complete') {
+                
+                fpr('referral',{email: data.eventData.user.email,uid: data.eventData.user.id})
+                dataLayer.push({'event': 'checkoutSuccess'});
+                window.gtag('event','checkoutSuccess')
+          
+                Router.push("/paymentsuccess")
+            }
+          } })
+    
+    
+        
+          
+      }, [])
+
     const _handleBillingPeriodChange = (billingPeriod: "monthly" | "annually") => {
         setBillingPeriod(billingPeriod)
 
@@ -32,6 +58,20 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
             setAnnualDiscountActive(false)
         }
     }
+
+
+
+  function onClick(product: any){
+    Paddle.Checkout.open({
+      method: 'inline', // set to `inline`
+      product: product, // replace with a product ID or plan ID
+      allowQuantity: false,
+      disableLogout: true,
+      frameTarget: 'checkout-container', // className of your checkout <div>
+      frameInitialHeight: 450, // `450` or above
+      frameStyle: 'width:100%; min-width:312px; background-color: transparent; border: none;' // `min-width` must be set to `286px` or above with checkout padding off; `312px` with checkout padding on.
+    });
+  }
 
     return (
         <>
@@ -338,8 +378,8 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                         />
 
                         <div className="flex flex-col w-full tablet:max-w-[1156px] desktop:w-[1156px] phablet:grid phablet:grid-cols-4 content-center gap-12px desktop:gap-24px">
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            <div
+                             
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -459,13 +499,13 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                     </ul>
                                 </div>
                                 <button
-                                    className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
+                                    className="rounded-12px  inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="810887" data-theme="none">Get started</a>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </div>
+                            <div
+                               
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -609,11 +649,11 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="810888" data-theme="none">Get started</a>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </div>
+                            <div
+                               
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-[rgba(15,107,233,1)] text-white shadow-pricingCard-highlight"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -757,9 +797,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primaryOnBlue hover:text-buttonNew-primaryOnBlue-hover active:text-buttonNew-primaryOnBlue-active focus:text-buttonNew-primaryOnBlue-focus disabled:text-buttonNew-primaryOnBlue-disabled bg-buttonNew-primaryOnBlue hover:bg-buttonNew-primaryOnBlue active:bg-buttonNew-primaryOnBlue-active focus:bg-white disabled:bg-buttonNew-primaryOnBlue-disabled border-[1px] border-buttonNew-primaryOnBlue hover:border-buttonNew-primaryOnBlue-hover active:border-buttonNew-primaryOnBlue-active disabled:border-buttonNew-primaryOnBlue-disabled shadow-none hover:shadow-buttonNew-primaryOnBlue-hover active:shadow-none focus:shadow-buttonNew-primaryOnBlue-focus disabled:shadow-buttonNew-primaryOnBlue-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnBlue before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="826727" data-theme="none">Get started</a>
                                 </button>
-                            </a>
+                            </div>
                             <button
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                                 type="button"

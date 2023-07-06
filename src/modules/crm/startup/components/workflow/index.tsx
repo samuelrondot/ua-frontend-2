@@ -45,7 +45,7 @@ export const CrmStartupWorkflow: FC = () => {
                             <div className="flex flex-col h-[315px] bg-background-light-tertiary rounded-16px">
                                 <picture className="mt-auto max-h-full">
                                     <source
-                                        srcSet="https://attio.com/build/_assets/perfect-workflow-mobile-GTPBPDIQ.webp"
+                                        srcSet="/assets/expor.png"
                                         type="image/webp"
                                     />
                                     <img
@@ -70,7 +70,7 @@ export const CrmStartupWorkflow: FC = () => {
                             <div className="flex flex-col h-[315px] bg-background-light-tertiary rounded-16px">
                                 <picture className="mt-auto max-h-full">
                                     <source
-                                        srcSet="https://attio.com/build/_assets/intel-mobile-QTBTNIXS.webp"
+                                        srcSet="/assets/clean.png"
                                         type="image/webp"
                                     />
                                     <img
@@ -95,7 +95,7 @@ export const CrmStartupWorkflow: FC = () => {
                             <div className="flex flex-col h-[315px] bg-background-light-tertiary rounded-16px">
                                 <picture className="mt-auto max-h-full">
                                     <source
-                                        srcSet="https://attio.com/build/_assets/notes-mobile-VGWFLSAC.webp"
+                                        srcSet="/assets/enrich2.png"
                                         type="image/webp"
                                     />
                                     <img
