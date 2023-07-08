@@ -48,8 +48,9 @@ export async function getServerSideProps(staticProps: any) {
 
     const relatedPosts = await cmsContent.posts.getManyPosts(
         {
+            order: 'published_at DESC',
             include: ['tags', 'authors'],
-            limit: 100,
+            limit: 4,
             filter,
         },
         locale
