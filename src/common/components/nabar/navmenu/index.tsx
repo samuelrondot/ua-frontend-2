@@ -141,6 +141,7 @@ export const NavMenu: FC<OwnProps> = (props) => {
 
         return (
             <Dropdown
+                key={key}
                 className={`dropdown-item px-16px py-8px rounded-12px typography-h3 tablet:typography-p5-medium transition-colors text-typography-light-tertiary tablet:text-typography-light-primary bg-transparent desktop:hover:bg-buttonNew-ghost-hover active:bg-buttonNew-ghost-active `}
                 isDesktopMedia={isDesktopMedia}
                 toggleElement={

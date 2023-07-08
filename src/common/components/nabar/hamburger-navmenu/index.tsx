@@ -131,6 +131,7 @@ export const HambergerNavMenu: FC<OwnProps> = (props) => {
 
         return (
             <Dropdown
+                key={key}
                 className={`dropdown-item`}
                 isDesktopMedia={false}
                 toggleElement={

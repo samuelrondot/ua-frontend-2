@@ -13,10 +13,6 @@ type OwnProps = {
 export const Dropdown: FC<OwnProps> = (props) => {
     const [open, setOpen] = useState<boolean>(false);
 
-    useEffect(() => {
-        console.log("open", open);
-    }, [open]);
-
     const _handleOpen = () => {
         setOpen(!open);
     };
