@@ -8,7 +8,7 @@ export const CrmStartupHero: FC = () => {
         <>
             <section className="py-[60px] desktop:pt-[86px] tablet:pb-[190px] bg-background-light-secondary relative">
                 <div className="max-w-[540px] tablet:max-w-[1440px] mx-auto">
-                    <div className="contents isolate tablet:flex flex-col-reverse desktop:flex-row items-center justify-between tablet:pl-[118px] gap-40px desktop:gap-[79px]">
+                    <div className="contents isolate tablet:flex  desktop:flex-row items-center justify-between tablet:pl-[118px] gap-40px desktop:gap-[79px]">
                         <header className="relative z-10 px-24px desktop:pt-[115px] tablet:max-desktop:pr-[118px] max-desktop:w-full flex flex-col gap-32px max-tablet:items-center">
                             <div className="flex flex-col gap-12px tablet:gap-16px desktop:max-w-[590px]">
                                 <div className="gap-16px flex flex-col items-center tablet:items-start">
