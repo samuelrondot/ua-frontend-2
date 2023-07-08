@@ -15,13 +15,13 @@ export const BannerRaises: FC<OwnProps> = (props) => {
                 <div className="w-full flex rounded-[12px] px-[11px] tablet:py-[5px] cursor-pointer bg-[#202124] hover:bg-button-gradient-primary border border-[#3B3E45]">
                     <div className="relative flex flex-row gap-[12px] items-center w-full justify-center">
                         <span className="typography-p6-strong text-[#FFFFFF]">
-                            We&apos;ve raised a $23.5m Series A led by Redpoint Ventures!
+                            5X your reply rate with useArtemis AI
                         </span>
                         <a
                             className="typography-c1-strong text-[#FFFFFF] underline"
-                            href="https://attio.com/blog/series-a-round"
+                            href="https://app.useartemis.co/register"
                         >
-                            Read more
+                           Request access
                         </a>
                     </div>
                     <button

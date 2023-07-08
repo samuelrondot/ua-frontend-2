@@ -15,7 +15,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/GW4Gdj31RIWmYJGwH87J"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1882833/thumb_square_264d9fe56dedf992467a54a12e9e7e0d.jpeg"
                                         alt="Sebastiaan Debrouwere"
                                         width={96}
                                         height={96}
@@ -24,16 +24,14 @@ export const CrmStartupTestimonialsList: FC = () => {
                                     />
                                     <div>
                                         <p className="typography-p6-medium text-[#5e636e]">
-                                            Sebastiaan Debrouwere
+                                        Kazuki O.
                                         </p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@iamsebdeb</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Co-Founder</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        We use @attio on a daily basis for several internal processes, and
-                                        I cannot rave enough about them. Incredible flexibility and
-                                        features combined with super intuitive UI
+                                    &quot;Best Value for Lead Scrapping tool in the market right now! I love using Artemis as the lead scrapping tool using Linkedin. It saves me tons of time to verify and find email addresses. It is highly recommended!&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         10:01 PM · Apr 7, 2022
@@ -48,7 +46,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/9RVsigJSSGHzx0TVtiEL"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1783350/thumb_square_2e69ad475d5b60612006af1d4b93ff6e.jpeg"
                                         alt="Alon"
                                         width={96}
                                         height={96}
@@ -56,14 +54,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Alon</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@alon</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Jefferson T.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Acquisitions & Development</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        As an early stage startup I’m really loving using @attio - great
-                                        balance of flexibility and prescriptiveness
+                                    &quot;Fantastic Lead Generation Tool That Is Continually Improving. Highly Recommend! What I like best about Artemis is its ease of use. The UX is intuitive and is continually improving. Knowing the development team continues to improve the product is a great comfort.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         6:57 PM · Dec 1, 2022
@@ -78,7 +75,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/pJ9TAXxZSZqEsUuGOFPo"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/20533/thumb_square_da4bff9b6cefb49d43fa8e0c9eb5f45a.jpg"
                                         alt="Dimitry Gershenson"
                                         width={96}
                                         height={96}
@@ -87,17 +84,16 @@ export const CrmStartupTestimonialsList: FC = () => {
                                     />
                                     <div>
                                         <p className="typography-p6-medium text-[#5e636e]">
-                                            Dimitry Gershenson
+                                        Brandon M.
                                         </p>
                                         <p className="typography-p6-medium text-[#acb0b9]">
-                                            @d_gershenson
+                                        Creative Strategist
                                         </p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        We use our CRM @attio for sales, fundraising, and recruiting. It&apos;s
-                                        awesome
+                                    &quot;Target Multiple Niche Professionals & Get Hyper-Focused Results! Simplicity is essential; a user will not use any software if over-complicated. I find this to be incredibly simple to use, straight to the point, and able to focus on fine-tuning your search.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         1:32 PM · Jan 4, 2023
@@ -112,7 +108,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/WXNrZIfT6yPCwzB2JfYn"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1829349/thumb_square_ace2ae5f10c35a9b4d1d9e071f0c3d02.jpeg"
                                         alt="Jono Bacon"
                                         width={96}
                                         height={96}
@@ -120,16 +116,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Jono Bacon</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@jonobacon</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Massimo M.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Startup Mentor</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        Let&apos;s be honest, most CRMs suck. Overcomplicated, expensive, and
-                                        you have to bend to their will...not the other way around. I am a
-                                        huge fan of @attio - their product is rock-solid, customer support
-                                        is AAA, and it is *very* flexible and simple.
+                                    &quot;Best software for b2b lead I am happy to leave a 5-star review for useArtemis on G2! As a sales professional, I have struggled in the past with finding accurate B2B contact information for my outreach efforts. But since I started using useArtemis, my search for lead generation has ended.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         4:05 PM · Jan 9, 2023
@@ -144,7 +137,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px] phablet:hidden">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/izYVyyVTY2jBQCqkVCtj"
+                                        src="https://cdn0.capterra-static.com/profile-images/linkedin/5894576a9029a834df43d65e727ba5d1.jpeg"
                                         alt="Sri"
                                         width={96}
                                         height={96}
@@ -152,17 +145,15 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Sri</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Ian</p>
                                         <p className="typography-p6-medium text-[#acb0b9]">
-                                            @therealsrii
+                                        Marketing (Australie)
                                         </p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        I&apos;ve been using @attio to track applicants, manage my deal
-                                        pipeline and manage the associated notes/tasks. The use-cases are
-                                        unlimited; it truly feels like the Notion of CRM.
+                                    &quot;Easily can view thousands of emails to target But what really sets UseArtemis apart is its effectiveness. Since using this software, I have seen a significant increase in the number of leads I generate, and I&apos;ve been able to close more deals as a result. I love how customizable the software is, allowing me to tailor my emails to each individual recipient and increasing the likelihood of a positive response.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         10:17 PM · Jan 3, 2023
@@ -185,15 +176,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Krishna</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@ntkris</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Ankita T.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Assistant Marketing Manager</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        Holy shit @attio is beautiful 😍 I&apos;ve run my CRM on Notion to
-                                        date. Hubspot &amp; Salesforce too clunky. Sleek and simple, just
-                                        what I need
+                                    &quot;Good for Email Enrichment&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         1:03 PM · Mar 3, 2023
@@ -210,7 +199,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/GW4Gdj31RIWmYJGwH87J"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1882833/thumb_square_264d9fe56dedf992467a54a12e9e7e0d.jpeg"
                                         alt="Sebastiaan Debrouwere"
                                         width={96}
                                         height={96}
@@ -219,16 +208,14 @@ export const CrmStartupTestimonialsList: FC = () => {
                                     />
                                     <div>
                                         <p className="typography-p6-medium text-[#5e636e]">
-                                            Sebastiaan Debrouwere
+                                        Kazuki O.
                                         </p>
                                         <p className="typography-p6-medium text-[#acb0b9]">@iamsebdeb</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        We use @attio on a daily basis for several internal processes, and
-                                        I cannot rave enough about them. Incredible flexibility and
-                                        features combined with super intuitive UI
+                                    &quot;Best Value for Lead Scrapping tool in the market right now! I love using Artemis as the lead scrapping tool using Linkedin. It saves me tons of time to verify and find email addresses. It is highly recommended!&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         10:01 PM · Apr 7, 2022
@@ -243,7 +230,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/9RVsigJSSGHzx0TVtiEL"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1783350/thumb_square_2e69ad475d5b60612006af1d4b93ff6e.jpeg"
                                         alt="Alon"
                                         width={96}
                                         height={96}
@@ -251,14 +238,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Alon</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@alon</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Jefferson T.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Acquisitions & Development</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        As an early stage startup I’m really loving using @attio - great
-                                        balance of flexibility and prescriptiveness
+                                    &quot;Fantastic Lead Generation Tool That Is Continually Improving. Highly Recommend! What I like best about Artemis is its ease of use. The UX is intuitive and is continually improving. Knowing the development team continues to improve the product is a great comfort.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         6:57 PM · Dec 1, 2022
@@ -273,7 +259,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/pJ9TAXxZSZqEsUuGOFPo"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/20533/thumb_square_da4bff9b6cefb49d43fa8e0c9eb5f45a.jpg"
                                         alt="Dimitry Gershenson"
                                         width={96}
                                         height={96}
@@ -282,17 +268,16 @@ export const CrmStartupTestimonialsList: FC = () => {
                                     />
                                     <div>
                                         <p className="typography-p6-medium text-[#5e636e]">
-                                            Dimitry Gershenson
+                                        Brandon M.
                                         </p>
                                         <p className="typography-p6-medium text-[#acb0b9]">
-                                            @d_gershenson
+                                        Creative Strategist
                                         </p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        We use our CRM @attio for sales, fundraising, and recruiting. It&apos;s
-                                        awesome
+                                    &quot;Target Multiple Niche Professionals & Get Hyper-Focused Results! Simplicity is essential; a user will not use any software if over-complicated. I find this to be incredibly simple to use, straight to the point, and able to focus on fine-tuning your search.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         1:32 PM · Jan 4, 2023
@@ -307,7 +292,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px]">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/WXNrZIfT6yPCwzB2JfYn"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/1829349/thumb_square_ace2ae5f10c35a9b4d1d9e071f0c3d02.jpeg"
                                         alt="Jono Bacon"
                                         width={96}
                                         height={96}
@@ -315,16 +300,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Jono Bacon</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@jonobacon</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Massimo M.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Startup Mentor</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        Let&apos;s be honest, most CRMs suck. Overcomplicated, expensive, and
-                                        you have to bend to their will...not the other way around. I am a
-                                        huge fan of @attio - their product is rock-solid, customer support
-                                        is AAA, and it is *very* flexible and simple.
+                                    &quot;Best software for b2b lead I am happy to leave a 5-star review for useArtemis on G2! As a sales professional, I have struggled in the past with finding accurate B2B contact information for my outreach efforts. But since I started using useArtemis, my search for lead generation has ended.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         4:05 PM · Jan 9, 2023
@@ -339,7 +321,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px] phablet:hidden">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/izYVyyVTY2jBQCqkVCtj"
+                                        src="https://cdn0.capterra-static.com/profile-images/linkedin/5894576a9029a834df43d65e727ba5d1.jpeg"
                                         alt="Sri"
                                         width={96}
                                         height={96}
@@ -347,17 +329,15 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Sri</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Ian</p>
                                         <p className="typography-p6-medium text-[#acb0b9]">
-                                            @therealsrii
+                                        Marketing (Australie)
                                         </p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        I&apos;ve been using @attio to track applicants, manage my deal
-                                        pipeline and manage the associated notes/tasks. The use-cases are
-                                        unlimited; it truly feels like the Notion of CRM.
+                                    &quot;Easily can view thousands of emails to target But what really sets UseArtemis apart is its effectiveness. Since using this software, I have seen a significant increase in the number of leads I generate, and I&apos;ve been able to close more deals as a result. I love how customizable the software is, allowing me to tailor my emails to each individual recipient and increasing the likelihood of a positive response.&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         10:17 PM · Jan 3, 2023
@@ -372,7 +352,7 @@ export const CrmStartupTestimonialsList: FC = () => {
                             <div className="w-full phablet:w-[330px] bg-white border border-stroke-light-primary rounded-[20px] p-[24px] flex flex-col gap-[20px] phablet:hidden">
                                 <div className="flex flex-row items-center gap-16px">
                                     <img
-                                        src="https://media.graphassets.com/Kd0XUrnRRGmF7owczBfF"
+                                        src="https://images.g2crowd.com/uploads/avatar/image/587067/thumb_square_da626e9f8e4668f2f770b36a9ac3942c.jpeg"
                                         alt="Krishna"
                                         width={96}
                                         height={96}
@@ -380,15 +360,13 @@ export const CrmStartupTestimonialsList: FC = () => {
                                         className="rounded-full w-[48px] h-[48px]"
                                     />
                                     <div>
-                                        <p className="typography-p6-medium text-[#5e636e]">Krishna</p>
-                                        <p className="typography-p6-medium text-[#acb0b9]">@ntkris</p>
+                                        <p className="typography-p6-medium text-[#5e636e]">Ankita T.</p>
+                                        <p className="typography-p6-medium text-[#acb0b9]">Assistant Marketing Manager</p>
                                     </div>
                                 </div>
                                 <div className="flex flex-col gap-12px">
                                     <p className="typography-p6-medium text-[#757C8A] break-words">
-                                        Holy shit @attio is beautiful 😍 I&apos;ve run my CRM on Notion to
-                                        date. Hubspot &amp; Salesforce too clunky. Sleek and simple, just
-                                        what I need
+                                    &quot;Good for Email Enrichment&quot;
                                     </p>
                                     <p className="typography-p6-medium text-[#9196a1]">
                                         1:03 PM · Mar 3, 2023

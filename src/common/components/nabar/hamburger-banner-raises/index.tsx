@@ -15,12 +15,12 @@ export const HamburgerBannerRaises: FC<OwnProps> = (props) => {
                 <div className="w-full  rounded-[12px] px-[10px] py-[8px] flex flex-row items-center cursor-pointer bg-[#202124] border border-[#3B3E45]">
                     <div className="flex flex-row gap-[12px] items-center w-full justify-center pl-[30px] pr-[10px]">
                         <div className="typography-c1-medium text-[#FFFFFF] text-center">
-                            We&apos;ve raised a $23.5m Series A led by Redpoint Ventures!
+                        5X your reply rate with useArtemis AI
                             <a
                                 className="inline-block ml-[4px] typography-c1-strong text-[#FFFFFF] underline"
-                                href="https://attio.com/blog/series-a-round"
+                                href="https://app.useartemis.co/register"
                             >
-                                Read more
+                                Request access
                             </a>
                         </div>
                     </div>

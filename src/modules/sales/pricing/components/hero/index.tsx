@@ -2,6 +2,7 @@
 import { FC, useEffect, useState } from "react"
 // Components
 import { SalesPricingBillingSelector } from "../billing-selector"
+import Router, { useRouter } from 'next/router'
 
 const annualDiscountActiveClass = 'opacity-1 translate-x-0'
 const annualDiscountInactiveClass = 'opacity-0 translate-x-8px'
@@ -23,6 +24,31 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
         props.onChange(billingPeriod)
     }, [billingPeriod])
 
+    const router = useRouter()
+    
+    useEffect(() => {
+   
+        Paddle.Setup({ 
+          vendor: 153221,
+          eventCallback: function(data: any) {
+    
+            console.log(data)
+            //...
+            if (data.event === 'Checkout.Complete') {
+                
+                fpr('referral',{email: data.eventData.user.email,uid: data.eventData.user.id})
+                dataLayer.push({'event': 'checkoutSuccess'});
+                window.gtag('event','checkoutSuccess')
+          
+                Router.push("/paymentsuccess")
+            }
+          } })
+    
+    
+        
+          
+      }, [])
+
     const _handleBillingPeriodChange = (billingPeriod: "monthly" | "annually") => {
         setBillingPeriod(billingPeriod)
 
@@ -32,6 +58,20 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
             setAnnualDiscountActive(false)
         }
     }
+
+
+
+  function onClick(product: any){
+    Paddle.Checkout.open({
+      method: 'inline', // set to `inline`
+      product: product, // replace with a product ID or plan ID
+      allowQuantity: false,
+      disableLogout: true,
+      frameTarget: 'checkout-container', // className of your checkout <div>
+      frameInitialHeight: 450, // `450` or above
+      frameStyle: 'width:100%; min-width:312px; background-color: transparent; border: none;' // `min-width` must be set to `286px` or above with checkout padding off; `312px` with checkout padding on.
+    });
+  }
 
     return (
         <>
@@ -322,12 +362,12 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                 <div className="absolute bg-gradient-radial w-full top-[80px] h-full max-h-[100%]" />
                 <div className="flex flex-col items-center z-10 tablet:pt-80px relative px-[10px] tablet:px-24px ">
                     <h1 className="font-gilroy font-bold text-40px leading-120 -tracking-0.3px tablet:typography-h1-strong text-typography-light-primary pb-8px tablet:pb-16px">
-                        From zero to IPO.
+                        Start Your Lead Machine Today
                     </h1>
                     <h2 className="typography-p4-medium tablet:typography-p2-medium text-typography-light-tertiary text-center">
-                        Designed for every stage of your journey.
+                        Pick up the plan that fit your needs.
                         <br />
-                        Start today, no credit card required.
+                        Cancel at any time.
                         <br />
                     </h2>
                     <div className="h-40px desktop:h-[60px]" />
@@ -338,8 +378,8 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                         />
 
                         <div className="flex flex-col w-full tablet:max-w-[1156px] desktop:w-[1156px] phablet:grid phablet:grid-cols-4 content-center gap-12px desktop:gap-24px">
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            <div
+                             
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -372,17 +412,22 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col gap-12px pb-4px">
-                                    <h3 className="typography-p1-strong">Free</h3>
+                                    <h3 className="typography-p1-strong">Starter</h3>
                                     <div>
-                                        <div className="flex flex-row items-start gap-8px">
+                                    <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
-                                                    <div className="relative">€0</div>
-                                                    <div className="opacity-0 top-0 absolute" />
+                                                    {billingPeriod === 'monthly' ? (
+                                                        <div className="relative">$49</div>
+                                                    ) : (
+                                                        <div className="relative">$39</div>
+                                                    )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
-                                                <p className="text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200" />
+                                                <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200 ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
+                                                    -20%
+                                                </p>
                                             </div>
                                         </div>
                                         <div className="text-[11px] leading-120 font-medium text-typography-light-tertiary">
@@ -394,7 +439,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     <div className="relative"> annually</div>
                                                 )}
                                             </div>
+                                            
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="text-typography-light-secondary">
@@ -414,7 +461,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Real-time contact syncing
+                                            2000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -430,7 +477,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Automatic data enrichment
+                                            4 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -446,18 +493,19 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Up to 3 seats
+                                            10 campaign actions / day
                                         </li>
+                                       
                                     </ul>
                                 </div>
                                 <button
-                                    className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
+                                    className="rounded-12px  inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="810887" data-theme="none">Get started</a>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </div>
+                            <div
+                               
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -503,15 +551,15 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
                                                     {billingPeriod === 'monthly' ? (
-                                                        <div className="relative">€34</div>
+                                                        <div className="relative">$99</div>
                                                     ) : (
-                                                        <div className="relative">€29</div>
+                                                        <div className="relative">$79</div>
                                                     )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
                                                 <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] text-typography-light-quaternary bg-greyscale-light-04 translate-x-8px transition duration-200 delay-200 ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
-                                                    -15%
+                                                    -20%
                                                 </p>
                                             </div>
                                         </div>
@@ -525,6 +573,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                 )}
                                             </div>
                                         </div>
+                                        
                                     </div>
                                 </div>
                                 <div className="text-typography-light-secondary">
@@ -544,7 +593,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Private lists
+                                            7000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -560,7 +609,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Enhanced email sending
+                                           6 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -576,18 +625,35 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            No seat limits
+                                            30 campaign actions / day
                                         </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                           AI for LinkedIn Invites
+                                        </li>
+                                      
                                     </ul>
                                 </div>
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="810888" data-theme="none">Get started</a>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </div>
+                            <div
+                               
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-[rgba(15,107,233,1)] text-white shadow-pricingCard-highlight"
                             >
                                 <div className="hidden desktop:block desktop:h-[50px]">
@@ -633,15 +699,15 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
                                                     {billingPeriod === 'monthly' ? (
-                                                        <div className="relative">€69</div>
+                                                        <div className="relative">$139</div>
                                                     ) : (
-                                                        <div className="relative">€59</div>
+                                                        <div className="relative">$115</div>
                                                     )}
                                                 </div>
                                             </div>
                                             <div className="flex flex-col items-start pt-[6px]">
                                                 <p className={`text-[11px] font-medium tracking-165 flex items-center text-center -tracking-0.2px rounded-6px px-[6px] py-[2px] translate-x-8px transition duration-200 delay-200 text-white bg-[#2D7EEE] ${annualDiscountActive ? annualDiscountActiveClass : annualDiscountInactiveClass}`}>
-                                                    -15%
+                                                    -20%
                                                 </p>
                                             </div>
                                         </div>
@@ -676,7 +742,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Fully adjustable permissions
+                                            35 000 enrichment credits
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
@@ -692,7 +758,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Advanced data enrichment
+                                            15 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
@@ -708,16 +774,32 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Priority support
+                                            70 campaign actions / day
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-03"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            AI for LinkedIn Invites
                                         </li>
                                     </ul>
                                 </div>
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primaryOnBlue hover:text-buttonNew-primaryOnBlue-hover active:text-buttonNew-primaryOnBlue-active focus:text-buttonNew-primaryOnBlue-focus disabled:text-buttonNew-primaryOnBlue-disabled bg-buttonNew-primaryOnBlue hover:bg-buttonNew-primaryOnBlue active:bg-buttonNew-primaryOnBlue-active focus:bg-white disabled:bg-buttonNew-primaryOnBlue-disabled border-[1px] border-buttonNew-primaryOnBlue hover:border-buttonNew-primaryOnBlue-hover active:border-buttonNew-primaryOnBlue-active disabled:border-buttonNew-primaryOnBlue-disabled shadow-none hover:shadow-buttonNew-primaryOnBlue-hover active:shadow-none focus:shadow-buttonNew-primaryOnBlue-focus disabled:shadow-buttonNew-primaryOnBlue-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnBlue before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity mt-auto"
                                 >
-                                    <span className="z-1 relative">Get started</span>
+                                    <a className=" z-1 relative paddle_button" href="#!"  data-product="826727" data-theme="none">Get started</a>
                                 </button>
-                            </a>
+                            </div>
                             <button
                                 className="group transition-transform duration-300 transform-gpu desktop:hover:-translate-y-4px translate-y-0 rounded-16px border-stroke-light-primary border p-24px phablet:p-[18px] tablet:pb-[16px] flex flex-col items-stretch justify-start gap-24px outline-offset-4 text-left bg-white text-typography-light-primary shadow-pricingCard-standard"
                                 type="button"
@@ -761,7 +843,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                         <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
-                                                    <div className="relative">€119</div>
+                                                    <div className="relative">$259</div>
                                                     <div className="opacity-0 top-0 absolute" />
                                                 </div>
                                             </div>
@@ -770,9 +852,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                         </div>
                                         <div className="text-[11px] leading-120 font-medium text-typography-light-tertiary">
-                                            per user/month, billed{" "}
+                                            per user/month, billed monthly
                                             <div className="relative inline-block">
-                                                <div className="relative">annually</div>
+                                               
                                                 <div className="opacity-0 top-0 absolute" />
                                             </div>
                                         </div>
@@ -797,7 +879,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Unlimited reporting
+                                            Unlimited enrichment
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -813,7 +895,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            SAML and SSO
+                                            50 running campaigns
                                         </li>
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
@@ -829,7 +911,24 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            Custom billing
+                                           500 campaign actions / day
+                                        </li>
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                          AI for LinkedIn Invites
                                         </li>
                                     </ul>
                                 </div>

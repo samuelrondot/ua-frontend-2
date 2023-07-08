@@ -1,5 +1,6 @@
 // React
 import { FC } from "react"
+import Salesnav from 'assets/images/salesnavexport.png'
 
 export const CrmStartupHero: FC = () => {
 
@@ -7,28 +8,25 @@ export const CrmStartupHero: FC = () => {
         <>
             <section className="py-[60px] desktop:pt-[86px] tablet:pb-[190px] bg-background-light-secondary relative">
                 <div className="max-w-[540px] tablet:max-w-[1440px] mx-auto">
-                    <div className="contents isolate tablet:flex flex-col-reverse desktop:flex-row items-center justify-between tablet:pl-[118px] gap-40px desktop:gap-[79px]">
+                    <div className="contents isolate tablet:flex  desktop:flex-row items-center justify-between tablet:pl-[118px] gap-40px desktop:gap-[79px]">
                         <header className="relative z-10 px-24px desktop:pt-[115px] tablet:max-desktop:pr-[118px] max-desktop:w-full flex flex-col gap-32px max-tablet:items-center">
                             <div className="flex flex-col gap-12px tablet:gap-16px desktop:max-w-[590px]">
                                 <div className="gap-16px flex flex-col items-center tablet:items-start">
-                                    <p className="border font-inter font-semibold text-12px leading-130 rounded-[30px] px-[10px] tablet:px-12px py-4px tablet:py-[6px] uppercase flex-grow-0 border-brand-light-primary text-brand-light-primary ">
-                                        CRM For Startups
-                                    </p>
-                                    <h1 className="typography-h3-strong tablet:typography-h1-strong text-center tablet:text-left text-typography-light-primary phablet:max-desktop:max-w-[820px]">
-                                        The real-time CRM for scaling startups.
+                                   
+                                    <h1 className="typography-h3-strong tablet:typography-h1-strong text-center tablet:text-left text-typography-light-primary phablet:max-desktop:max-w-[820px] lineheight">
+                                    The Smartest way to <span className="brandcolor">Scrape LinkedIn</span>
                                     </h1>
                                 </div>
                                 <p className="typography-p4-medium tablet:typography-p2-medium text-typography-light-tertiary text-center tablet:text-left max-tablet:px-[14px]">
-                                    Infinitely flexible, Attio is built for every stage of the startup
-                                    journey – from zero to IPO.
+                                Extract & Enrich clean data from LinkedIn and LinkedIn Sales Navigator with our LinkedIn Scraper.
                                 </p>
                             </div>
                             <div className="flex flex-row items-center tablet:items-start gap-12px tablet:gap-20px max-tablet:px-24px w-full max-w-[700px] tablet:self-start">
                                 <a
-                                    href="https://app.attio.com/welcome/sign-in"
+                                    href="https://app.useartemis.co/register"
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity max-tablet:flex-1 text-center"
                                 >
-                                    <span className="z-1 relative">Try for free</span>
+                                    <span className="z-1 relative">14-day free trial</span>
                                 </a>
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus max-phablet:flex-1 text-center"
@@ -42,27 +40,25 @@ export const CrmStartupHero: FC = () => {
                                 </button>
                             </div>
                         </header>
-                        <picture className="relative z-10 w-auto max-desktop:max-w-[80vw] max-desktop:max-h-full desktop:w-[590px] desktop:h-[437px] hidden tablet:block desktop:mr-[60px] flex-grow-none">
+
+                       
+                        
+                        <picture className="relative z-10 w-auto max-desktop:max-w-[80vw] max-desktop:max-h-full desktop:w-[590px] desktop:h-[437px] hidden tablet:block desktop:mr-[60px] flex-grow-none ">
                             <source
-                                srcSet="https://attio.com//build/_assets/hero-desktop-YSI3JNA5.webp"
+                                srcSet="/assets/salesnavexport2.png"
                                 media="(min-width:992px)"
                                 type="image/webp"
                                 width={1331}
                                 height={1222}
                             />
-                            <source
-                                srcSet="https://attio.com//build/_assets/hero-desktop-XMRXFLBE.png"
-                                media="(min-width:992px)"
-                                type="image/png"
-                                width={1331}
-                                height={1222}
-                            />
+                           
                             <img
                                 src=""
                                 alt="Attio's product, showing an activity view of a user's contact. It includes a recent email from the contact, a status change in the Deal Flow pipeline, and an upcoming calendar meeting."
-                                className="max-h-[500px] max-phablet:hidden w-auto"
+                                className="max-h-[500px] max-phablet:hidden w-auto salesnav"
                             />
                         </picture>
+
                         <div className="hidden tablet:block absolute top-0 bottom-0 right-0 z-0">
                             <svg
                                 width={1427}
