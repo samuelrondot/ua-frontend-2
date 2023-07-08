@@ -98,12 +98,12 @@ export const Footer: FC = () => {
                                         >
                                             LinkedIn Scraper
                                         </Link>
-                                        <a
+                                        <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
                                             href="/email-finder"
                                         >
                                             Email Finder
-                                        </a>
+                                        </Link>
                                         <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
                                             href="/multichannel-outreach"
@@ -170,12 +170,12 @@ export const Footer: FC = () => {
                                 body={
                                     <div className="flex phablet:flex flex-col gap-12px phablet:gap-8px pb-8px hidden">
                                         
-                                        <a
+                                        <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
                                             href="/blog"
                                         >
                                             Blog
-                                        </a>
+                                        </Link>
 
                                         <a
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
@@ -190,12 +190,12 @@ export const Footer: FC = () => {
                                         >
                                             About
                                         </a>
-                                        <a
+                                        <Link
                                             className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
                                             href="/contact-us"
                                         >
                                             Contact
-                                        </a>
+                                        </Link>
                                        
                                        
                                     </div>
