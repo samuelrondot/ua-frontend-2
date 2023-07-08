@@ -53,10 +53,6 @@
     a {
         letter-spacing: 0.5px;
     }
-
-    h3 {
-        font-family: var(--font-sans-serif);
-    }
 }
 
 .navigation {
@@ -149,7 +145,6 @@
         font-size: 18px;
         color: rgb(35, 31, 32);
         text-decoration: none;
-        font-family: var(--font-sans-serif);
         font-weight: 400;
         margin: 0px 10px;
         padding: 0px 4px;
@@ -331,7 +326,6 @@
     padding: 16px 8px;
     font-size: 20px;
     font-weight: 700;
-    font-family: var(--font-headings);
 
     &:hover {
         text-decoration: underline;
@@ -418,4 +412,26 @@
     height: 48px;
     font-size: 18px;
     justify-content: center;
+}
+
+.hamburger {
+    .dropdown-item {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        justify-items: center;
+    }
+    .dropdown-menu-item {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+        gap: 8px;
+        font-size: 18px;
+        height: 28px;
+        color: black;
+    }
 }

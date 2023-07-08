@@ -27,7 +27,7 @@ const navTree = {
             name: 'Multichannel',
             url: '/multichannel-outreach'
         },
-       
+
         {
             sortOrder: 5,
             name: 'Pricing',
@@ -141,7 +141,7 @@ export const NavMenu: FC<OwnProps> = (props) => {
 
         return (
             <Dropdown
-                className={`dropdown-item ${navLinkClassName}`}
+                className={`dropdown-item px-16px py-8px rounded-12px typography-h3 tablet:typography-p5-medium transition-colors text-typography-light-tertiary tablet:text-typography-light-primary bg-transparent desktop:hover:bg-buttonNew-ghost-hover active:bg-buttonNew-ghost-active `}
                 isDesktopMedia={isDesktopMedia}
                 toggleElement={
                     <a
@@ -166,10 +166,10 @@ export const NavMenu: FC<OwnProps> = (props) => {
                         </div>
                     </a>
                 }
-                menuItems={item.children?.map((child: any, key: number) => (
+                menuItems={item.children?.map((child: any, idx: number) => (
                     <a className="dropdown-menu-item"
                         href={child.url}
-                        key={key}
+                        key={key * idx}
                     >
                         <img src={child.image} />
                         <div>

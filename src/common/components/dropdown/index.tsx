@@ -1,5 +1,5 @@
 // React
-import { cloneElement, FC, ReactElement, useState } from "react";
+import { cloneElement, FC, ReactElement, use, useEffect, useState } from "react";
 // Styles
 import style from "./style.module.scss";
 
@@ -13,6 +13,10 @@ type OwnProps = {
 export const Dropdown: FC<OwnProps> = (props) => {
     const [open, setOpen] = useState<boolean>(false);
 
+    useEffect(() => {
+        console.log("open", open);
+    }, [open]);
+
     const _handleOpen = () => {
         setOpen(!open);
     };
@@ -25,18 +29,33 @@ export const Dropdown: FC<OwnProps> = (props) => {
         setOpen(false);
     };
 
+    const _handleMouseOver = () => {
+        if (!props.isDesktopMedia) {
+            return;
+        }
+        setOpen(true);
+    };
+
+    const _handleMouseOut = () => {
+        if (!props.isDesktopMedia) {
+            return;
+        }
+        setOpen(false);
+    };
+
     return (
         <div
             className={`${props.className} ${style.dropdown} dropdown-item`}
-            aria-expanded={open ? true : false}
-            onMouseOver={() => setOpen(true)}
-            onMouseOut={() => setOpen(false)}
+            onMouseOver={() => _handleMouseOver()}
+            onMouseOut={() => _handleMouseOut()}
             style={{ maxWidth: 1344 }}
+            aria-expanded={open}
         >
             {cloneElement(props.toggleElement, {
+                key: 0,
                 onClick: _handleOpen,
             })}
-            {true ? (
+            {open ? (
                 <div
                     className={
                         "dropdown-menu " +
@@ -46,11 +65,12 @@ export const Dropdown: FC<OwnProps> = (props) => {
                     aria-label="submenu"
                 >
                     <div className="dropdown-container">
-                        {props.menuItems.map((item, index) =>
+                        {props.menuItems.map((item, index) => (
                             cloneElement(item, {
+                                key: index,
                                 onClick: () => _handleMenuItemClick(item),
                             })
-                        )}
+                        ))}
                     </div>
                 </div>
             ) : null}
