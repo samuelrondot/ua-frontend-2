@@ -6,7 +6,6 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react';
 import Script from 'next/script'
 
-
 const UAApp = ({ Component, pageProps }: AppProps) => {
 
   const router = useRouter()
