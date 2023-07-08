@@ -4813,6 +4813,12 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     align-items: stretch;
 }
 
+.bf-relatedcard {
+    flex-grow: 1;
+    display: flex;
+    align-items: stretch;
+}
+
 .bf-relatedcard-imgbox {
     flex-shrink: 0;
     width: 190px;

@@ -55,11 +55,9 @@ export const CmsContentPostMainHero: FC<OwnProps> = (props) => {
                                     {post.title}
                                 </h1>
                             </a>
-                            <div className="gh-excerpt">
-                                <div
-                                    dangerouslySetInnerHTML={{ __html: `${post.excerpt.slice(0, 200)} ${post.excerpt?.length > 200 ? '...' : null}` }}
-                                />
-                            </div>
+                            <div className="gh-excerpt"
+                                dangerouslySetInnerHTML={{ __html: `${post.excerpt.slice(0, 200)} ${post.excerpt?.length > 200 ? '...' : null}` }}
+                            />
                             <div className="gh-header-meta">
                                 <time dateTime={post.published_at} >
                                     {new Date(post.published_at).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })}
@@ -117,7 +115,8 @@ export const CmsContentPostMainHero: FC<OwnProps> = (props) => {
                                 )}
                             </div>
                         </div>
-                        <a className="gh-author-card" href={getAuthorPath(post.primary_author)}>
+                        <a className="gh-author-card"
+                            href={getAuthorPath(post.primary_author)}>
                             <div className="gh-author-card-image-wrap">
                                 <img
                                     className="gh-author-card-image"

@@ -15,7 +15,7 @@ export const BlogLayout: FC<OwnProps> = (props) => {
     return (
         <>
             <Navbar />
-            <Main>
+            <Main className="gh-main">
                 {props.children}
             </Main >
             <Footer />
