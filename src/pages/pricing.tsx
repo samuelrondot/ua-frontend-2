@@ -1,9 +1,11 @@
+// React
+import { FC } from "react";
 // Next
 import Head from "next/head";
 // Modules Components
 import { SalesPricingLandingPage } from "modules/sales/pricing/components/landing-page";
 
-export default function Home() {
+const Pricing: FC = () => {
     return (
         <>
             <Head>
@@ -16,3 +18,5 @@ export default function Home() {
         </>
     );
 }
+
+export default Pricing;

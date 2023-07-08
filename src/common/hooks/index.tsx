@@ -1,3 +1,5 @@
+export * from './use-ghost-api'
 export * from './use-media'
+export * from './use-pagination'
 export * from './use-scroll-y'
 export * from './use-window-dimensions'
