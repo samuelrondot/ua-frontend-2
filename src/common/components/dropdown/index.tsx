@@ -1,54 +1,75 @@
 // React
-import { cloneElement, FC, ReactElement, useState } from "react";
+import { cloneElement, FC, ReactElement, use, useEffect, useState } from "react";
 // Styles
 import style from "./style.module.scss";
 
 type OwnProps = {
-  toggleElement: ReactElement;
-  menuItems: ReactElement[];
-  isDesktopMedia: boolean;
+    className?: string;
+    toggleElement: ReactElement;
+    menuItems: ReactElement[];
+    isDesktopMedia: boolean;
 };
 
 export const Dropdown: FC<OwnProps> = (props) => {
-  const [open, setOpen] = useState(false);
+    const [open, setOpen] = useState<boolean>(false);
 
-  const _handleOpen = () => {
-    setOpen(!open);
-  };
+    const _handleOpen = () => {
+        setOpen(!open);
+    };
 
-  const _handleMenuItemClick = (item: ReactElement) => {
-    if (typeof item.props?.onClick === "function") {
-      item.props?.onClick();
-    }
+    const _handleMenuItemClick = (item: ReactElement) => {
+        if (typeof item.props?.onClick === "function") {
+            item.props?.onClick();
+        }
 
-    setOpen(false);
-  };
+        setOpen(false);
+    };
 
-  return (
-    <div
-      className={`${style.dropdown} w-dropdown`}
-      onMouseOver={() => setOpen(true)}
-      onMouseOut={() => setOpen(false)}
-      style={{ maxWidth: 1344 }}
-    >
-      {cloneElement(props.toggleElement, {
-        onClick: _handleOpen,
-      })}
-      {open ? (
-        <nav
-          className={
-            "dropdown-list w-dropdown-list " +
-            (open ? "w--open " : " ") +
-            (props.isDesktopMedia ? "" : "w--nav-dropdown-list-open w--open")
-          }
+    const _handleMouseOver = () => {
+        if (!props.isDesktopMedia) {
+            return;
+        }
+        setOpen(true);
+    };
+
+    const _handleMouseOut = () => {
+        if (!props.isDesktopMedia) {
+            return;
+        }
+        setOpen(false);
+    };
+
+    return (
+        <div
+            className={`${props.className} ${style.dropdown} dropdown-item`}
+            onMouseOver={() => _handleMouseOver()}
+            onMouseOut={() => _handleMouseOut()}
+            style={{ maxWidth: 1344 }}
+            aria-expanded={open}
         >
-          {props.menuItems.map((item, index) =>
-            cloneElement(item, {
-              onClick: () => _handleMenuItemClick(item),
-            })
-          )}
-        </nav>
-      ) : null}
-    </div>
-  );
+            {cloneElement(props.toggleElement, {
+                key: 0,
+                onClick: _handleOpen,
+            })}
+            {open ? (
+                <div
+                    className={
+                        "dropdown-menu " +
+                        (open ? "w--open " : " ") +
+                        (props.isDesktopMedia ? "" : "w--nav-dropdown-list-open w--open")
+                    }
+                    aria-label="submenu"
+                >
+                    <div className="dropdown-container">
+                        {props.menuItems.map((item, index) => (
+                            cloneElement(item, {
+                                key: index,
+                                onClick: () => _handleMenuItemClick(item),
+                            })
+                        ))}
+                    </div>
+                </div>
+            ) : null}
+        </div>
+    );
 };

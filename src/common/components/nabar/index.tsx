@@ -13,6 +13,8 @@ import { BannerRaises } from "./banner-raises";
 import { NavMenu } from "./navmenu";
 import Logo from 'assets/images/useartemis-logo.png'
 import Link from "next/link";
+// Styles
+import style from "./style.module.scss";
 
 type OwnProps = {
   navbarStyle?: "light" | "dark";
@@ -67,7 +69,7 @@ const Navbar: FC<OwnProps> = (props) => {
         />
         <div className="flex items-center py-16px">
           <Link aria-label="Home" href="/">
-          <img className="logo" src={Logo.src}></img>
+            <img className="logo" src={Logo.src}></img>
           </Link>
           <NavMenu />
           <div className="ml-auto flex-shrink-0 flex gap-12px max-tablet:hidden">

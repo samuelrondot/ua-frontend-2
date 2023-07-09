@@ -1,10 +1,12 @@
 
+// React
+import { FC } from 'react';
 // Next
 import Head from "next/head";
 // Modules Components
 import { CrmStartupLandingPage } from "modules/crm/startup/components/landing-page";
 
-export default function StartupCrm() {
+const StartupCrm: FC = () => {
     return (
         <>
             <Head>
@@ -17,3 +19,5 @@ export default function StartupCrm() {
         </>
     );
 }
+
+export default StartupCrm;
