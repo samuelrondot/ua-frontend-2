@@ -60,10 +60,10 @@ export const CmsContentPostMain: FC<OwnProps> = (props) => {
                 </div>
             </div>
             <CrmWidgetNewsletterSubscription />
-            <CrmWidgetPodcastProposal />
+
 
             <>
-                {/** PS: There is not enough posts to show (I keep this here for now) */}
+                {/** PS: There is not enough posts to show (I keep this here for now) 
                 <div className="bf-homefeed gh-page">
                     <div className="gh-container bf-tab" >
                         <CmsContentTagTabSelector
@@ -75,6 +75,7 @@ export const CmsContentPostMain: FC<OwnProps> = (props) => {
                         </div>
                     </div>
                 </div>
+                */}
             </>
 
             <SalesCaptureSocialProof />

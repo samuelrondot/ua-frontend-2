@@ -4,6 +4,8 @@ import { FC } from "react";
 import { PostModel } from "modules/cms/content/models";
 // Utils
 import { getAuthorPath, getTagPath } from "modules/cms/content/utils";
+import moment from 'moment'
+import Link from "next/link";
 
 const appBrandName = process.env.NEXT_PUBLIC_APP_BRAND_NAME;
 
@@ -21,12 +23,12 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                     <div className="gh-header-content">
                         <div className="gh-post-breadcrumb">
                             {/* Determine correct breadcrumbs */}
-                            <a
+                            <Link
                                 className="gh-breadcrumb-link"
                                 href="/blog"
                             >
                                 Blog
-                            </a>
+                            </Link>
                             <svg viewBox="0 0 18 27" xmlns="http://www.w3.org/2000/svg">
                                 <path
                                     d="M2.397 25.426l13.143-11.5-13.143-11.5"
@@ -39,23 +41,23 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                 />
                             </svg>
                             {post.primary_tag && (
-                                <a
+                                <Link
                                     className="gh-breadcrumb-link"
                                     href={getTagPath(post.primary_tag)}
                                 >
                                     {post.primary_tag?.name}
-                                </a>
+                                </Link>
                             )}
                         </div>
                         <h1 className="gh-title">
                             {post.title}
                         </h1>
                         <div className="gh-excerpt"
-                            dangerouslySetInnerHTML={{ __html: post.excerpt }} />
+                           dangerouslySetInnerHTML={{ __html: post.excerpt.substring(0, 200) + '...' }} />
                         <div className="gh-header-meta">
-                            <time dateTime={post.published_at} >
-                                {new Date(post.published_at).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })}
-                            </time>
+                           
+
+                            {moment(post.published_at).format('MMMM DD, YYYY')}
                             <span className="bf-readingtime">
                                 <svg
                                     width={24}
@@ -123,7 +125,7 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                     {post.primary_author.bio?.length > 0 ? (
                                         post.primary_author.bio
                                     ) : (
-                                        `Content Writer @ ${appBrandName}`
+                                        `Founder @ ${appBrandName}`
                                     )}
                                 </span>
                             </div>

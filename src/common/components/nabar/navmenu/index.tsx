@@ -12,22 +12,8 @@ const navLinkClassName = 'px-16px py-8px inline-flex flex-row items-center justi
 
 const navTree = {
     items: [
-        {
-            sortOrder: 1,
-            name: 'LinkedIn Scraper',
-            url: '/linkedin-scraper'
-        },
-        {
-            sortOrder: 2,
-            name: 'Email Finder',
-            url: 'email-finder'
-        },
-        {
-            sortOrder: 3,
-            name: 'Multichannel',
-            url: '/multichannel-outreach'
-        },
-
+        
+       
         {
             sortOrder: 5,
             name: 'Pricing',
@@ -44,48 +30,42 @@ const navTree = {
             children: [
                 {
                     sortOrder: 1,
-                    name: 'Publishing',
+                    name: 'LinkedIn Scraper',
                     image: 'https://buffer.com/resources/assets/img/header/tool-icons/publish-icon.svg?v=9a5cf479fa',
+                    url: '/linkedin-scraper',
                     description: `
                     <div>
-                        <h3>Publishing</h3>
+                      
                         <p>Plan, collaborate, and publish thumb-stopping content</p>
+                       
                     </div>
                     `
                 },
                 {
                     sortOrder: 2,
-                    name: 'Analytics',
+                    name: 'Email Finder',
                     image: 'https://buffer.com/resources/assets/img/header/tool-icons/analyze-icon.svg?v=9a5cf479fa',
+                    url: '/email-finder',
                     description: `
                     <div>
-                        <h3>Analytics</h3>
+                       
                         <p>Analyze social media performance and create reports</p>
                     </div>
                     `
                 },
                 {
                     sortOrder: 3,
-                    name: 'Engagement',
+                    name: 'Multichannel',
                     image: 'https://buffer.com/resources/assets/img/header/tool-icons/engage-icon.svg?v=9a5cf479fa',
+                    url: '/multichannel-outreach',
                     description: `
                     <div>
-                        <h3>Engagement</h3>
+                        
                         <p>Quickly navigate your comments and engage with your audience</p>
                     </div>
                     `
                 },
-                {
-                    sortOrder: 4,
-                    name: 'Start Page',
-                    image: 'https://buffer.com/resources/assets/img/header/tool-icons/start-page-icon.svg?v=9a5cf479fa',
-                    description: `
-                    <div>
-                        <h3>Start Page</h3>
-                        <p>Build a customized landing page in minutes</p>
-                    </div>
-                    `
-                },
+              
             ]
         },
     ]
@@ -142,7 +122,7 @@ export const NavMenu: FC<OwnProps> = (props) => {
         return (
             <Dropdown
                 key={key}
-                className={`dropdown-item px-16px py-8px rounded-12px typography-h3 tablet:typography-p5-medium transition-colors text-typography-light-tertiary tablet:text-typography-light-primary bg-transparent desktop:hover:bg-buttonNew-ghost-hover active:bg-buttonNew-ghost-active `}
+                className={`typography-p5-medium dropdown-item px-16px py-8px rounded-12px typography-h3 tablet:typography-p5-medium transition-colors text-typography-light-tertiary tablet:text-typography-light-primary bg-transparent desktop:hover:bg-buttonNew-ghost-hover active:bg-buttonNew-ghost-active `}
                 isDesktopMedia={isDesktopMedia}
                 toggleElement={
                     <a
@@ -168,7 +148,7 @@ export const NavMenu: FC<OwnProps> = (props) => {
                     </a>
                 }
                 menuItems={item.children?.map((child: any, idx: number) => (
-                    <a className="dropdown-menu-item"
+                    <a className="dropdown-menu-item typography-p5-medium"
                         href={child.url}
                         key={key * idx}
                     >
@@ -188,7 +168,7 @@ export const NavMenu: FC<OwnProps> = (props) => {
     return (
         <>
             <nav className="navigation ml-44px flex-row gap-[12px] max-tablet:hidden">
-                <section className="navigation-desktop-menu">
+                <section className="navigation-desktop-menu typography-p5-medium">
                     {navTree?.items?.length > 0 && (
                         _renderMenuItems(navTree.items, 0)
                     )}

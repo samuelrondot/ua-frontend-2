@@ -1143,10 +1143,10 @@ h6 {
     .bf-sharebar {
         grid-column: wide-start/wide-end;
         margin: 0 !important;
-        position: absolute;
+        position: sticky;
         top: 0;
         left: 0;
-        bottom: 0;
+       
     }
 
     .bf-sharebar-actions {
@@ -1252,6 +1252,8 @@ h6 {
         font-size: 2rem;
         line-height: 1.6em;
     }
+
+
 }
 
 .gh-content {
@@ -2546,6 +2548,30 @@ img.bf-flow-logo {
 
 .gh-article {
     padding: 8vmin 0;
+    font-family: Inter,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Droid Sans,Helvetica Neue,sans-serif;
+    font-size: 1.7rem;
+    font-weight: 300;
+    letter-spacing: .1px;
+    color: #394047;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    font-family: georgia,serif;
+    font-weight: 400;
+    line-height: 1.6em;
+    font-size: 2rem;
+}
+
+.gh-article p {
+    margin: 2.8rem 0 0
+}
+.gh-article ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
 }
 
 .gh-main .gh-page:first-of-type {
@@ -3768,7 +3794,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 .bf-home-bb {
     padding: 8vmin 3vmin;
     color: #fff;
-    background: #6b88ff;
+    background: #666cff;
 
     h4 {
         color: #fff;
@@ -4436,6 +4462,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     font-size: 1.3rem;
     color: #636363;
     letter-spacing: 0.3px;
+    justify-content: space-evenly;
 
     > {
         * {
@@ -4457,7 +4484,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 .gh-author-card-image-wrap {
     flex: 0 0 auto;
     position: relative;
-    border: 2px solid #6b88ff;
+    border: 2px solid #666cff;
     margin-right: 18px;
     border-radius: 100%;
 
@@ -4517,7 +4544,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
         width: 60px;
         height: 4px;
         margin-right: 15px;
-        background: #6b88ff;
+        background: #666cff;
     }
 }
 
@@ -4785,6 +4812,11 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     }
 }
 
+.bf-readingtime {
+    display: flex;
+    align-items: center;
+}
+
 .bf-archive-page .gh-page-head {
     text-align: left;
 
@@ -4943,7 +4975,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    color: #6b88ff;
+    color: #666cff;
 }
 
 .bf-maincta-logo {
@@ -4997,7 +5029,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
         }
 
         svg {
-            fill: #6b88ff;
+            fill: #666cff;
             width: auto;
             height: 20px;
         }
@@ -5380,4 +5412,23 @@ a {
     transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
     font-size: 1.5rem;
     font-size: 17px;
+}
+
+
+.content-aside-container {
+    display: flex; /* aligns the content and the sidebar next to each other */
+    justify-content: space-between; /* optional, adds some space between content and sidebar */
+}
+
+.sticky-sidebar {
+    position: sticky;
+    top: 0; /* adjust this value according to your needs */
+    /* don't forget to add fallbacks for browsers that don't support sticky positioning */
+}
+
+.sidebarimage {
+    position: sticky;
+    top: 80px;
+    width: 90%;
+    max-width: 400px;
 }

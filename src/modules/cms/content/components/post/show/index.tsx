@@ -23,21 +23,17 @@ export const CmsContentPostShow: FC<OwnProps> = (props) => {
 
     return (
         <BlogLayout>
-            <article className="gh-article post tag-flow tag-social-media-marketing tag-linkedin featured">
-                <CmsContentPostShowHeader
-                    post={post} />
-                <div className="gh-content gh-canvas">
-                    <div
-                        dangerouslySetInnerHTML={{ __html: post.html }} />
-                    <CmsContentPostShowAside
-                        className={style.aside}
-                        post={post} />
-                    <div className="bf-spacer" />
-                    {/** TODO: PS: You can add your comments here */}
-                </div>
-            </article>
-            <CmsContentPostShowRelated relatedPosts={props.relatedPosts} />
-            <SalesCaptureSocialProof />
-        </BlogLayout >
+        <article className="gh-article post tag-flow tag-social-media-marketing tag-linkedin featured">
+            <CmsContentPostShowHeader post={post} />
+            <div className="content-aside-container">
+                <div className="gh-content gh-canvas" dangerouslySetInnerHTML={{ __html: post.html }} />
+                <CmsContentPostShowAside className={`${style.aside} sticky-sidebar`} post={post} />
+            </div>
+            <div className="bf-spacer" />
+            {/* TODO: PS: You can add your comments here */}
+        </article>
+        <CmsContentPostShowRelated relatedPosts={props.relatedPosts} />
+       {/* <SalesCaptureSocialProof />  */}
+    </BlogLayout>
     );
 }

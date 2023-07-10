@@ -10,6 +10,9 @@ import { getPostPath } from "modules/cms/content/utils/posts";
 import { getTagPath } from "modules/cms/content/utils/tags";
 // Styles
 import style from './style.module.scss';
+import Link from "next/link";
+import moment from 'moment'
+
 
 type OwnProps = {
     posts: PostModel[];
@@ -93,7 +96,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                 {visiblePosts?.map((post, idx) => (
                     <article className="gh-card post" key={post.id}>
                         <div className="gh-card-link">
-                            <a
+                            <Link
                                 href={getPostPath(post)}
                                 className="bf-post-link"
                             >
@@ -104,22 +107,20 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                     src={post.feature_image}
                                     loading="lazy"
                                 />
-                            </a>
+                            </Link>
                             <div className="gh-card-content">
                                 <div className={`${style.cardContentMeta} gh-card-meta`}>
                                     {post.primary_tag && (
-                                        <a
+                                        <Link
                                             className="gh-card-tag"
                                             href={getTagPath(post.primary_tag)}
                                         >
                                             {post.primary_tag?.name}
-                                        </a>
+                                        </Link>
                                     )}
-                                    <time dateTime={post.published_at} >
-                                        {new Date(post.published_at).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'long', day: 'numeric' })}
-                                    </time>
+                                        {moment(post.created_at).format('MMMM DD, YYYY')}
                                 </div>
-                                <a href="#!" className="read-time d-inline-block ">
+                                <div  className="read-time d-inline-block ">
                                     <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-bivlfq"
                                         focusable="false"
@@ -131,25 +132,25 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                         <path d="M12.5 7H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
                                     </svg>{" "}
                                     Reading time {post.reading_time} minutes
-                                </a>
-                                <a
+                                </div>
+                                <Link
                                     href={getPostPath(post)}
                                     className="bf-post-link"
                                 >
                                     <h3 className="gh-card-title">
                                         {post.title}
                                     </h3>
-                                </a>
-                                <a
+                                </Link>
+                                <Link
                                     href={getPostPath(post)}
                                     className="bf-post-link"
                                 >
                                     <div
                                         dangerouslySetInnerHTML={{ __html: `${post.excerpt.slice(0, 200)} ${post.excerpt?.length > 200 ? '...' : null}` }}
                                     />
-                                </a>
+                                </Link>
                             </div>
-                            <a
+                            <Link
                                 className="gh-card-author"
                                 href={getAuthorPath(post.primary_author)}
                             >
@@ -164,7 +165,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                 <div className="gh-card-author-content">
                                     <strong>{post.primary_author.name}</strong>
                                 </div>
-                            </a>
+                            </Link>
                         </div>
                     </article>
                 ))}

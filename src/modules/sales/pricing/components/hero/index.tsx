@@ -699,9 +699,9 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
                                                     {billingPeriod === 'monthly' ? (
-                                                        <div className="relative">$139</div>
+                                                        <div className="relative">$129</div>
                                                     ) : (
-                                                        <div className="relative">$115</div>
+                                                        <div className="relative">$109</div>
                                                     )}
                                                 </div>
                                             </div>

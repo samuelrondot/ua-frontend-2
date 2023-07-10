@@ -4,6 +4,8 @@ import { FC } from "react";
 import { PostModel } from "modules/cms/content/models";
 // Utils
 import { getPostPath, getTagPath } from "modules/cms/content/utils";
+import moment from 'moment'
+
 
 type OwnProps = {
     relatedPosts: PostModel[];
@@ -45,9 +47,8 @@ export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
                                         </h4>
                                     </a>
                                     <footer className="bf-relatedcard-meta">
-                                        <time dateTime={post.published_at} >
-                                            {new Date(post.published_at).toLocaleDateString(undefined, { weekday: 'short', year: 'numeric', month: 'short', })}
-                                        </time>
+                                     
+                                        {moment(post.published_at).format('MMMM DD, YYYY')}
                                         <span className="bf-readingtime">
                                             <svg
                                                 width={24}
