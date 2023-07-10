@@ -14,18 +14,9 @@ const navTree = {
     items: [
         
        
+        
         {
-            sortOrder: 5,
-            name: 'Pricing',
-            url: '/pricing'
-        },
-        {
-            sortOrder: 6,
-            name: 'Blog',
-            url: '/blog'
-        },
-        {
-            sortOrder: 7,
+            sortOrder: 1,
             name: 'Tools',
             children: [
                 {
@@ -36,7 +27,7 @@ const navTree = {
                     description: `
                     <div>
                       
-                        <p>Plan, collaborate, and publish thumb-stopping content</p>
+                        <p>Extract and enrich LinkedIn & Sales Navigator search results.</p>
                        
                     </div>
                     `
@@ -49,7 +40,7 @@ const navTree = {
                     description: `
                     <div>
                        
-                        <p>Analyze social media performance and create reports</p>
+                        <p>Enrich leads automatically from LinkedIn or CSV.</p>
                     </div>
                     `
                 },
@@ -61,13 +52,19 @@ const navTree = {
                     description: `
                     <div>
                         
-                        <p>Quickly navigate your comments and engage with your audience</p>
+                        <p>Automate your outreach campaigns through LinkedIn and emails.</p>
                     </div>
                     `
                 },
               
             ]
         },
+        {
+            sortOrder: 2,
+            name: 'Pricing',
+            url: '/pricing'
+        },
+       
     ]
 }
 

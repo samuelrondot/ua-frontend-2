@@ -184,18 +184,6 @@ export const Footer: FC = () => {
                                             Help center
                                         </a>
 
-                                        <a
-                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                            href="/about"
-                                        >
-                                            About
-                                        </a>
-                                        <Link
-                                            className="typography-p5-medium tablet:typography-p6-medium text-footer-dark-link hover:text-oncolor-primary transition flex align-center gap-[4px]"
-                                            href="/contact-us"
-                                        >
-                                            Contact
-                                        </Link>
                                        
                                        
                                     </div>

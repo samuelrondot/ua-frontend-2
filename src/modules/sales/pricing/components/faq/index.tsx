@@ -4,52 +4,51 @@ import { SalesPricingFaqItem } from "./item";
 
 const leftQuestionsAndAnswers = [
     {
-        question: "Is Attio free to use?",
-        answer: "<p>Attio has plans for teams of all sizes, including a free option for very small teams or light projects. Our paid plans are incredibly powerful and are the best way to get the most out of Attio.</p>",
+        question: "Can i try useArtemis for free?",
+        answer: "<p>You will get a 14-day free trial with any plan exept with the entreprise plan.</p>",
     },
     {
         question: "Do you offer discounts?",
-        answer: "<p>Our Plus and Pro plans come with a 15% discount if you subscribe annually.</p>"
+        answer: "<p>You can have a discount with our annual billing.</p>"
     },
     {
         question: "What are my payment options?",
-        answer: "<p>All payments can be made via credit card. For our Pro and Enterprise plans, we can issue invoices and will accept PO, ACH, check or wire. Please contact our sales team for more information.</p>"
+        answer: "<p>All payments can be made via credit card and paypal.</p>"
     },
     {
         question: "Do you offer invoice billing?",
         answer: "<p>We can issue invoices for our users of our Pro and Enterprise plans.</p>"
     },
     {
-        question: "Do I need to connect my email?",
-        answer: "<p><p>Connecting your email and calendar is not required. However, we recommend you sync your email and calendar with Attio.</p><p>When you sync your email and calendar, Attio instantly builds a real-time, global database of all your contacts. The more contacts you have in the database, the better our product becomes for you.</p></p>"
+        question: "Do I need a LinkedIn Premium subscription?",
+        answer: "<p><p>No, useArtemis also works with regular LinkedIn. However we strongly advise you to pick up a Sales Navigator to improve your performances.</p></p>"
     },
     {
         question: "Can I import data from other tools?",
-        answer: "<p>Yes! You can easily import data into Attio from other applications through CSV files.</p>"
+        answer: "<p>Yes! You can easily import data into useArtemis from other applications through CSV files.</p>"
     }
 ]
 
 const rightQuestionsAndAnswers = [
     {
-        question: "Does Attio have a free trial?",
-        answer: "<p>Yes! Attio has a free plan which you can use to explore whether Attio is right for you.</p>"
+        question: "What does 1 credit mean?",
+        answer: "<p>1 enrichment credit is equal to 1 lead with at least a verified email address.</p>"
     },
     {
-        question: "Do you have a startup program?",
-        answer: `<p>Yes! We offer up to $5k in credit for eligible startups and <a class="text-link active:text-link-active hover:text-link-hover" href="/startups">you can apply here</a>. For more information on the program feel free to reach out to the team at <a class="text-link active:text-link-active hover:text-link-hover" href="mailto:sales@attio.com">sales@attio.com</a>.</p>`
+        question: "Do you have a freelance program?",
+        answer: `<p>Yes! Please send us an email at hello@useartemis.co</p>`
     },
     {
         question: "Do you have monthly and annual billing options?",
-        answer: "<p>Our plans are billed either annually or monthly. If you choose to pay annually for our Plus and Pro plans, you'll receive a 15% discount.</p>"
+        answer: "<p>Our plans are billed either annually or monthly. Our annual plans come with a 20% discount.</p>"
     },
     {
-        question: "Which plan is right for me?",
-        answer: `<div><p>Our plans are built to scale with your needs. They include all the basic features and become increasingly more powerful depending on which plan you choose. Here's how they break down:</p>` +
-            `<ul class="flex flex-col gap-4px pl-32px list-disc list-outside"><li class="mt-[5px] first-of-type:mt-[8px]"><span class="font-semibold">Free (for very small teams):</span> This plan is for teams with less than 3 people. It includes all the basic features, but has limited capabilities, including email and data enrichment.</li><li class="mt-[5px] first-of-type:mt-[8px]"><span class="font-semibold">Plus (for growing teams)</span>: This plan has an unlimited amount of seats. It has enhanced data enrichment, email capabilities such as sending and sharing and enhanced contact analysis.</li><li class="mt-[5px] first-of-type:mt-[8px]"><span class="font-semibold">Pro (for fast scaling businesses):</span> This plan is for businesses who need a single source of truth across their entire organization. It includes complete email sharing and sending capabilities. advanced data enrichment, advanced access permissions and extensive report building.</li><li class="mt-[5px] first-of-type:mt-[8px]"><span class="font-semibold">Enterprise (for large organizations):</span> This plan includes everything from our Pro plan plus advanced admin tools, permission access and SAML support. It is built for large organizations with strategic relationships spanning multiple business units.</li></ul></div>`
+        question: "Can useArtemis be used as a marketing tool?",
+        answer: `<p>Absolutely. You can configure to automatically push new leads through your campaign and create the perfect workflow to reach out to your leads.</p>`
     },
     {
-        question: "Does Attio have an API?",
-        answer: "<p>Yes. Attio has a custom API that allows you to integrate with other tools in your stack.</p>"
+        question: "Does useArtemis have an API?",
+        answer: "<p>Yes. You can push new leads to your campaigns or lists through our API.</p>"
     },
 ]
 

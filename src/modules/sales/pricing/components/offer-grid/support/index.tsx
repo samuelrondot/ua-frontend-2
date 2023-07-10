@@ -50,7 +50,7 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
                                         <div className="h-20px flex flex-row items-center">
@@ -156,7 +156,7 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
                                             Help center{" "}
                                         </div>
                                         <button
@@ -186,604 +186,7 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">
-                                                            Enterprise
-                                                        </div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                )}
-                            </tr>
-                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Chat and email support
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Plus
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Pro
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Enterprise
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr
-                                className="typography-p6-medium hidden max-desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary"
-                                data-state="closed"
-                                data-orientation="vertical"
-                            >
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    <h3
-                                        data-orientation="vertical"
-                                        data-state="closed"
-                                        className="w-full flex-1 flex flex-row items-center justify-between"
-                                    >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Chat and email support{" "}
-                                        </div>
-                                        <button
-                                            type="button"
-                                            aria-controls="radix-:Rcl8rhp:"
-                                            aria-expanded={_isAccordionOpen(1) ? true : false}
-                                            data-state={_isAccordionOpen(1) ? 'open' : 'close'}
-                                            data-orientation="vertical"
-                                            id="radix-:R4l8rhp:"
-                                            className="group flex-grow flex flex-row justify-end"
-                                            data-radix-collection-item=""
-                                            onClick={() => _toggleAccordionOpen(1)}
-                                        >
-                                            <svg
-                                                height={15}
-                                                width={20}
-                                                className=" stroke-greyscale-light-14 transition-transform transform rotate-0 group-aria-expanded:-rotate-180"
-                                            >
-                                                <FontAwesomeIcon icon={faChevronDown} />
-                                            </svg>
-                                        </button>
-                                    </h3>
-                                </td>
-                                {_isAccordionOpen(1) && (
-                                    <td className="contents" data-state="open" id="radix-:R6b7rhp:" role="region" aria-labelledby="radix-:R2b7rhp:" data-orientation="vertical" style={{ "--radix-accordion-content-height": "var(--radix-collapsible-content-height)", "--radix-accordion-content-width": "var(--radix-collapsible-content-width)" } as any}>
-                                        <table className="contents">
-                                            <tbody className="contents">
-                                                <tr className="contents">
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">
-                                                            Enterprise
-                                                        </div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                )}
-                            </tr>
-                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Priority support
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M12 4L4 12"
-                                                    className="stroke-greyscale-light-07"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                                <path
-                                                    d="M4 4L12 12"
-                                                    className="stroke-greyscale-light-07"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Plus
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M12 4L4 12"
-                                                    className="stroke-greyscale-light-07"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                                <path
-                                                    d="M4 4L12 12"
-                                                    className="stroke-greyscale-light-07"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Pro
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Enterprise
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        <div className="h-20px flex flex-row items-center">
-                                            <svg
-                                                width={16}
-                                                height={16}
-                                                viewBox="0 0 16 16"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <path
-                                                    d="M3 7.92308L5.64706 11L13 3"
-                                                    className="stroke-brand-light-primary"
-                                                    strokeWidth="1.5"
-                                                    strokeLinecap="round"
-                                                    strokeLinejoin="round"
-                                                />
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </td>
-                            </tr>
-                            <tr
-                                className="typography-p6-medium hidden max-desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary"
-                                data-state="closed"
-                                data-orientation="vertical"
-                            >
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    <h3
-                                        data-orientation="vertical"
-                                        data-state="closed"
-                                        className="w-full flex-1 flex flex-row items-center justify-between"
-                                    >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Priority support{" "}
-                                        </div>
-                                        <button
-                                            type="button"
-                                            aria-controls="radix-:Rcn8rhp:"
-                                            aria-expanded={_isAccordionOpen(2) ? true : false}
-                                            data-state={_isAccordionOpen(2) ? 'open' : 'close'}
-                                            data-orientation="vertical"
-                                            id="radix-:R4n8rhp:"
-                                            className="group flex-grow flex flex-row justify-end"
-                                            data-radix-collection-item=""
-                                            onClick={() => _toggleAccordionOpen(2)}
-                                        >
-                                            <svg
-                                                height={15}
-                                                width={20}
-                                                className=" stroke-greyscale-light-14 transition-transform transform rotate-0 group-aria-expanded:-rotate-180"
-                                            >
-                                                <FontAwesomeIcon icon={faChevronDown} />
-                                            </svg>
-                                        </button>
-                                    </h3>
-                                </td>
-                                {_isAccordionOpen(2) && (
-                                    <td className="contents" data-state="open" id="radix-:R6b7rhp:" role="region" aria-labelledby="radix-:R2b7rhp:" data-orientation="vertical" style={{ "--radix-accordion-content-height": "var(--radix-collapsible-content-height)", "--radix-accordion-content-width": "var(--radix-collapsible-content-width)" } as any}>
-                                        <table className="contents">
-                                            <tbody className="contents">
-                                                <tr className="contents">
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M12 4L4 12"
-                                                                        className="stroke-greyscale-light-07"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                    <path
-                                                                        d="M4 4L12 12"
-                                                                        className="stroke-greyscale-light-07"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M12 4L4 12"
-                                                                        className="stroke-greyscale-light-07"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                    <path
-                                                                        d="M4 4L12 12"
-                                                                        className="stroke-greyscale-light-07"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">
-                                                            Enterprise
-                                                        </div>
-                                                        <div className="flex justify-between desktop:contents flex-1">
-                                                            <div className="h-20px flex flex-row items-center">
-                                                                <svg
-                                                                    width={16}
-                                                                    height={16}
-                                                                    viewBox="0 0 16 16"
-                                                                    fill="none"
-                                                                    xmlns="http://www.w3.org/2000/svg"
-                                                                >
-                                                                    <path
-                                                                        d="M3 7.92308L5.64706 11L13 3"
-                                                                        className="stroke-brand-light-primary"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </td>
-                                )}
-                            </tr>
-                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">    <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
                                     Migration assistance
                                     <button
@@ -805,7 +208,7 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                    Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
                                         <div className="h-20px flex flex-row items-center">
@@ -916,7 +319,7 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
                                                             <div className="h-20px flex flex-row items-center">
                                                                 <svg
@@ -969,7 +372,604 @@ export const SalesPricingOfferGridSupport: FC = () => {
                                         </table>
                                     </td>
                                 )}
+                            </tr></div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">
+                                                            Enterprise
+                                                        </div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                )}
                             </tr>
+                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
+                                    Chat and email support
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Starter
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Plus
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Pro
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Enterprise
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr
+                                className="typography-p6-medium hidden max-desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary"
+                                data-state="closed"
+                                data-orientation="vertical"
+                            >
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
+                                    <h3
+                                        data-orientation="vertical"
+                                        data-state="closed"
+                                        className="w-full flex-1 flex flex-row items-center justify-between"
+                                    >
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
+                                            Chat and email support{" "}
+                                        </div>
+                                        <button
+                                            type="button"
+                                            aria-controls="radix-:Rcl8rhp:"
+                                            aria-expanded={_isAccordionOpen(1) ? true : false}
+                                            data-state={_isAccordionOpen(1) ? 'open' : 'close'}
+                                            data-orientation="vertical"
+                                            id="radix-:R4l8rhp:"
+                                            className="group flex-grow flex flex-row justify-end"
+                                            data-radix-collection-item=""
+                                            onClick={() => _toggleAccordionOpen(1)}
+                                        >
+                                            <svg
+                                                height={15}
+                                                width={20}
+                                                className=" stroke-greyscale-light-14 transition-transform transform rotate-0 group-aria-expanded:-rotate-180"
+                                            >
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </button>
+                                    </h3>
+                                </td>
+                                {_isAccordionOpen(1) && (
+                                    <td className="contents" data-state="open" id="radix-:R6b7rhp:" role="region" aria-labelledby="radix-:R2b7rhp:" data-orientation="vertical" style={{ "--radix-accordion-content-height": "var(--radix-collapsible-content-height)", "--radix-accordion-content-width": "var(--radix-collapsible-content-width)" } as any}>
+                                        <table className="contents">
+                                            <tbody className="contents">
+                                                <tr className="contents">
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">
+                                                            Enterprise
+                                                        </div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                )}
+                            </tr>
+                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
+                                    Priority support
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                    Starter
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12 4L4 12"
+                                                    className="stroke-greyscale-light-07"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M4 4L12 12"
+                                                    className="stroke-greyscale-light-07"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Plus
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M12 4L4 12"
+                                                    className="stroke-greyscale-light-07"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                                <path
+                                                    d="M4 4L12 12"
+                                                    className="stroke-greyscale-light-07"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Pro
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                    <div className="w-[120px] flex-none block desktop:hidden">
+                                        Enterprise
+                                    </div>
+                                    <div className="flex justify-between desktop:contents flex-1">
+                                        <div className="h-20px flex flex-row items-center">
+                                            <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr
+                                className="typography-p6-medium hidden max-desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary"
+                                data-state="closed"
+                                data-orientation="vertical"
+                            >
+                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
+                                    <h3
+                                        data-orientation="vertical"
+                                        data-state="closed"
+                                        className="w-full flex-1 flex flex-row items-center justify-between"
+                                    >
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
+                                            Priority support{" "}
+                                        </div>
+                                        <button
+                                            type="button"
+                                            aria-controls="radix-:Rcn8rhp:"
+                                            aria-expanded={_isAccordionOpen(2) ? true : false}
+                                            data-state={_isAccordionOpen(2) ? 'open' : 'close'}
+                                            data-orientation="vertical"
+                                            id="radix-:R4n8rhp:"
+                                            className="group flex-grow flex flex-row justify-end"
+                                            data-radix-collection-item=""
+                                            onClick={() => _toggleAccordionOpen(2)}
+                                        >
+                                            <svg
+                                                height={15}
+                                                width={20}
+                                                className=" stroke-greyscale-light-14 transition-transform transform rotate-0 group-aria-expanded:-rotate-180"
+                                            >
+                                                <FontAwesomeIcon icon={faChevronDown} />
+                                            </svg>
+                                        </button>
+                                    </h3>
+                                </td>
+                                {_isAccordionOpen(2) && (
+                                    <td className="contents" data-state="open" id="radix-:R6b7rhp:" role="region" aria-labelledby="radix-:R2b7rhp:" data-orientation="vertical" style={{ "--radix-accordion-content-height": "var(--radix-collapsible-content-height)", "--radix-accordion-content-width": "var(--radix-collapsible-content-width)" } as any}>
+                                        <table className="contents">
+                                            <tbody className="contents">
+                                                <tr className="contents">
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M12 4L4 12"
+                                                                        className="stroke-greyscale-light-07"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                    <path
+                                                                        d="M4 4L12 12"
+                                                                        className="stroke-greyscale-light-07"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M12 4L4 12"
+                                                                        className="stroke-greyscale-light-07"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                    <path
+                                                                        d="M4 4L12 12"
+                                                                        className="stroke-greyscale-light-07"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                    <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
+                                                        <div className="w-[120px] flex-none block desktop:hidden">
+                                                            Enterprise
+                                                        </div>
+                                                        <div className="flex justify-between desktop:contents flex-1">
+                                                            <div className="h-20px flex flex-row items-center">
+                                                                <svg
+                                                                    width={16}
+                                                                    height={16}
+                                                                    viewBox="0 0 16 16"
+                                                                    fill="none"
+                                                                    xmlns="http://www.w3.org/2000/svg"
+                                                                >
+                                                                    <path
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
+                                                                        strokeWidth="1.5"
+                                                                        strokeLinecap="round"
+                                                                        strokeLinejoin="round"
+                                                                    />
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </td>
+                                )}
+                            </tr>
+                        
                         </tbody>
                     </table>
                 </div>

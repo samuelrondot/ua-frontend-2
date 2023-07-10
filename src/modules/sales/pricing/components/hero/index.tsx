@@ -693,7 +693,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                     </svg>
                                 </div>
                                 <div className="flex flex-col gap-12px pb-4px">
-                                    <h3 className="typography-p1-strong">Pro</h3>
+                                    <h3 className="typography-p1-strong color-white">Pro</h3>
                                     <div>
                                         <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">

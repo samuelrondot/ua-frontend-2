@@ -35,10 +35,10 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        10 credits
+                                        2000 credits
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -46,7 +46,7 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                         Plus
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        50 credits
+                                        7000 credits
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -54,7 +54,7 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                         Pro
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        100 credits
+                                        35000 credits
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -62,7 +62,7 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                         Enterprise
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        500 credits
+                                        Unlimited
                                     </div>
                                 </td>
                             </tr>
@@ -77,7 +77,7 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
+                                        <div className=" accordionttiles flex flex-row gap-[10px]">
                                             Enrich contacts from LinkedIn{" "}
                                         </div>
                                         <button
@@ -107,21 +107,21 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            10 credits
+                                                            2000 credits
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            50 credits
+                                                            7000 credits
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            100 credits
+                                                            35 000 credits
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -129,7 +129,7 @@ export const SalesPricingOfferGridChromeExtension: FC = () => {
                                                             Enterprise
                                                         </div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            500 credits
+                                                            Unlimited
                                                         </div>
                                                     </td>
                                                 </tr>

@@ -133,7 +133,7 @@ export const CmsContentPostMainHero: FC<OwnProps> = (props) => {
                                     {post.primary_author.bio?.length > 0 ? (
                                         post.primary_author.bio
                                     ) : (
-                                        `Content Writer @ ${appBrandName}`
+                                        `Founder @ ${appBrandName}`
                                     )}
                                 </span>
                             </div>

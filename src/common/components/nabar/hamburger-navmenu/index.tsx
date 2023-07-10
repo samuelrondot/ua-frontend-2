@@ -38,57 +38,8 @@ const navTree = {
             sortOrder: 6,
             name: 'Blog',
             url: '/blog'
-        },
-        {
-            sortOrder: 7,
-            name: 'Tools',
-            children: [
-                {
-                    sortOrder: 1,
-                    name: 'Publishing',
-                    image: 'https://buffer.com/resources/assets/img/header/tool-icons/publish-icon.svg?v=9a5cf479fa',
-                    description: `
-                    <div>
-                        <h3>Publishing</h3>
-                        <p>Plan, collaborate, and publish thumb-stopping content</p>
-                    </div>
-                    `
-                },
-                {
-                    sortOrder: 2,
-                    name: 'Analytics',
-                    image: 'https://buffer.com/resources/assets/img/header/tool-icons/analyze-icon.svg?v=9a5cf479fa',
-                    description: `
-                    <div>
-                        <h3>Analytics</h3>
-                        <p>Analyze social media performance and create reports</p>
-                    </div>
-                    `
-                },
-                {
-                    sortOrder: 3,
-                    name: 'Engagement',
-                    image: 'https://buffer.com/resources/assets/img/header/tool-icons/engage-icon.svg?v=9a5cf479fa',
-                    description: `
-                    <div>
-                        <h3>Engagement</h3>
-                        <p>Quickly navigate your comments and engage with your audience</p>
-                    </div>
-                    `
-                },
-                {
-                    sortOrder: 4,
-                    name: 'Start Page',
-                    image: 'https://buffer.com/resources/assets/img/header/tool-icons/start-page-icon.svg?v=9a5cf479fa',
-                    description: `
-                    <div>
-                        <h3>Start Page</h3>
-                        <p>Build a customized landing page in minutes</p>
-                    </div>
-                    `
-                },
-            ]
-        },
+        }
+       
     ]
 }
 

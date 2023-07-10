@@ -29,8 +29,8 @@ const BlogPostList: FC<OwnProps> = (props) => {
     );
 }
 
-export async function getServerSideProps(staticProps: any) {
-    const locale = staticProps.locale;
+export async function getStaticProps(context: any) {
+    const locale = context.locale;
 
     const defaultTag: Partial<TagModel> = {
         name: 'Latest Updates',
@@ -54,6 +54,9 @@ export async function getServerSideProps(staticProps: any) {
 
     return {
         props: { posts, tags }, // will be passed to the page component as props
+
+        // Optionally, you can add revalidation here
+        revalidate: 1, // In seconds
     };
 }
 

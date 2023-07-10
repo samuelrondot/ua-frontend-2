@@ -39,14 +39,14 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
         <>
             <div className="w-full px-24px desktop:px-0 desktop:w-[1168px]">
                 <h3 className="typography-p3-strong desktop:sticky desktop:top-[269px] bg-neutral-light-50 desktop:backdrop-blur desktop:bg-opacity-90 text-neutral-light-900 py-4px desktop:py-16px">
-                    Email and calendar
+                    Enrichment
                 </h3>
                 <div data-orientation="vertical">
                     <table className="table-fixed border-separate w-full desktop:w-auto">
                         <tbody>
                             <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Email and calendar sync
+                                    Enrichment credits
                                     <button
                                         type="button"
                                         aria-haspopup="dialog"
@@ -66,10 +66,10 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        1 account per user
+                                        2000
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -77,7 +77,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Plus
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        1 account per user
+                                        7000
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -85,7 +85,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Pro
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        2 accounts per user
+                                       35 000
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -93,7 +93,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Enterprise
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        3+ accounts per user
+                                        Unlimited
                                     </div>
                                 </td>
                             </tr>
@@ -108,8 +108,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Email and calendar sync
+                                        <div className=" accordionttiles flex flex-row gap-[10px]">
+                                        Enrichment credits
                                             <button
                                                 type="button"
                                                 aria-haspopup="dialog"
@@ -154,21 +154,21 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            1 account per user
+                                                            2000
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            1 account per user
+                                                            7000
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            2 accounts per user
+                                                           35 000
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -176,7 +176,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                                             Enterprise
                                                         </div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            3+ accounts per user
+                                                            Unlimited
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -194,7 +194,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                             </tr>
                             <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Email sharing
+                                    Exports
                                     <button
                                         type="button"
                                         aria-haspopup="dialog"
@@ -214,10 +214,10 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        Individual metadata
+                                    Unlimited
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -225,7 +225,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Plus
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        Individual bodies and attachments
+                                    Unlimited
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -233,7 +233,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Pro
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        Specific contacts
+                                    Unlimited
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -241,7 +241,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Enterprise
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        Specific contacts
+                                    Unlimited
                                     </div>
                                 </td>
                             </tr>
@@ -256,8 +256,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Email sharing
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
+                                            Exports
                                             <button
                                                 type="button"
                                                 aria-haspopup="dialog"
@@ -302,29 +302,29 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            Individual metadata
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            Individual bodies and attachments
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            Specific contacts
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">
-                                                            Enterprise
+                                                        Unlimited
                                                         </div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            Specific contacts
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -342,14 +342,14 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                             </tr>
                             <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Email sending
+                                   Bulk enrichment
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        200 sends per month
+                                       100 per month
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -357,7 +357,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Plus
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        1,000 sends per month
+                                    300 per month
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -365,7 +365,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Pro
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        Unlimited
+                                    Unlimited
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -388,8 +388,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Email sending{" "}
+                                        <div className=" accordionttiles flex flex-row gap-[10px]">
+                                        Bulk enrichment{" "}
                                         </div>
                                         <button
                                             type="button"
@@ -418,15 +418,15 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            200 sends per month
+                                                            100 sends per month
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            1,000 sends per month
+                                                        300 per month
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -458,7 +458,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                             </tr>
                             <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Bulk email sending
+                                    LinkedIn Scraping
                                     <button
                                         type="button"
                                         aria-haspopup="dialog"
@@ -478,10 +478,10 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        10 sends at a time
+                                        100 per month
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -489,7 +489,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Plus
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        50 sends at a time
+                                    300 per month
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -497,7 +497,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Pro
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        50 sends at a time
+                                    Unlimited
                                     </div>
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -505,7 +505,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         Enterprise
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
-                                        50 sends at a time
+                                    Unlimited
                                     </div>
                                 </td>
                             </tr>
@@ -520,8 +520,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Bulk email sending
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
+                                        LinkedIn Scraping
                                             <button
                                                 type="button"
                                                 aria-haspopup="dialog"
@@ -566,21 +566,21 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            10 sends at a time
+                                                        100 per month
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Plus</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            50 sends at a time
+                                                        300 per month
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                                         <div className="w-[120px] flex-none block desktop:hidden">Pro</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            50 sends at a time
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
@@ -588,7 +588,7 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                                             Enterprise
                                                         </div>
                                                         <div className="flex justify-between desktop:contents flex-1">
-                                                            50 sends at a time
+                                                        Unlimited
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -606,15 +606,15 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                             </tr>
                             <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Remove &apos;Sent with Attio&apos;
+                                   Database search
                                 </td>
                                 <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
                                     <div className="w-[120px] flex-none block desktop:hidden">
-                                        Free
+                                        Starter
                                     </div>
                                     <div className="flex justify-between desktop:contents flex-1">
                                         <div className="h-20px flex flex-row items-center">
-                                            <svg
+                                          { /* <svg
                                                 width={16}
                                                 height={16}
                                                 viewBox="0 0 16 16"
@@ -631,6 +631,23 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                                 <path
                                                     d="M4 4L12 12"
                                                     className="stroke-greyscale-light-07"
+                                                    strokeWidth="1.5"
+                                                    strokeLinecap="round"
+                                                    strokeLinejoin="round"
+                                                />
+                                            </svg>
+                                */}
+
+                                                <svg
+                                                width={16}
+                                                height={16}
+                                                viewBox="0 0 16 16"
+                                                fill="none"
+                                                xmlns="http://www.w3.org/2000/svg"
+                                            >
+                                                <path
+                                                    d="M3 7.92308L5.64706 11L13 3"
+                                                    className="stroke-brand-light-primary"
                                                     strokeWidth="1.5"
                                                     strokeLinecap="round"
                                                     strokeLinejoin="round"
@@ -723,8 +740,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                         data-state="closed"
                                         className="w-full flex-1 flex flex-row items-center justify-between"
                                     >
-                                        <div className="flex flex-row gap-[10px]">
-                                            Remove &apos;Sent with Attio&apos;{" "}
+                                        <div className="accordionttiles flex flex-row gap-[10px]">
+                                        Database search
                                         </div>
                                         <button
                                             type="button"
@@ -753,10 +770,10 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                             <tbody className="contents">
                                                 <tr className="contents">
                                                     <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                                        <div className="w-[120px] flex-none block desktop:hidden">Free</div>
+                                                        <div className="w-[120px] flex-none block desktop:hidden">Starter</div>
                                                         <div className="flex justify-between desktop:contents flex-1">
                                                             <div className="h-20px flex flex-row items-center">
-                                                                <svg
+                                                            <svg
                                                                     width={16}
                                                                     height={16}
                                                                     viewBox="0 0 16 16"
@@ -764,15 +781,8 @@ export const SalesPricingOfferGridEmailCalandar: FC = () => {
                                                                     xmlns="http://www.w3.org/2000/svg"
                                                                 >
                                                                     <path
-                                                                        d="M12 4L4 12"
-                                                                        className="stroke-greyscale-light-07"
-                                                                        strokeWidth="1.5"
-                                                                        strokeLinecap="round"
-                                                                        strokeLinejoin="round"
-                                                                    />
-                                                                    <path
-                                                                        d="M4 4L12 12"
-                                                                        className="stroke-greyscale-light-07"
+                                                                        d="M3 7.92308L5.64706 11L13 3"
+                                                                        className="stroke-brand-light-primary"
                                                                         strokeWidth="1.5"
                                                                         strokeLinecap="round"
                                                                         strokeLinejoin="round"

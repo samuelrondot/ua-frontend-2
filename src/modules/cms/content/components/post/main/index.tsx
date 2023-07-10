@@ -59,11 +59,15 @@ export const CmsContentPostMain: FC<OwnProps> = (props) => {
                     </div>
                 </div>
             </div>
-            <CrmWidgetNewsletterSubscription />
+           
 
 
             <>
-                {/** PS: There is not enough posts to show (I keep this here for now) 
+                {/** 
+                 *  <CrmWidgetNewsletterSubscription />
+                 * 
+                 * 
+                 * PS: There is not enough posts to show (I keep this here for now) 
                 <div className="bf-homefeed gh-page">
                     <div className="gh-container bf-tab" >
                         <CmsContentTagTabSelector
@@ -75,10 +79,14 @@ export const CmsContentPostMain: FC<OwnProps> = (props) => {
                         </div>
                     </div>
                 </div>
+
+                 <SalesCaptureSocialProof />
+
+
                 */}
             </>
 
-            <SalesCaptureSocialProof />
+           
         </BlogLayout>
     );
 }

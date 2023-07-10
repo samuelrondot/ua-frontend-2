@@ -53,14 +53,15 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                             >
                                 <div className="flex flex-col gap-4px">
                                     <p className="typography-p2-strong text-website-text-primary">
-                                        Free
+                                        Starter
                                     </p>
                                     <div className="font-inter text-[11px] leading-105 text-website-text-tertiary font-medium slashed-zero">
                                         <div className="relative inline-block">
-                                            <div className="relative">€0 user/mo billed annually</div>
-                                            <div className="opacity-0 top-0 absolute">
-                                                €0 user/mo billed monthly
-                                            </div>
+                                        {billingPeriod === 'monthly' ? (
+                                                <div className="relative"> $49 user/mo billed monthly</div>
+                                            ) : (
+                                                <div className="relative"> $39 user/mo billed annually</div>
+                                            )}
                                         </div>
                                     </div>
                                 </div>
@@ -81,9 +82,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     <div className="font-inter text-[11px] leading-105 text-website-text-tertiary font-medium slashed-zero">
                                         <div className="relative inline-block">
                                             {billingPeriod === 'monthly' ? (
-                                                <div className="relative"> €34 user/mo billed monthly</div>
+                                                <div className="relative"> $99 user/mo billed monthly</div>
                                             ) : (
-                                                <div className="relative"> €29 user/mo billed annually</div>
+                                                <div className="relative"> $79 user/mo billed annually</div>
                                             )}
                                         </div>
                                     </div>
@@ -105,9 +106,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     <div className="font-inter text-[11px] leading-105 text-website-text-tertiary font-medium slashed-zero">
                                         <div className="relative inline-block">
                                             {billingPeriod === 'monthly' ? (
-                                                <div className="relative"> €69 user/mo billed monthly</div>
+                                                <div className="relative"> $129 user/mo billed monthly</div>
                                             ) : (
-                                                <div className="relative"> €59 user/mo billed annually</div>
+                                                <div className="relative"> $109 user/mo billed annually</div>
                                             )}
                                         </div>
                                     </div>
@@ -132,7 +133,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     </p>
                                     <div className="font-inter text-[11px] leading-105 text-website-text-tertiary font-medium slashed-zero">
                                         <div className="relative inline-block">
-                                            <div className="relative">€119 user/mo billed annually</div>
+                                            <div className="relative">€259 user/mo billed monthly</div>
                                             <div className="opacity-0 top-0 absolute" />
                                         </div>
                                     </div>
@@ -148,13 +149,13 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                     <hr className="w-[1168px] mx-auto border-b border-stroke-light-navigation" />
                 </div>
                 <div className="isolate flex flex-col w-full desktop:w-auto gap-40px desktop:gap-0">
-                    <SalesPricingOfferGridWorkspace />
+                   
                     <SalesPricingOfferGridEmailCalandar />
                     <SalesPricingOfferGridDataSources />
-                    <SalesPricingOfferGridReporting />
+                   
                     <SalesPricingOfferGridChromeExtension />
-                    <SalesPricingOfferGridDataModel />
-                    <SalesPricingOfferGridAdmin />
+                   
+                   
                     <SalesPricingOfferGridSupport />
                 </div>
             </section >
