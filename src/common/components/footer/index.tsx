@@ -225,12 +225,12 @@ export const Footer: FC = () => {
                             <div className="hidden tablet:flex flex-col gap-16px max-tablet:w-full max-tablet:flex-none">
                                 <p className="typography-p5-medium text-[#9098A0]">Ready to get started?</p>
                                 <div className="flex flex-row tablet:flex-col gap-12px">
-                                    <a
-                                        href="https://app.useartemis.co/register"
+                                    <Link
+                                        href="/pricing"
                                         className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primaryOnDark hover:text-buttonNew-primaryOnDark-hover active:text-buttonNew-primaryOnDark-active disabled:text-buttonNew-primaryOnDark-disabled bg-buttonNew-primaryOnDark hover:bg-buttonNew-primaryOnDark active:bg-buttonNew-primaryOnDark-active disabled:bg-buttonNew-primaryOnDark-disabled border-[1px] border-buttonNew-primaryOnDark hover:border-buttonNew-primaryOnDark-hover active:border-buttonNew-primaryOnDark-active disabled:border-buttonNew-primaryOnDark-disabled shadow-buttonNew-primaryOnDark hover:shadow-buttonNew-primaryOnDark-hover active:shadow-none focus:shadow-buttonNew-primaryOnDark-focus disabled:shadow-buttonNew-primaryOnDark-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnDark before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity"
                                     >
                                         <span className="z-1 relative">Start for free</span>
-                                    </a>
+                                    </Link>
                                     <button
                                         className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-secondaryOnDark hover:text-white enabled:active:text-white focus:text-white disabled:text-buttonNew-secondaryOnDark-disabled enabled:active:bg-buttonNew-secondaryOnDark-active focus:bg-buttonNew-secondaryOnDark-active border-[1px] border-buttonNew-secondaryOnDark hover:border-white enabled:active:border-white focus:border-white disabled:border-buttonNew-secondaryOnDark-disabled disabled shadow-none focus:shadow-buttonNew-secondaryOnDark-focus disabled:opacity-25 typography-p4-medium text-[#9098A0] flex flex-row items-center justify-center gap-4px py-12px w-[294px]"
                                         type="button"

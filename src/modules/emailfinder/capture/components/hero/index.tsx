@@ -3,6 +3,7 @@ import { FC, useState } from "react"
 // Components
 import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
+import Link from "next/link"
 
 type OwnProps = {
     style?: object,
@@ -56,12 +57,12 @@ export const Hero: FC<OwnProps> = (props) => {
                         Supercharge your lead generation with useArtemis&apos;s email finder tool - the ultimate solution for B2B lead generation.
                         </h2>
                         <div className="relative z-10 mt-32px flex flex-row justify-center gap-12px pb-10px slide-down animation-delay-[750ms]">
-                            <a
-                                href="https://app.useartemis.co/sign-in"
+                            <Link
+                                href="/pricing"
                                 className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity text-center"
                             >
                                 <span className="z-1 relative">14-day free trial</span>
-                            </a>
+                            </Link>
                             <button
                                 className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus text-center"
                                 type="button"

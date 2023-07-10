@@ -12491,3 +12491,74 @@ pre.prism-code {
     margin: auto;
     margin-top: 200px;
 }
+
+
+.subcontainer {
+  
+}
+
+.input-flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5px;
+   
+}
+
+.mt-10 {
+    margin-top: 50px
+}
+
+
+.register-container {
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+}
+
+
+.john {
+    font-size: 1.475rem;
+    line-height: 1.25rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+    background-color: transparent;
+    border-width: 1px;
+    border-radius: 7px;
+    width: 100%;
+    height: 4.5rem;
+    display: flex;
+    border-color: #0000001b;
+    
+}
+
+.john-container {
+    width: 49%;
+}
+
+.john-container-w {
+    width: 100%;
+}
+
+.height-full {
+    height: 90vh;
+}
+
+.registerimage {
+    width: 100px;
+    margin: auto;
+}
+
+.muted {
+    color: rgba(0, 0, 0, 0.768);
+    margin-top: 10px;
+}
+
+.error {
+    color: red;
+}
+
+.mb-10 {
+    margin-bottom: 30px;
+}

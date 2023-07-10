@@ -2,6 +2,7 @@
 import { FC } from "react";
 // Module Components
 import { CrmStartupFeaturesTabSlider } from "./tab-slider";
+import Link from "next/link";
 
 export const CrmStartupFeatures: FC = () => {
 
@@ -21,12 +22,12 @@ export const CrmStartupFeatures: FC = () => {
                         Multichannel approach not only renders your strategy less intrusive, but also acknowledges that 80% of your prospects emails may remain undiscovered. By diversifying your channels, you demonstrate a genuine effort to connect with prospects, which is greatly appreciated by them.
                         </p>
                     </div>
-                    <a
-                        href="https://app.useartemis.co/register"
+                    <Link
+                        href="/pricing"
                         className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity"
                     >
                         <span className="z-1 relative">Start 14-day free trial</span>
-                    </a>
+                    </Link>
                 </header>
                 <CrmStartupFeaturesTabSlider />
             </section>

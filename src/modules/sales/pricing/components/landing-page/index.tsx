@@ -24,7 +24,7 @@ export const SalesPricingLandingPage: FC = () => {
                         onChange={(period) => setBillingPeriod(period)} />
                     <SalesPricingFaq />
                 </div>
-            </Layout>
+            </Layout>''
         </>
     );
 }
