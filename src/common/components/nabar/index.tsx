@@ -64,9 +64,11 @@ const Navbar: FC<OwnProps> = (props) => {
   return (
     <div className={`sticky top-0 z-50 transition-shadow duration-300 bg-background-light-primary ${showShadow ? "shadow-[0_1px_0_0_#E4E7EB]" : null}`}>
       <div className="w-full max-w-[1440px] mx-auto px-24px flex flex-col width-before-scroll-bar">
+       {
         <BannerRaises
           isDesktopMedia={isDesktopMedia}
         />
+        }
         <div className="flex items-center py-16px">
           <Link aria-label="Home" href="/">
             <img className="logo" src={Logo.src}></img>
@@ -113,9 +115,10 @@ const Navbar: FC<OwnProps> = (props) => {
           </div>
         </div>
       </div>
-      <HamburgerBannerRaises
+     {/* <HamburgerBannerRaises
         isDesktopMedia={isDesktopMedia}
       />
+      */}
     </div>
 
   );

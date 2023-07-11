@@ -10,21 +10,20 @@ export const CrmStartupTestimonial: FC = () => {
                     <div className="flex flex-col gap-[28px] items-start tablet:hidden">
                        
                         <div className="flex flex-col gap-20px">
-                            <p className="typography-p4-medium tablet:typography-p1-medium text-[#9098A0]">
-                                “Attio is the most flexible CRM we’ve ever come across.{" "}
+                        <p className="typography-p4-medium tablet:typography-p1-medium text-[#9098A0]">
+                                “Best Value for Lead Scrapping tool in the market right now!{" "}
                                 <strong className="font-medium text-typography-light-secondary">
-                                    We’ve been able to build a world-class go-to-market engine
+                                I love using Artemis as the lead scrapping tool using Linkedin.
                                 </strong>{" "}
-                                – from our sales pipelines to customer onboarding processes to
-                                customer success.{" "}
+                                It saves me tons of time to verify and find email addresses.{" "}
                                 <strong className="font-medium text-typography-light-secondary">
-                                    There’s nothing like it in the market.
+                                It is highly recommended!
                                 </strong>
                                 ”
                             </p>
                             <div className="flex flex-row items-center gap-[18px]">
                                 <img
-                                    src="https://attio.com/build/_assets/taimur-headshot-GAHQTH2W.png"
+                                    src="https://images.g2crowd.com/uploads/avatar/image/1882833/thumb_square_264d9fe56dedf992467a54a12e9e7e0d.jpeg"
                                     width={50}
                                     height={50}
                                     alt="Taimur Abdaal"
@@ -32,10 +31,10 @@ export const CrmStartupTestimonial: FC = () => {
                                 />
                                 <div>
                                     <p className="typography-p6-medium text-typography-light-secondary">
-                                        Taimur Abdaal
+                                    Kazuki O.
                                     </p>
                                     <p className="typography-p6-medium text-typography-light-quaternary">
-                                        Co-Founder &amp; CTO
+                                    Co-Founder
                                     </p>
                                 </div>
                             </div>

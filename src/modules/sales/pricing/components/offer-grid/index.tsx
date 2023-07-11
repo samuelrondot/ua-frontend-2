@@ -10,6 +10,7 @@ import { SalesPricingOfferGridReporting } from "./reporting";
 import { SalesPricingOfferGridWorkspace } from "./workspace";
 import { SalesPricingOfferGridSupport } from "./support";
 import { SalesPricingOfferGridAdmin } from "./admin";
+import Link from "next/link";
 
 type OwnProps = {
     billingPeriod: "monthly" | "annually"
@@ -47,8 +48,8 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     billingPeriod={billingPeriod}
                                     onChange={_handleBillingPeriodChange} />
                             </div>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            <Link
+                                href="/register?plan=810887"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -70,9 +71,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </Link>
+                            <Link
+                                href="/register?plan=810888"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -94,9 +95,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </a>
-                            <a
-                                href="https://app.attio.com/welcome/sign-in"
+                            </Link>
+                            <Link
+                                href="/register?plan=826727"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -118,7 +119,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </a>
+                            </Link>
                             <button
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                                 type="button"

@@ -5,6 +5,7 @@ import { CrmStartupWorkflowSalesImage } from "./sales-image";
 import { CrmStartupWorkflowDealImage } from "./deal-image";
 import { CrmStartupWorkflowNoteImage } from "./note-image";
 import { CrmStartupWorkflowAccordion } from "./accordion";
+import Link from "next/link";
 
 export const CrmStartupWorkflow: FC = () => {
     const [activeAccordion, setActiveAccordion] = useState<number>(0)
@@ -32,12 +33,12 @@ export const CrmStartupWorkflow: FC = () => {
                                 Stop wasting hours to manually extract and clean lists of leads from LinkedIn.
                                 </p>
                             </div>
-                            <a
-                                href="https://app.useartemis.co/register"
+                            <Link
+                                href="/pricing"
                                 className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity"
                             >
                                 <span className="z-1 relative">Start for free</span>
-                            </a>
+                            </Link>
                         </header>
                     </div>
                     <div className="flex flex-col px-24px gap-60px max-phablet:items-center phablet:flex-row phablet:flex-wrap phablet:justify-center phablet:max-desktop:after:basis-[342px]">

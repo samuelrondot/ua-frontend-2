@@ -12562,3 +12562,17 @@ pre.prism-code {
 .mb-10 {
     margin-bottom: 30px;
 }
+
+.icn-spinner {
+    animation: spin-animation 0.5s infinite;
+    display: inline-block;
+  }
+  
+  @keyframes spin-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(359deg);
+    }
+  }

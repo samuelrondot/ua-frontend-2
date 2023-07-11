@@ -1,4 +1,5 @@
 // React
+import Link from "next/link"
 import { FC, useState } from "react"
 
 type OwnProps = {
@@ -15,14 +16,14 @@ export const BannerRaises: FC<OwnProps> = (props) => {
                 <div className="w-full flex rounded-[12px] px-[11px] tablet:py-[5px] cursor-pointer bg-[#202124] hover:bg-button-gradient-primary border border-[#3B3E45]">
                     <div className="relative flex flex-row gap-[12px] items-center w-full justify-center">
                         <span className="typography-p6-strong text-[#FFFFFF]">
-                            5X your reply rate with useArtemis AI
+                            Send personalized LinkedIn invites with AI
                         </span>
-                        <a
+                        <Link
                             className="typography-c1-strong text-[#FFFFFF] underline"
-                            href="https://app.useartemis.co/register"
+                            href="/pricing"
                         >
-                           Request access
-                        </a>
+                           Start 14-day free trial
+                        </Link>
                     </div>
                     <button
                         aria-label="Hide banner"

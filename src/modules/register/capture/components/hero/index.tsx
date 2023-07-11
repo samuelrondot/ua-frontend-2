@@ -5,7 +5,7 @@ import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
 import axios from "axios"
 import { useRouter } from 'next/router';
-
+import { Loader } from 'lucide-react'
 type OwnProps = {
     style?: object,
 }
@@ -31,7 +31,7 @@ export const Hero: FC<OwnProps> = (props) => {
 
 
     async function handleRegister  ()  {
-
+        setIsLoading(true)
         const geoInfo: any = await getGeoInfo();
     
     
@@ -59,10 +59,12 @@ export const Hero: FC<OwnProps> = (props) => {
      
     
       function Success () {
+        setIsLoading(false)
         router.push(`/register/next?plan=${plan}&useremail=${email}`)
       }
     
       function Fail () {
+        setIsLoading(false)
         setLoginerror(data.message)
      
       } 
@@ -189,7 +191,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                 
                                 className="w-full rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primary  active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary  active:bg-buttonNew-primary-active  border-[1px] border-buttonNew-primary before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity text-center"
                             >
-                                <span className="z-1 " onClick={()=> handleRegister()}>Sign up with email</span>
+                                <span className="z-1 flex" onClick={()=> handleRegister()}>{isLoading && <Loader className="mr-2 icn-spinner"/>}Sign up with email</span>
                             </button>
 
 
