@@ -1,5 +1,5 @@
 // React
-import { FC } from "react"
+import { FC, Suspense } from "react"
 // Common Components
 import { Layout } from "common/components/layout"
 // Module Components
@@ -19,7 +19,9 @@ export const LandingPage: FC<OwnProps> = (props) => {
 
     return (
         <>
+        <Suspense fallback={<p>Loading</p>}>
             <Layout>
+            
                 <Hero />
                 <Brands />
                 <Features />
@@ -27,7 +29,9 @@ export const LandingPage: FC<OwnProps> = (props) => {
                { /* <Features2 /> */   }
                 <Testimonials />
                 <CrmStartupCallToActions />
+               
             </Layout>
+            </Suspense>
         </>
     )
 }
