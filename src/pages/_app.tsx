@@ -27,6 +27,20 @@ const UAApp = ({ Component, pageProps }: AppProps) => {
 
   }, [router.events]);
 
+
+
+  useEffect(() => {
+
+    (window as any).intercomSettings = {
+      api_base: "https://api-iam.intercom.io",
+      app_id: "hav4rqtk",
+     
+     
+    };
+   
+  }, [])
+  
+
   return (
     <>
        <GlobalProvider>

@@ -49,7 +49,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     onChange={_handleBillingPeriodChange} />
                             </div>
                             <Link
-                                href="/register?plan=841099"
+                                href="/upgrade/next?plan=810887"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -73,7 +73,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 </button>
                             </Link>
                             <Link
-                                href="/register?plan=841100"
+                                href="/upgrade/next?plan=810888"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -97,7 +97,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 </button>
                             </Link>
                             <Link
-                                href="/register?plan=841101"
+                                href="/upgrade/next?plan=826727"
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
