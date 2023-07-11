@@ -45,7 +45,7 @@ export const Hero: FC<OwnProps> = (props) => {
         countryname: geoInfo.country
       }
     
-      await fetch(`${"http://localhost:80"}/register`, {
+      await fetch(`${"https://app.useartemis.co"}/register`, {
         method:"POST",
         credentials: "include",
         headers: {
