@@ -42,7 +42,7 @@ export const Hero: FC<OwnProps> = (props) => {
                 dataLayer.push({'event': 'checkoutSuccess'});
                 window.gtag('event','checkoutSuccess')
           
-                window.location.href = 'https://app.useartemis.co'
+                window.location.href = 'https://app.useartemis.co/register/next'
             }
           } })
 
