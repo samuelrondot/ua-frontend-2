@@ -1,10 +1,11 @@
 // React
-import React, {useEffect, FC, useState } from "react"
+import React, {useEffect, FC, useState, useContext } from "react"
 // Components
 import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
 import axios from "axios"
 import { useRouter } from 'next/router';
+import GlobalContext from "context/GlobalContext";
 
 type OwnProps = {
     style?: object,
@@ -23,6 +24,7 @@ export const Hero: FC<OwnProps> = (props) => {
     const [password, setPassword] = React.useState('')
     const [loginerror, setLoginerror] = React.useState(null)
   
+    const gContext = useContext<any>(GlobalContext)
   
     const Router = useRouter()
 
@@ -42,14 +44,14 @@ export const Hero: FC<OwnProps> = (props) => {
                 dataLayer.push({'event': 'checkoutSuccess'});
                 window.gtag('event','checkoutSuccess')
           
-                window.location.href = 'https://app.useartemis.co/register/next'
+                window.location.href = 'https://app.useartemis.co/'
             }
           } })
 
           Paddle.Checkout.open({
             
                     method: 'inline', // set to `inline`
-                    email: useremail,
+                    email: gContext?.userinfo?.email,
                     product: plan,
                    // replace with a product ID or plan ID
             
@@ -89,10 +91,10 @@ export const Hero: FC<OwnProps> = (props) => {
                         >
                             <div className="flex items-center gap-[6px] p-[2px_7px_2px_2px] typography-p6-medium text-typography-light-secondary">
                                 <span className="h-[26px] align-middle p-[3px_9px_3px_10px] rounded-20px bg-greyscale-light-12 text-greyscale-light-01">
-                                   Get started
+                                   Upgrade
                                 </span>
                                 <div className="flex items-center ">
-                                   Start your 14-day free trial
+                                   Turn on your lead machine
                                     <svg
                                         className="group-hover:translate-x-[3px] group-focus:translate-x-[3px] transition-transform duration-500 ease-out"
                                         width={18}
@@ -121,9 +123,9 @@ export const Hero: FC<OwnProps> = (props) => {
 
                                 <img className="registerimage" src="/assets/useartemis.png"/>
 
-                                <h1>Activate your trial</h1>
+                                <h1>Get started</h1>
                                 <p className="mb-10">You are one step away from starting your lead machine !</p>
-                                <p className="mb-10">You won't be charged today.</p>
+                           
                               
                               
                             </div>

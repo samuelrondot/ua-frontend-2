@@ -5,19 +5,11 @@ import { useRouter } from "next/router";
 // Next
 import Head from "next/head";
 // Modules Components
-import { SalesPricingLandingPage } from "modules/sales/pricing/components/landing-page";
+import { SalesPricingLandingPage } from "modules/sales/upgrade/components/landing-page";
 
 const Pricing: FC = () => {
 
-    const router = useRouter()
-
-    const gContext = useContext(GlobalContext);
-
-
-    if(gContext?.isloggedin){
-        router.push('/upgrade')
-    }
-
+   
     return (
         <>
             <Head>

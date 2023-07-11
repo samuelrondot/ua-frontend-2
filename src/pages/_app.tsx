@@ -5,6 +5,8 @@ import "styles/style.scss";
 import { useRouter } from 'next/router'
 import { useEffect } from 'react';
 import Script from 'next/script'
+import { GlobalProvider } from "context/GlobalContext";
+
 
 const UAApp = ({ Component, pageProps }: AppProps) => {
 
@@ -27,6 +29,7 @@ const UAApp = ({ Component, pageProps }: AppProps) => {
 
   return (
     <>
+       <GlobalProvider>
       <Component {...pageProps} />
       <div>
         <Script
@@ -65,6 +68,7 @@ const UAApp = ({ Component, pageProps }: AppProps) => {
 
     
       </div>
+      </GlobalProvider>
     </>
   )
 }

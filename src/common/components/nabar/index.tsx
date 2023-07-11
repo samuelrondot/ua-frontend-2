@@ -1,5 +1,6 @@
 // React
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState, useContext } from "react";
+import GlobalContext from "context/GlobalContext"
 import { render, unmountComponentAtNode } from "react-dom";
 // Hooks
 import {
@@ -21,6 +22,11 @@ type OwnProps = {
 };
 
 const Navbar: FC<OwnProps> = (props) => {
+
+
+  const gContext = useContext(GlobalContext);
+
+
   const [isHamburgerExpanded, setHamburgerExpanded] = useState(false);
   const [isDesktopMedia, setIsDesktopMedia] = useState(true);
   const [showShadow, setShowShadow] = useState(false);
@@ -74,6 +80,19 @@ const Navbar: FC<OwnProps> = (props) => {
             <img className="logo" src={Logo.src}></img>
           </Link>
           <NavMenu />
+          {gContext?.isloggedin === true ?  
+           <div className="ml-auto flex-shrink-0 flex gap-12px max-tablet:hidden">
+         
+           <a
+             href="https://app.useartemis.co/"
+             className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primary hover:text-buttonNew-primary-hover active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary hover:bg-buttonNew-primary active:bg-buttonNew-primary-active focus:bg-buttonNew-primary-active disabled:bg-buttonNew-primary-disabled border-[1px] border-buttonNew-primary hover:border-buttonNew-primary-hover disabled:border-buttonNew-primary-disabled shadow-buttonNew-primary hover:shadow-buttonNew-primary-hover active:shadow-none focus:shadow-buttonNew-primary-focus disabled:shadow-buttonNew-primary-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity"
+           >
+             <span className="z-1 relative">Dashboard</span>
+           </a>
+         </div>
+          
+          :
+          
           <div className="ml-auto flex-shrink-0 flex gap-12px max-tablet:hidden">
             <a
               href="https://app.useartemis.co/login"
@@ -87,7 +106,7 @@ const Navbar: FC<OwnProps> = (props) => {
             >
               <span className="z-1 relative">Start for free</span>
             </Link>
-          </div>
+          </div>}
           <div className="ml-auto flex items-center gap-12px tablet:hidden">
             <button className="humberger-btn"
               onClick={() => setHamburgerExpanded(!isHamburgerExpanded)}>

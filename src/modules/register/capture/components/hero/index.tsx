@@ -6,6 +6,9 @@ import Screenshot from 'assets/images/screen2.png'
 import axios from "axios"
 import { useRouter } from 'next/router';
 import { Loader } from 'lucide-react'
+import { baseurl } from 'env'
+
+
 type OwnProps = {
     style?: object,
 }
@@ -45,7 +48,7 @@ export const Hero: FC<OwnProps> = (props) => {
         countryname: geoInfo.country
       }
     
-      await fetch(`${"https://app.useartemis.co"}/register`, {
+      await fetch(`${baseurl}/register`, {
         method:"POST",
         credentials: "include",
         headers: {

@@ -363,7 +363,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                 <div className="absolute bg-gradient-radial w-full top-[80px] h-full max-h-[100%]" />
                 <div className="flex flex-col items-center z-10 tablet:pt-80px relative px-[10px] tablet:px-24px ">
                     <h1 className="font-gilroy font-bold text-40px leading-120 -tracking-0.3px tablet:typography-h1-strong text-typography-light-primary pb-8px tablet:pb-16px">
-                        Start Your Lead Machine Today
+                        Upgrade your account
                     </h1>
                     <h2 className="typography-p4-medium tablet:typography-p2-medium text-typography-light-tertiary text-center">
                         Pick up the plan that fit your needs.
@@ -502,7 +502,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px  inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <Link className=" z-1 relative " href="/register?plan=841099"  >Start for free</Link>
+                                    <Link className=" z-1 relative " href="/upgrade/next?plan=810887"  >Get Started</Link>
                                 </button>
                             </div>
                             <div
@@ -650,7 +650,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <Link className=" z-1 relative " href="/register?plan=841100"  >Start for free</Link>
+                                    <Link className=" z-1 relative " href="/upgrade/next?plan=810888"  >Get Started</Link>
                                    
                                 </button>
                             </div>
@@ -799,7 +799,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primaryOnBlue hover:text-buttonNew-primaryOnBlue-hover active:text-buttonNew-primaryOnBlue-active focus:text-buttonNew-primaryOnBlue-focus disabled:text-buttonNew-primaryOnBlue-disabled bg-buttonNew-primaryOnBlue hover:bg-buttonNew-primaryOnBlue active:bg-buttonNew-primaryOnBlue-active focus:bg-white disabled:bg-buttonNew-primaryOnBlue-disabled border-[1px] border-buttonNew-primaryOnBlue hover:border-buttonNew-primaryOnBlue-hover active:border-buttonNew-primaryOnBlue-active disabled:border-buttonNew-primaryOnBlue-disabled shadow-none hover:shadow-buttonNew-primaryOnBlue-hover active:shadow-none focus:shadow-buttonNew-primaryOnBlue-focus disabled:shadow-buttonNew-primaryOnBlue-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnBlue before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity mt-auto"
                                 >
-                                     <Link className=" z-1 relative " href="/register?plan=841101"  >Start for free</Link>
+                                     <Link className=" z-1 relative " href="/upgrade/next?plan=826727"  >Get Started</Link>
                                     
                                 </button>
                             </div>
