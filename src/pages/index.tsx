@@ -1,5 +1,5 @@
 // React
-import { FC } from "react";
+import { FC, Suspense } from "react";
 // Next
 import Head from "next/head";
 // Modules Components
@@ -16,6 +16,7 @@ const Home: FC = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <Suspense fallback={<p>Loading</p>}>
       <Script
       id="intercom"
       dangerouslySetInnerHTML={{
@@ -25,6 +26,7 @@ const Home: FC = () => {
       }}
     />
       <LandingPage />
+      </Suspense>
     </>
   );
 }
