@@ -22,7 +22,7 @@ export const Hero: FC<OwnProps> = (props) => {
                     <div className="flex flex-col items-center z-10 tablet:pt-80px relative px-[10px] tablet:px-24px ">
                         <div
                             className="mb-32px fade-in animation-delay-[1000ms] group rounded-20px bg-tertiary border border-attio-blue-01 border-opacity-0 hover:border-opacity-100 active:border-opacity-100 outline-none ring-attio-blue-main ring-0 hover:ring-[3px] active:ring-[1px] focus:ring-[3px] ring-opacity-0 hover:ring-opacity-30 active:ring-opacity-30 focus:ring-opacity-30 transition-all duration-500 ease-out"
-                            href="/customers/pallet"
+                          
                         >
                             <div className="flex items-center gap-[6px] p-[2px_7px_2px_2px] typography-p6-medium text-typography-light-secondary">
                                 <span className="h-[26px] align-middle p-[3px_9px_3px_10px] rounded-20px bg-greyscale-light-12 text-greyscale-light-01">
