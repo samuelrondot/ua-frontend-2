@@ -200,7 +200,7 @@ export const Hero: FC<OwnProps> = (props) => {
                         </div>
 
                         <div>
-                        <p className="muted">By clicking continue, you agree to our Terms of Service and Privacy Policy. Already have an account ? <a href="https://app.useartemis.co/login">Login instead</a></p>
+                        <p className="muted">By clicking continue, you agree to our Terms of Service and Privacy Policy. Already have an account ? <a href="https://app.useartemis.co/login">Log in instead</a></p>
 
                      
                     
