@@ -108,17 +108,17 @@ export const CmsContentPostMainHero: FC<OwnProps> = (props) => {
                                     {post.reading_time} min read
                                 </span>
                                 {post.primary_tag && (
-                                    <Link
+                                    <div
                                         className="bf-badge bf-badge-flow"
-                                        href={getTagPath(post.primary_tag)}
+                                       
                                     >
                                         {post.primary_tag?.name}
-                                    </Link>
+                                    </div>
                                 )}
                             </div>
                         </div>
-                        <Link className="gh-author-card"
-                            href={getAuthorPath(post.primary_author)}>
+                        <div className="gh-author-card"
+                          >
                             <div className="gh-author-card-image-wrap">
                                 <img
                                     className="gh-author-card-image"
@@ -137,7 +137,7 @@ export const CmsContentPostMainHero: FC<OwnProps> = (props) => {
                                     )}
                                 </span>
                             </div>
-                        </Link>
+                        </div>
                     </div>
                     <Link className="gh-header-image" href={getPostPath(post)}>
                         <picture className="gh-feature-image">

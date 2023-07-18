@@ -11,7 +11,7 @@ export const CoockiesPolicy: FC = () => {
                         We use cookies to improve your experience. You can opt out of certain
                         cookies. Find out more in our&nbsp;
                         <a
-                            href="/legal/privacy"
+                            href="/privacy"
                             target="_blank"
                             className=" hover:text-greyscale-light-08 underline"
                         >

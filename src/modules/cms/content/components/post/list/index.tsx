@@ -77,7 +77,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
 
     return (
         <>
-            <div className={`${style.list} gh-postfeed`}>
+            <div className={`${style.list} gh-postfeed gh-article `}>
                 {activeTags.length > 0 && activeTags[0]?.feature_image && (
                     <div id="flow-banner" className="bf-tab-banner">
                         <img
@@ -111,16 +111,16 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                             <div className="gh-card-content">
                                 <div className={`${style.cardContentMeta} gh-card-meta`}>
                                     {post.primary_tag && (
-                                        <Link
+                                        <div
                                             className="gh-card-tag"
-                                            href={getTagPath(post.primary_tag)}
+                                           
                                         >
                                             {post.primary_tag?.name}
-                                        </Link>
+                                        </div>
                                     )}
                                         {moment(post.created_at).format('MMMM DD, YYYY')}
                                 </div>
-                                <div  className="read-time d-inline-block ">
+                                <div  className="read-time d-inline-block customfontblog ">
                                     <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-bivlfq"
                                         focusable="false"
@@ -145,14 +145,14 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                     href={getPostPath(post)}
                                     className="bf-post-link"
                                 >
-                                    <div
+                                    <div className="gh-excerpt"
                                         dangerouslySetInnerHTML={{ __html: `${post.excerpt.slice(0, 200)} ${post.excerpt?.length > 200 ? '...' : null}` }}
                                     />
                                 </Link>
                             </div>
-                            <Link
+                            <div
                                 className="gh-card-author"
-                                href={getAuthorPath(post.primary_author)}
+                               
                             >
                                 <div className="gh-card-author-image-wrap">
                                     <img
@@ -165,7 +165,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                 <div className="gh-card-author-content">
                                     <strong>{post.primary_author.name}</strong>
                                 </div>
-                            </Link>
+                            </div>
                         </div>
                     </article>
                 ))}

@@ -41,12 +41,12 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                 />
                             </svg>
                             {post.primary_tag && (
-                                <Link
+                                <div
                                     className="gh-breadcrumb-link"
-                                    href={getTagPath(post.primary_tag)}
+                                   
                                 >
                                     {post.primary_tag?.name}
-                                </Link>
+                                </div>
                             )}
                         </div>
                         <h1 className="gh-title">
@@ -110,7 +110,7 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                 </a>
                             )}
                         </div>
-                        <a className="gh-author-card" href={getAuthorPath(post.primary_author)}>
+                        <div className="gh-author-card" href={getAuthorPath(post.primary_author)}>
                             <div className="gh-author-card-image-wrap">
                                 <img
                                     className="gh-author-card-image"
@@ -129,7 +129,7 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                     )}
                                 </span>
                             </div>
-                        </a>
+                        </div>
                     </div>
                     <div className="gh-header-image">
                         <picture className="gh-feature-image">
