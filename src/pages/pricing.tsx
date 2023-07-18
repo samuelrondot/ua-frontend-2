@@ -13,9 +13,20 @@ const Pricing: FC = () => {
 
     const gContext = useContext(GlobalContext);
 
+    const calculateDateDifference = (date: any) => {
+        const currentDate = new Date();
+        const accountDate = new Date(date);
+        const diffTime = Math.abs(currentDate.getTime() - accountDate.getTime());
+        const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24)); 
+        return diffDays;
+      }
 
-    if(gContext?.isloggedin){
-        router.push('/upgrade')
+    if(gContext?.isloggedin && gContext?.userinfo){
+        const diffDays = calculateDateDifference(gContext.userinfo.createdAt);
+       
+        if (diffDays > 14) {
+          router.push('/upgrade');
+        }
     }
 
     return (

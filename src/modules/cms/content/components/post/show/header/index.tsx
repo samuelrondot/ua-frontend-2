@@ -110,7 +110,7 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                 </a>
                             )}
                         </div>
-                        <div className="gh-author-card" href={getAuthorPath(post.primary_author)}>
+                        <div className="gh-author-card" >
                             <div className="gh-author-card-image-wrap">
                                 <img
                                     className="gh-author-card-image"

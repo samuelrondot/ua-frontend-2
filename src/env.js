@@ -1,5 +1,5 @@
 module.exports = {    
-baseurl: 'https://api.useartemis.co'
-//baseurl: 'http://localhost:80'
+//baseurl: 'https://api.useartemis.co'
+baseurl: 'http://localhost:80'
 };
 
