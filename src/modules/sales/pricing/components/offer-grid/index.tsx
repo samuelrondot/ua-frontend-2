@@ -1,5 +1,5 @@
 // React
-import { FC, useEffect, useState } from "react";
+import { FC, useEffect, useState, useContext } from "react";
 // Components
 import { SalesPricingBillingSelector } from "../billing-selector";
 import { SalesPricingOfferGridChromeExtension } from "./chrome-extension";
@@ -11,6 +11,8 @@ import { SalesPricingOfferGridWorkspace } from "./workspace";
 import { SalesPricingOfferGridSupport } from "./support";
 import { SalesPricingOfferGridAdmin } from "./admin";
 import Link from "next/link";
+import GlobalContext from "context/GlobalContext"
+
 
 type OwnProps = {
     billingPeriod: "monthly" | "annually"
@@ -18,6 +20,10 @@ type OwnProps = {
 }
 
 export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
+
+    const gContext = useContext(GlobalContext);
+
+
     const [billingPeriod, setBillingPeriod] = useState<"monthly" | "annually">("monthly")
 
     useEffect(() => {
@@ -49,7 +55,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     onChange={_handleBillingPeriodChange} />
                             </div>
                             <Link
-                                href="/register?plan=841099"
+                                href={gContext?.isloggedin ? `/register/next?plan=841099&useremail=${gContext?.userinfo?.email}` : "/register?plan=841099"}
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -73,7 +79,8 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 </button>
                             </Link>
                             <Link
-                                href="/register?plan=841100"
+                                href={gContext?.isloggedin ? `/register/next?plan=841100&useremail=${gContext?.userinfo?.email}` : "/register?plan=841100"}
+                                
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -97,7 +104,8 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 </button>
                             </Link>
                             <Link
-                                href="/register?plan=841101"
+                                href={gContext?.isloggedin ? `/register/next?plan=841101&useremail=${gContext?.userinfo?.email}` : "/register?plan=841101"}
+                                
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">

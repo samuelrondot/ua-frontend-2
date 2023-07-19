@@ -21,6 +21,7 @@ const Pricing: FC = () => {
         return diffDays;
       }
 
+      
     if(gContext?.isloggedin && gContext?.userinfo){
         const diffDays = calculateDateDifference(gContext.userinfo.createdAt);
        
@@ -28,7 +29,7 @@ const Pricing: FC = () => {
           router.push('/upgrade');
         }
     }
-
+    
     return (
         <>
             <Head>

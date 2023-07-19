@@ -1,9 +1,10 @@
 // React
-import { FC, useEffect, useState } from "react"
+import { FC, useEffect, useState, useContext } from "react"
 // Components
 import { SalesPricingBillingSelector } from "../billing-selector"
 import Router, { useRouter } from 'next/router'
 import Link from "next/link"
+import GlobalContext from "context/GlobalContext"
 
 const annualDiscountActiveClass = 'opacity-1 translate-x-0'
 const annualDiscountInactiveClass = 'opacity-0 translate-x-8px'
@@ -14,6 +15,11 @@ type OwnProps = {
 }
 
 export const SalesPricingHero: FC<OwnProps> = (props) => {
+
+
+    const gContext = useContext(GlobalContext);
+
+
     const [billingPeriod, setBillingPeriod] = useState<"monthly" | "annually">("monthly")
     const [annualDiscountActive, setAnnualDiscountActive] = useState<boolean>(false)
 
@@ -468,7 +474,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px  inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <Link className=" z-1 relative " href="/register?plan=841099"  >Start for free</Link>
+                                    <Link className=" z-1 relative " href={gContext?.isloggedin ? `/register/next?plan=841099&useremail=${gContext?.userinfo?.email}` : "/register?plan=841099"}  >Start for free</Link>
                                 </button>
                             </div>
                             <div
@@ -616,7 +622,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto"
                                 >
-                                    <Link className=" z-1 relative " href="/register?plan=841100"  >Start for free</Link>
+                                    <Link className=" z-1 relative " href={gContext?.isloggedin ? `/register/next?plan=841100&useremail=${gContext?.userinfo?.email}` :  "/register?plan=841100"}  >Start for free</Link>
                                    
                                 </button>
                             </div>
@@ -765,7 +771,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                 <button
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-primaryOnBlue hover:text-buttonNew-primaryOnBlue-hover active:text-buttonNew-primaryOnBlue-active focus:text-buttonNew-primaryOnBlue-focus disabled:text-buttonNew-primaryOnBlue-disabled bg-buttonNew-primaryOnBlue hover:bg-buttonNew-primaryOnBlue active:bg-buttonNew-primaryOnBlue-active focus:bg-white disabled:bg-buttonNew-primaryOnBlue-disabled border-[1px] border-buttonNew-primaryOnBlue hover:border-buttonNew-primaryOnBlue-hover active:border-buttonNew-primaryOnBlue-active disabled:border-buttonNew-primaryOnBlue-disabled shadow-none hover:shadow-buttonNew-primaryOnBlue-hover active:shadow-none focus:shadow-buttonNew-primaryOnBlue-focus disabled:shadow-buttonNew-primaryOnBlue-disabled before:block before:content-[''] relative before:w-full before:h-full before:absolute overflow-hidden before:bg-button-gradient-primaryOnBlue before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity mt-auto"
                                 >
-                                     <Link className=" z-1 relative " href="/register?plan=841101"  >Start for free</Link>
+                                     <Link className=" z-1 relative " href={gContext?.isloggedin ? `/register/next?plan=841101&useremail=${gContext?.userinfo?.email}` : "/register?plan=841101" } >Start for free</Link>
                                     
                                 </button>
                             </div>
