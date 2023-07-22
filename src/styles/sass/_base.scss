@@ -3872,10 +3872,19 @@ html {
     --tw-bg-opacity: 1;
     background-color: rgb(254 236 (240 / var(--tw-bg-opacity)));
 }
-
+//rgb(102, 108, 255)
 .bg-brand-light-primary {
     --tw-bg-opacity: 1;
-    background-color: rgb(38 109 (240 / var(--tw-bg-opacity)));
+    background-color: rgb(102 108 (255));
+}
+
+.colorcustom {
+   color:  #ffffff8e
+}
+
+.buttoncustom {
+    background-color: #ffffff1f;
+    color: #ffffff;
 }
 
 .bg-greyscale-light-12 {
@@ -7084,8 +7093,8 @@ html {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 400;
-    src: local("Gilroy Regular"), local("Gilroy-Regular"), url(/fonts/Gilroy-Regular.woff2) format("woff2"),
-        url(/fonts/Gilroy-Regular.woff) format("woff");
+    src: local("Gilroy Regular"), local("Gilroy-Regular"), url(/fonts/Gilroy-Regular.ttf) format("truetype"),
+        url(/fonts/Gilroy-Regular.ttf) format("truetype");
 }
 
 @font-face {
@@ -7093,47 +7102,47 @@ html {
     font-style: italic;
     font-weight: 800;
     src: local("Gilroy Extrabold Italic"), local("Gilroy-ExtraboldItalic"),
-        url(/fonts/Gilroy-ExtraboldItalic.woff2) format("woff2"), url(/fonts/Gilroy-ExtraboldItalic.woff) format("woff");
+        url(/fonts/Gilroy-ExtraboldItalic.ttf) format("truetype"), url(/fonts/Gilroy-ExtraboldItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 700;
-    src: local("Gilroy Bold"), local("Gilroy-Bold"), url(/fonts/Gilroy-Bold.woff2) format("woff2"),
-        url(/fonts/Gilroy-Bold.woff) format("woff");
+    src: local("Gilroy Bold"), local("Gilroy-Bold"), url(/fonts/Gilroy-Bold.ttf) format("truetype"),
+        url(/fonts/Gilroy-Bold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 900;
-    src: local("Gilroy Black"), local("Gilroy-Black"), url(/fonts/Gilroy-Black.woff2) format("woff2"),
-        url(/fonts/Gilroy-Black.woff) format("woff");
+    src: local("Gilroy Black"), local("Gilroy-Black"), url(/fonts/Gilroy-Black.ttf) format("truetype"),
+        url(/fonts/Gilroy-Black.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 300;
-    src: local("Gilroy Light"), local("Gilroy-Light"), url(/fonts/Gilroy-Light.woff2) format("woff2"),
-        url(/fonts/Gilroy-Light.woff) format("woff");
+    src: local("Gilroy Light"), local("Gilroy-Light"), url(/fonts/Gilroy-Light.ttf) format("truetype"),
+        url(/fonts/Gilroy-Light.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 600;
-    src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url(/fonts/Gilroy-Semibold.woff2) format("woff2"),
-        url(/fonts/Gilroy-Semibold.woff) format("woff");
+    src: local("Gilroy Semibold"), local("Gilroy-Semibold"), url(/fonts/Gilroy-Semibold.ttf) format("truetype"),
+        url(/fonts/Gilroy-Semibold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 500;
-    src: local("Gilroy Medium"), local("Gilroy-Medium"), url(/fonts/Gilroy-Medium.woff2) format("woff2"),
-        url(/fonts/Gilroy-Medium.woff) format("woff");
+    src: local("Gilroy Medium"), local("Gilroy-Medium"), url(/fonts/Gilroy-Medium.ttf) format("truetype"),
+        url(/fonts/Gilroy-Medium.ttf) format("truetype");
 }
 
 @font-face {
@@ -7141,23 +7150,23 @@ html {
     font-style: italic;
     font-weight: 500;
     src: local("Gilroy Medium Italic"), local("Gilroy-MediumItalic"),
-        url(/fonts/Gilroy-MediumItalic.woff2) format("woff2"), url(/fonts/Gilroy-MediumItalic.woff) format("woff");
+        url(/fonts/Gilroy-MediumItalic.ttf) format("truetype"), url(/fonts/Gilroy-MediumItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: italic;
     font-weight: 900;
-    src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url(/fonts/Gilroy-BlackItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-BlackItalic.woff) format("woff");
+    src: local("Gilroy Black Italic"), local("Gilroy-BlackItalic"), url(/fonts/Gilroy-BlackItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-BlackItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 200;
-    src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url(/fonts/Gilroy-UltraLight.woff2) format("woff2"),
-        url(/fonts/Gilroy-UltraLight.woff) format("woff");
+    src: local("Gilroy UltraLight"), local("Gilroy-UltraLight"), url(/fonts/Gilroy-UltraLight.ttf) format("truetype"),
+        url(/fonts/Gilroy-UltraLight.ttf) format("truetype");
 }
 
 @font-face {
@@ -7165,7 +7174,7 @@ html {
     font-style: italic;
     font-weight: 400;
     src: local("Gilroy Regular Italic"), local("Gilroy-RegularItalic"),
-        url(/fonts/Gilroy-RegularItalic.woff2) format("woff2"), url(/fonts/Gilroy-RegularItalic.woff) format("woff");
+        url(/fonts/Gilroy-RegularItalic.ttf) format("truetype"), url(/fonts/Gilroy-RegularItalic.ttf) format("truetype");
 }
 
 @font-face {
@@ -7173,31 +7182,31 @@ html {
     font-style: italic;
     font-weight: 600;
     src: local("Gilroy Semibold Italic"), local("Gilroy-SemiboldItalic"),
-        url(/fonts/Gilroy-SemiboldItalic.woff2) format("woff2"), url(/fonts/Gilroy-SemiboldItalic.woff) format("woff");
+        url(/fonts/Gilroy-SemiboldItalic.ttf) format("truetype"), url(/fonts/Gilroy-SemiboldItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: italic;
     font-weight: 900;
-    src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url(/fonts/Gilroy-HeavyItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-HeavyItalic.woff) format("woff");
+    src: local("Gilroy Heavy Italic"), local("Gilroy-HeavyItalic"), url(/fonts/Gilroy-HeavyItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-HeavyItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 800;
-    src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url(/fonts/Gilroy-Extrabold.woff2) format("woff2"),
-        url(/fonts/Gilroy-Extrabold.woff) format("woff");
+    src: local("Gilroy Extrabold"), local("Gilroy-Extrabold"), url(/fonts/Gilroy-Extrabold.ttf) format("truetype"),
+        url(/fonts/Gilroy-Extrabold.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: italic;
     font-weight: 700;
-    src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url(/fonts/Gilroy-BoldItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-BoldItalic.woff) format("woff");
+    src: local("Gilroy Bold Italic"), local("Gilroy-BoldItalic"), url(/fonts/Gilroy-BoldItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-BoldItalic.ttf) format("truetype");
 }
 
 @font-face {
@@ -7205,40 +7214,40 @@ html {
     font-style: italic;
     font-weight: 200;
     src: local("Gilroy UltraLight Italic"), local("Gilroy-UltraLightItalic"),
-        url(/fonts/Gilroy-UltraLightItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-UltraLightItalic.woff) format("woff");
+        url(/fonts/Gilroy-UltraLightItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-UltraLightItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: italic;
     font-weight: 300;
-    src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url(/fonts/Gilroy-LightItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-LightItalic.woff) format("woff");
+    src: local("Gilroy Light Italic"), local("Gilroy-LightItalic"), url(/fonts/Gilroy-LightItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-LightItalic.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 900;
-    src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url(/fonts/Gilroy-Heavy.woff2) format("woff2"),
-        url(/fonts/Gilroy-Heavy.woff) format("woff");
+    src: local("Gilroy Heavy"), local("Gilroy-Heavy"), url(/fonts/Gilroy-Heavy.ttf) format("truetype"),
+        url(/fonts/Gilroy-Heavy.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: normal;
     font-weight: 100;
-    src: local("Gilroy Thin"), local("Gilroy-Thin"), url(/fonts/Gilroy-Thin.woff2) format("woff2"),
-        url(/fonts/Gilroy-Thin.woff) format("woff");
+    src: local("Gilroy Thin"), local("Gilroy-Thin"), url(/fonts/Gilroy-Thin.ttf) format("truetype"),
+        url(/fonts/Gilroy-Thin.ttf) format("truetype");
 }
 
 @font-face {
     font-family: Gilroy;
     font-style: italic;
     font-weight: 100;
-    src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url(/fonts/Gilroy-ThinItalic.woff2) format("woff2"),
-        url(/fonts/Gilroy-ThinItalic.woff) format("woff");
+    src: local("Gilroy Thin Italic"), local("Gilroy-ThinItalic"), url(/fonts/Gilroy-ThinItalic.ttf) format("truetype"),
+        url(/fonts/Gilroy-ThinItalic.ttf) format("truetype");
 }
 
 .custom-scrollbar {
@@ -12494,7 +12503,7 @@ pre.prism-code {
 
 
 .subcontainer {
-  
+  height: fit-content
 }
 
 .input-flex {
@@ -12563,6 +12572,11 @@ pre.prism-code {
     margin-bottom: 30px;
 }
 
+
+.checkout-container {
+  
+}
+
 .icn-spinner {
     animation: spin-animation 0.5s infinite;
     display: inline-block;
@@ -12575,4 +12589,13 @@ pre.prism-code {
     100% {
       transform: rotate(359deg);
     }
+  }
+
+
+  .ml-2 {
+    margin-left: 5px;
+  }
+
+  .mt-2 {
+    margin-top: 5px;
   }

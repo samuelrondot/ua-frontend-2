@@ -134,10 +134,7 @@ const Navbar: FC<OwnProps> = (props) => {
           </div>
         </div>
       </div>
-     {/* <HamburgerBannerRaises
-        isDesktopMedia={isDesktopMedia}
-      />
-      */}
+    
     </div>
 
   );

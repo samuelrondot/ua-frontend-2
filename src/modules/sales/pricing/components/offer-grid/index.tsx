@@ -54,8 +54,8 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                     billingPeriod={billingPeriod}
                                     onChange={_handleBillingPeriodChange} />
                             </div>
-                            <Link
-                                href={gContext?.isloggedin ? `/register/next?plan=841099&useremail=${gContext?.userinfo?.email}` : "/register?plan=841099"}
+                            <a
+                                href={gContext?.isloggedin ? `https://useartemis.co/register/next?plan=841099&useremail=${gContext?.userinfo?.email}` : "https://useartemis.co/register?plan=841099"}
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
                                 <div className="flex flex-col gap-4px">
@@ -77,9 +77,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </Link>
-                            <Link
-                                href={gContext?.isloggedin ? `/register/next?plan=841100&useremail=${gContext?.userinfo?.email}` : "/register?plan=841100"}
+                            </a>
+                            <a
+                                href={gContext?.isloggedin ? `https://useartemis.co/register/next?plan=841100&useremail=${gContext?.userinfo?.email}` : "https://useartemis.co/register?plan=841100"}
                                 
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
@@ -102,9 +102,9 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </Link>
-                            <Link
-                                href={gContext?.isloggedin ? `/register/next?plan=841101&useremail=${gContext?.userinfo?.email}` : "/register?plan=841101"}
+                            </a>
+                            <a
+                                href={gContext?.isloggedin ? `https://useartemis.co/register/next?plan=841101&useremail=${gContext?.userinfo?.email}` : "https://useartemis.co/register?plan=841101"}
                                 
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                             >
@@ -127,7 +127,7 @@ export const SalesPricingOfferGrid: FC<OwnProps> = (props) => {
                                 >
                                     <span className="z-1 relative">Get started</span>
                                 </button>
-                            </Link>
+                            </a>
                             <button
                                 className="border outline-offset-4 rounded-16px w-[212px] border-stroke-light-secondary p-[18px] flex flex-col gap-16px bg-white"
                                 type="button"

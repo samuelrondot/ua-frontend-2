@@ -63,7 +63,7 @@ export const Hero: FC<OwnProps> = (props) => {
     
       function Success () {
         setIsLoading(false)
-        router.push(`/register/next?plan=${plan}&useremail=${email}`)
+        window.location.href = `/register/next?plan=${plan}&useremail=${email}`;
       }
     
       function Fail () {

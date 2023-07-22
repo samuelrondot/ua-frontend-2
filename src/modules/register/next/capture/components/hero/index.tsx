@@ -115,7 +115,7 @@ export const Hero: FC<OwnProps> = (props) => {
                        
                        
 
-                        <div className="register-container height-full">
+                        <div className="register-container mb-10">
 
                             <div className="subcontainer">
 

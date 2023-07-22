@@ -6,9 +6,37 @@ import { useRouter } from 'next/router'
 import { useEffect } from 'react';
 import Script from 'next/script'
 import { GlobalProvider } from "context/GlobalContext";
+import localFont from 'next/font/local'
+
+
+
+
+const Gilroy = localFont({
+  src: [
+    {
+      path: '../assets/font/Gilroy-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: '../assets/font/Gilroy-RegularItalic.ttf',
+      weight: '400',
+      style: 'italic',
+    },
+
+    {
+      path: '../assets/font/Gilroy-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+    
+  ],
+})
 
 
 const UAApp = ({ Component, pageProps }: AppProps) => {
+
+ 
 
   const router = useRouter()
 
@@ -44,7 +72,9 @@ const UAApp = ({ Component, pageProps }: AppProps) => {
   return (
     <>
        <GlobalProvider>
+       <main className={Gilroy.className}>
       <Component {...pageProps} />
+      </main>
       <div>
         <Script
           id='tagmanager'
