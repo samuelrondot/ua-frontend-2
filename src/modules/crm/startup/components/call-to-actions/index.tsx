@@ -11,7 +11,7 @@ export const CrmStartupCallToActions: FC<OwnProps> = (props) => {
     return (
         <>
             <div className="bg-brand-light-primary w-full flex flex-col desktop:flex-row justify-center desktop:items-end desktop:h-[346px] relative">
-                <div className="group transition-colors border-l border-attio-blue-02 overflow-hidden isolate w-full flex flex-col desktop:flex-row justify-between desktop:items-end desktop:h-[346px] relative max-w-[1440px]">
+                <div className="group transition-colors border-attio-blue-02 overflow-hidden isolate w-full flex flex-col desktop:flex-row justify-between desktop:items-end desktop:h-[346px] relative max-w-[1440px]">
                     <div className="z-10 w-full p-24px desktop:pb-[40px] desktop:pl-[40px] desktop:w-2/3 tablet:w-1/2 flex flex-col gap-32px desktop:gap-[20px] tablet:self-center tablet:pt-[80px] min-[1440px]:pl-[142px]">
                         <h2 className="typography-h4-strong desktop:typography-h2-strong colorcustom pt-4px">
                         Ready to start your <br className="hidden tablet:inline" /> 

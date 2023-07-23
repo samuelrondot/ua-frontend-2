@@ -109,17 +109,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                 />
                             </Link>
                             <div className="gh-card-content">
-                                <div className={`${style.cardContentMeta} gh-card-meta`}>
-                                    {post.primary_tag && (
-                                        <div
-                                            className="gh-card-tag"
-                                           
-                                        >
-                                            {post.primary_tag?.name}
-                                        </div>
-                                    )}
-                                        {moment(post.created_at).format('MMMM DD, YYYY')}
-                                </div>
+                               
                                 <div  className="read-time d-inline-block customfontblog ">
                                     <svg
                                         className="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-bivlfq"
@@ -150,6 +140,13 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                     />
                                 </Link>
                             </div>
+
+                            <div className={`${style.cardContentMeta} gh-card-meta`}>
+                                
+                                        {moment(post.created_at).format('MMMM DD, YYYY')}
+                                </div>
+
+
                             <div
                                 className="gh-card-author"
                                
@@ -165,7 +162,10 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                                 <div className="gh-card-author-content">
                                     <strong>{post.primary_author.name}</strong>
                                 </div>
+
+                                
                             </div>
+                            
                         </div>
                     </article>
                 ))}

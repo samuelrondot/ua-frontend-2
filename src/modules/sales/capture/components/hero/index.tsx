@@ -4,6 +4,7 @@ import { FC, useState } from "react"
 import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
 import Link from "next/link"
+import Image from 'next/image'
 
 type OwnProps = {
     style?: object,
@@ -71,7 +72,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                 aria-controls="radix-:R19hhp:"
                                 data-state="closed"
                             >
-                                <span className="z-1 relative">Talk to sales</span>
+                                <span className="z-1 ">Talk to sales</span>
                             </button>
                         </div>
                         <div className="w-[130%] phablet:w-[100%] centered-container mt-[24px] phablet:mt-[12px] tablet:mt-[0px] px-[0px] phablet:px-[32px] tablet:px-[64px] relative">
@@ -653,12 +654,15 @@ export const Hero: FC<OwnProps> = (props) => {
                                     </clipPath>
                                 </defs>
                             </svg>
-                            <div className="attio-hero-img relative attio-hero-fade-in animation-duration-[3000ms] shadow-home-hero-screen-preview-mobile tablet:shadow-home-hero-screen-preview-desktop">
-                                
+                            <div className="attio-hero-img  attio-hero-fade-in animation-duration-[3000ms] shadow-home-hero-screen-preview-mobile tablet:shadow-home-hero-screen-preview-desktop">
+                         
                                 <img
                                     src={Screenshot.src}
                                     className="w-full h-full"
                                 />
+                              
+
+                               
                                 
                                 {isVideoPlaying && (
                                     <Video />

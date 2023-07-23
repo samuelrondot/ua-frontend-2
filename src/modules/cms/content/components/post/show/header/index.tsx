@@ -58,8 +58,11 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                            
 
                             {moment(post.published_at).format('MMMM DD, YYYY')}
-                            <span className="bf-readingtime">
+                            
+                            
+                             <span className="bf-readingtime">
                                 <svg
+                                    className="svg-icon"
                                     width={24}
                                     height={10}
                                     viewBox="0 0 24 10"
@@ -101,6 +104,8 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
                                 </svg>
                                 {post.reading_time} min read
                             </span>
+
+                            
                             {post.primary_tag && (
                                 <a
                                     className="bf-badge bf-badge-flow"

@@ -19,7 +19,7 @@ export const Layout: FC<OwnProps> = (props) => {
                 {props.children}
             </Main >
             <Footer />
-            <CoockiesPolicy />
+            {/*<CoockiesPolicy />*/}
             <div id='hamburger-nav-menu'></div>
         </>
     )
