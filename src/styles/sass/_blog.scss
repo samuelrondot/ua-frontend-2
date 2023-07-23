@@ -732,7 +732,7 @@ h6 {
 }
 
 .bf-badge {
-    font-size: 1.3rem;
+    font-size: 14px;
     line-height: 1.3rem;
     font-weight: 500;
     text-align: center;
@@ -4413,7 +4413,8 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     display: flex;
     align-items: center;
     margin: 0 0 1rem;
-    font-size: 1.3rem;
+    font-size: 15px;
+    font-family: 'circular';
     line-height: 1.5em;
     letter-spacing: 0.5px;
 
@@ -4459,8 +4460,8 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0 0;
-    font-size: 1.3rem;
-    color: #636363;
+    font-family: 'circular';
+    color: #8f8a8a;
     letter-spacing: 0.3px;
     justify-content: space-evenly;
 
@@ -4513,6 +4514,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 .gh-author-card-content {
     display: flex;
     flex-direction: column;
+    font-family: Gilroy;
 
     strong {
         font-size: 2rem;
@@ -4522,11 +4524,12 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 
 .gh-author-card-bio {
     line-height: 1.4em;
-    color: #3d3d3d;
+    color: #7f7c7c;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    font-size: 17px;
 }
 
 .gh-excerpt {
@@ -4761,7 +4764,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
     align-items: center;
     justify-content: space-around;
     margin: 8px 0 0;
-    font-size: 1.3rem;
+    font-size: 15px;
     color: #636363;
 }
 
@@ -4815,6 +4818,8 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 .bf-readingtime {
     display: flex;
     align-items: center;
+    margin-right: 10px;
+    margin-left: 10px;
 }
 
 .bf-archive-page .gh-page-head {
