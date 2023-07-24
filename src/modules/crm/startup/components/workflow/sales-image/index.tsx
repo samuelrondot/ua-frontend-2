@@ -14,10 +14,10 @@ export const CrmStartupWorkflowSalesImage: FC = () => {
                         type="image/webp"
                     />
                     <source
-                        srcSet="https://attio.com/build/_assets/perfect-workflow-desktop-T5QM2YFJ.png"
+                        srcSet="/assets/expor.png"
                         media="(min-width:992px)"
                     />
-                    <img loading="lazy" srcSet="" className="" />
+                    <img loading="lazy" alt="A screenshot of useArtemis's Chrome extension in action to scrape linkedin search results." srcSet="" className="" />
                 </picture>
             </div>
         </>

@@ -144,7 +144,7 @@ export const CmsContentPostList: FC<OwnProps> = (props) => {
                             <div className={`${style.cardContentMeta} gh-card-meta`}>
                                 
                                         {moment(post.created_at).format('MMMM DD, YYYY')}
-                                </div>
+                            </div>
 
 
                             <div

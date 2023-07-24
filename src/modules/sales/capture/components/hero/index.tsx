@@ -2,7 +2,7 @@
 import { FC, useState } from "react"
 // Components
 import { Video } from "./video"
-import Screenshot from 'assets/images/screen2.png'
+import Screenshot from 'assets/images/screen2-min.png'
 import Link from "next/link"
 import Image from 'next/image'
 

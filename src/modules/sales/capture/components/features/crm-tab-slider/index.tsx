@@ -6,7 +6,7 @@ import Image from 'next/image'
 const tabSliderImages = [
     {
         key: "build",
-        src: "/assets/salesnavlist.png",
+        src: "/assets/useartemis-linkedin-scraper-2.png",
     },
     {
         key: "refine",
@@ -258,33 +258,13 @@ export const CrmTabSlider: FC = () => {
                         </div>
                         <div className="w-full max-w-[1204px]">
                             <div className="w-0 h-0" />
-                            <link
-                                rel="preload"
-                                type="image/webp"
-                                href="https://attio.com/build/_assets/mockup-build-SIZIHVT5.webp"
-                                as="image"
-                            />
+                           
                             <div className="w-0 h-0" />
-                            <link
-                                rel="preload"
-                                type="image/webp"
-                                href="https://attio.com/build/_assets/mockup-refine-QIDSIUNL.webp"
-                                as="image"
-                            />
+                           
                             <div className="w-0 h-0" />
-                            <link
-                                rel="preload"
-                                type="image/webp"
-                                href="https://attio.com/build/_assets/mockup-work-HQEVF3XL.webp"
-                                as="image"
-                            />
+                           
                             <div className="w-0 h-0" />
-                            <link
-                                rel="preload"
-                                type="image/webp"
-                                href="https://attio.com/build/_assets/mockup-report-JAXR6WI3.webp"
-                                as="image"
-                            />
+                           
                            <div className="w-full relative max-w-full z-10 rounded-[16px] p-[2px]">
                                 <div className="relative isolate">
                                
@@ -305,9 +285,9 @@ export const CrmTabSlider: FC = () => {
                                         />
                                         <img
                                             loading="lazy"
-                                            srcSet="https://attio.com"
+                                            srcSet="https://useartemis.co"
                                             className="rounded-[25px] relative rounded-[14px] w-full"
-                                            alt="A card labelled Stripe is moved from a Screening column to the next column along in a Pipeline view."
+                                            alt="Showing useArtemis.co"
                                             height={889}
                                             width={686}
                                         />
@@ -328,7 +308,7 @@ export const CrmTabSlider: FC = () => {
                                         />
                                         <img
                                             loading="lazy"
-                                            srcSet="https://attio.com"
+                                            srcSet="https://useartemis.co"
                                             className="rounded-[25px] relative rounded-[14px] w-full"
                                             height={889}
                                             width={686}
@@ -386,7 +366,7 @@ export const CrmTabSlider: FC = () => {
                                     <div className="self-center mx-auto">
                                         <div className="relative isolate">
                                             <picture className="opacity-0 absolute z-10 inset-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/salesnavlist.png"
                                                     media="(max-width:991px)"
@@ -400,7 +380,7 @@ export const CrmTabSlider: FC = () => {
                                                 />
                                             </picture>
                                             <picture className="relative inset-0 z-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/salesnavlist.png"
                                                     type="image/webp"
@@ -465,7 +445,7 @@ export const CrmTabSlider: FC = () => {
                                     <div className="self-center mx-auto">
                                         <div className="relative isolate">
                                             <picture className="opacity-0 absolute z-10 inset-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/enrich.png"
                                                     media="(max-width:991px)"
@@ -475,11 +455,11 @@ export const CrmTabSlider: FC = () => {
                                                     loading="lazy"
                                                     srcSet="/assets/enrich.png"
                                                     className=""
-                                                    alt="A popup allows creating a new attribute in a list, choosing from a list of name, email address, Instagram and others."
+                                                    alt="Showcase of useArtemis B2B enrichment system."
                                                 />
                                             </picture>
                                             <picture className="relative inset-0 z-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/enrich.png"
                                                     type="image/webp"
@@ -532,7 +512,7 @@ export const CrmTabSlider: FC = () => {
                                     <div className="self-center mx-auto">
                                     <div className="relative isolate">
                                             <picture className="opacity-0 absolute z-10 inset-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/campaign.png"
                                                     media="(max-width:991px)"
@@ -542,11 +522,11 @@ export const CrmTabSlider: FC = () => {
                                                     loading="lazy"
                                                     srcSet="/assets/campaign.png"
                                                     className=""
-                                                    alt="A card labelled Stripe is moved from a Screening column to the next column along in a Pipeline view."
+                                                    alt="Start multichannel outreach campaigns with useArtemis."
                                                 />
                                             </picture>
                                             <picture className="relative inset-0 z-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/campaign.png"
                                                     type="image/webp"
@@ -617,7 +597,7 @@ export const CrmTabSlider: FC = () => {
                                     <div className="self-center mx-auto">
                                         <div className="relative isolate">
                                             <picture className="opacity-0 absolute z-10 inset-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/report.png"
                                                     media="(max-width:991px)"
@@ -627,11 +607,11 @@ export const CrmTabSlider: FC = () => {
                                                     loading="lazy"
                                                     srcSet="/assets/report.png"
                                                     className=""
-                                                    alt="A card labelled Stripe is moved from a Screening column to the next column along in a Pipeline view."
+                                                    alt="Track useArtemis multichannel outrach campaign results."
                                                 />
                                             </picture>
                                             <picture className="relative inset-0 z-0 w-full h-full">
-                                                <source srcSet="https://attio.com" media="(min-width:992px)" />
+                                                <source srcSet="https://useartemis.co" media="(min-width:992px)" />
                                                 <source
                                                     srcSet="/assets/report.png"
                                                     type="image/webp"

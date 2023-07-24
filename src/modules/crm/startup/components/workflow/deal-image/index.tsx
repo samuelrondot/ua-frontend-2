@@ -9,15 +9,15 @@ export const CrmStartupWorkflowDealImage: FC = () => {
                 
                 <picture className="relative inset-0 z-0 w-full h-full">
                     <source
-                        srcSet="/assets/clean.png"
+                        srcSet="/assets/clean-linkedin-data.png"
                         media="(min-width:992px)"
                         type="image/webp"
                     />
                     <source
-                        srcSet="https://attio.com/build/_assets/intel-desktop-JS4GN2RH.png"
+                        srcSet="/assets/clean-linkedin-data.png"
                         media="(min-width:992px)"
                     />
-                    <img loading="lazy" srcSet="" className="" />
+                    <img loading="lazy" alt="clean data from linkedin" srcSet="" className="" />
                 </picture>
             </div>
         </>

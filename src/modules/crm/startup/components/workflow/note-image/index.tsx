@@ -15,10 +15,10 @@ export const CrmStartupWorkflowNoteImage: FC = () => {
                         type="image/webp"
                     />
                     <source
-                        srcSet="https://attio.com/build/_assets/notes-desktop-AOZNSJ4L.png"
+                        srcSet="/assets/enrich2.png"
                         media="(min-width:992px)"
                     />
-                    <img loading="lazy" srcSet="" className="" />
+                    <img loading="lazy" alt="Automatic enrichment and email finding with useArtemis" srcSet="" className="" />
                 </picture>
             </div>
         </>

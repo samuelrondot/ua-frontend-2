@@ -8,6 +8,10 @@ import Enrichment from 'assets/images/enrichment.png'
 import Sequence from 'assets/images/sequence.png'
 import Chatgpt from 'assets/images/chatgpt.png'
 import Icon from 'assets/images/icon.png'
+import Leadintelligence from "assets/images/LeadIntelligence.png"
+import Leadintelligence2 from "assets/images/LeadIntelligence2.png"
+import g2 from "assets/images/g2.png"
+
 
 export const Features: FC = (props) => {
     return (
@@ -330,8 +334,18 @@ export const Features: FC = (props) => {
                                     </div>
                                 </div>
                                 <div className="pt-40px pb-60px px-24px tablet:pt-[96px] tablet:pb-[120px] tablet:px-0">
-                                    <div className="tablet:grid grid-cols-10 gap-x-24px gap-y-[50px]">
-                                        
+                                    <div className=" tablet:grid grid-cols-10 gap-x-24px gap-y-[50px]">
+                                            <img
+                                        className="customheightg2 tablet:customheightg2tablet col-start-2 col-end-5"
+                                        src={Leadintelligence.src}
+                                        alt="useArtemis Lead Intelligence G2 badge award"
+                                    />
+
+                                    
+                                  
+                                  
+                                       
+
                                         <div className="mt-24px tablet:mt-0 col-start-5 col-end-11">
                                             <p className="max-w-[530px] typography-p2-strong tablet:typography-h5 tablet:!leading-120 text-typography-light-tertiary">
                                                 “As a marketing agency, this allows us to target specific segments and locations, export this data, and then utilize my messaging systems to monitor and automate the process. ”
@@ -354,12 +368,13 @@ export const Features: FC = (props) => {
                                             </div>
                                         </div>
                                         <div className="mt-[30px] tablet:mt-0 col-start-2 col-end-5 self-end tablet:mb-[6px]">
+                                            
                                             <a
                                                 target="blank"
                                                 className="typography-p5-strong text-attio-blue-main tablet:text-typography-light-tertiary group w-fit flex items-center gap-4px rounded-8px focus:shadow-[0px_0px_0px_2px_#FAFAFA,_0px_0px_0px_5px_rgba(38,_109,_240,_0.5)] focus:bg-[#FAFAFA]"
                                                 href="https://www.g2.com/products/useartemis/reviews"
                                             >
-                                                Read more reviews
+                                                Read more reviews on G2
                                                 <svg
                                                     className="mt-[2px] opacity-0 -translate-x-[3px] group-hover:opacity-100 group-focus:opacity-100 group-hover:translate-x-0 group-focus:translate-x-0 transition-all"
                                                     width={18}
@@ -1717,12 +1732,18 @@ export const Features: FC = (props) => {
 
                                 <div className="pt-40px pb-60px px-24px tablet:pt-[96px] tablet:pb-[120px] tablet:px-0">
                                     <div className="tablet:grid grid-cols-10 gap-x-24px gap-y-[50px]">
-                                       
+                                    <img
+                                        className="customheightg2 tablet:customheightg2tablet col-start-2 col-end-5"
+                                        src={Leadintelligence2.src}
+                                        alt="useArtemis Lead Intelligence G2 badge award"
+                                    />
+
                                         <div className="mt-24px tablet:mt-0 col-start-5 col-end-11">
                                             <p className="max-w-[530px] typography-p2-strong tablet:typography-h5 tablet:!leading-120 text-typography-light-tertiary">
                                                 “As a sales professional, I have struggled in the past with finding accurate B2B contact information for my outreach efforts. But since I started using useArtemis, my search for lead generation has ended.”
                                             </p>
                                         </div>
+                                        
                                         <div className="mt-24px tablet:mt-0 order-2 col-start-5 col-end-11 flex items-center gap-[18px]">
                                             <img
                                                 className="w-60px h-60px rounded-12px"
@@ -1738,6 +1759,8 @@ export const Features: FC = (props) => {
                                                 </p>
                                             </div>
                                         </div>
+
+                                        
                                         <div className="mt-[30px] tablet:mt-0 col-start-2 col-end-5 self-end tablet:mb-[6px]" />
                                     </div>
                                 </div>

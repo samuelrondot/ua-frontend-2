@@ -50,8 +50,8 @@ export const CrmStartupWorkflow: FC = () => {
                                         type="image/webp"
                                     />
                                     <img
-                                        src="https://attio.com/build/_assets/perfect-workflow-mobile-FEOJUOHX.png"
-                                        alt="A card with a user's name on it is dragged from the Prospect column of an Attio workspace."
+                                        src="/assets/expor.png"
+                                        alt="A screenshot of useArtemis's Chrome extension in action to scrape linkedin search results."
                                         className="max-h-full"
                                         width={684}
                                         height={630}
@@ -71,12 +71,12 @@ export const CrmStartupWorkflow: FC = () => {
                             <div className="flex flex-col h-[315px] bg-background-light-tertiary rounded-16px">
                                 <picture className="mt-auto max-h-full">
                                     <source
-                                        srcSet="/assets/clean.png"
+                                        srcSet="/assets/clean-linkedin-data.png"
                                         type="image/webp"
                                     />
                                     <img
-                                        src="https://attio.com/build/_assets/intel-mobile-MZOAH4JA.png"
-                                        alt="A dropdown shows eight types of attributes, including Name, Email Address and Instagram, many of which are automatically enriched."
+                                        src="/assets/clean-linkedin-data.png"
+                                        alt="An illustration of leads scrapd profiles from linkedin being cleaned and ready to use."
                                         className="max-h-full"
                                         width={684}
                                         height={630}
@@ -100,8 +100,8 @@ export const CrmStartupWorkflow: FC = () => {
                                         type="image/webp"
                                     />
                                     <img
-                                        src="https://attio.com/build/_assets/notes-mobile-BHVQJBIJ.png"
-                                        alt="Attio's notes feature showing two notes in a card display with truncated contents, title, and tags."
+                                        src="/assets/enrich2.png"
+                                        alt="useArtemis's enrichment feature in action."
                                         className="max-h-full"
                                         width={684}
                                         height={630}
