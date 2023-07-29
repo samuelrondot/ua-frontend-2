@@ -28,6 +28,58 @@ export const Hero: FC<OwnProps> = (props) => {
 
     const { useremail, plan } = Router.query;
 
+
+
+    useEffect(() => {
+        const script = document.createElement("script");
+        script.src = "https://cdn.paddle.com/paddle/paddle.js";
+        script.onload = () => {
+          // Paddle functions go here
+          Paddle.Setup({ 
+            vendor: 153221,
+            eventCallback: function(data: any) {
+      
+              console.log(data)
+              //...
+              if (data.event === 'Checkout.Complete') {
+                  
+                  fpr('referral',{email: data.eventData.user.email,uid: data.eventData.user.id})
+                  dataLayer.push({'event': 'checkoutSuccess'});
+                  window.gtag('event','checkoutSuccess')
+            
+                  window.location.href = 'https://app.useartemis.co/register/next'
+              }
+            } });
+          Paddle.Checkout.open({
+            
+            method: 'inline', // set to `inline`
+            email: useremail,
+            product: plan,
+           // replace with a product ID or plan ID
+    
+            allowQuantity: false,
+    
+            disableLogout: true,
+    
+            frameTarget: 'checkout-container', // className of your checkout <div>
+    
+            frameInitialHeight: 450, // `450` or above
+    
+            frameStyle: 'width:100%; min-width:312px; background-color: transparent; border: none;' // `min-width` must be set to `286px` or above with checkout padding off; `312px` with checkout padding on.
+    
+          });
+        };
+    
+        document.body.appendChild(script);
+    
+        // Cleanup function to remove the script when the component unmounts
+        return () => {
+          document.body.removeChild(script);
+        };
+      }, []);
+
+
+        /*
     useEffect(() => {
    
         Paddle.Setup({ 
@@ -69,7 +121,7 @@ export const Hero: FC<OwnProps> = (props) => {
         
           
       }, [])
-
+*/
 
   
    
