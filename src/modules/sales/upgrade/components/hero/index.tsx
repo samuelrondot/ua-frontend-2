@@ -815,7 +815,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                         <div className="flex flex-row items-start gap-8px">
                                             <div className="typography-h3-strong">
                                                 <div className="relative inline-block">
-                                                    <div className="relative">$259</div>
+                                                    <div className="relative">From $299</div>
                                                     <div className="opacity-0 top-0 absolute" />
                                                 </div>
                                             </div>
@@ -902,9 +902,29 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                           AI for LinkedIn Invites
                                         </li>
+
+
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                          Team management
+                                        </li>
+
                                     </ul>
                                 </div>
-                                <div
+                                <div id="my_custom_link"
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-[7px] typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus mt-auto mt-auto"
                                 >
                                     Talk to sales

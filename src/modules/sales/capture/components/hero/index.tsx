@@ -71,6 +71,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                 aria-expanded="false"
                                 aria-controls="radix-:R19hhp:"
                                 data-state="closed"
+                                id="my_custom_link"
                             >
                                 <span className="z-1 ">Talk to sales</span>
                             </button>

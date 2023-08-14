@@ -62,6 +62,7 @@ const UAApp = ({ Component, pageProps }: AppProps) => {
     (window as any).intercomSettings = {
       api_base: "https://api-iam.intercom.io",
       app_id: "hav4rqtk",
+      custom_launcher_selector:'#my_custom_link'
      
      
     };

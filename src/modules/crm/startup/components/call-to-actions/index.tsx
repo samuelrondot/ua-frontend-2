@@ -26,6 +26,7 @@ export const CrmStartupCallToActions: FC<OwnProps> = (props) => {
                             </Link>
                             <button
                                 type="button"
+                                id="my_custom_link"
                                 aria-haspopup="dialog"
                                 aria-expanded="false"
                                 aria-controls="radix-:Rkohp:"

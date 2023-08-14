@@ -30,6 +30,7 @@ export const CrmStartupHero: FC = () => {
                                     <span className="z-1 relative">14-day free trial</span>
                                 </Link>
                                 <button
+                                id="my_custom_link"
                                     className="rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-secondary hover:text-buttonNew-secondary-hover active:text-buttonNew-secondary-active disabled:text-buttonNew-secondary-disabled active:bg-white focus:bg-white border-[1px] border-buttonNew-secondary hover:border-buttonNew-secondary-hover active:border-buttonNew-secondary-active focus:border-buttonNew-secondary-active disabled:border-buttonNew-secondary-disabled shadow-none focus:shadow-buttonNew-secondary-focus max-phablet:flex-1 text-center"
                                     type="button"
                                     aria-haspopup="dialog"
