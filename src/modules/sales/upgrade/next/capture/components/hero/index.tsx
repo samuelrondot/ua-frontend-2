@@ -191,7 +191,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                         </div>
 
                                         <div>
-                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{tax ? tax?.toFixed(2) : null}/month</h2> 
+                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{tax}/month</h2> 
                                         </div>
 
 
