@@ -12534,7 +12534,16 @@ pre.prism-code {
 
 .subcontainer {
   height: fit-content
+
 }
+
+
+.checkout-title {
+    width: fit-content;
+    margin: auto;
+
+}
+
 
 .input-flex {
     display: flex;
@@ -12547,13 +12556,48 @@ pre.prism-code {
     margin-top: 50px
 }
 
+.p-10 {
+    padding: 20px;
+}
+
 
 .register-container {
     width: 450px;
     max-width: 100%;
     text-align: center;
+
 }
 
+.checkout-detail-width {
+    width: 400px;
+   
+}
+
+
+.bordercustom {
+    border: #0000004e 0.5px solid;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    border-style: dashed ;
+    
+}
+
+.register-container-checkout {
+    
+    width: 100%;
+   
+    height: 930px!important;
+    
+}
+
+.justify-evenly {
+    justify-content: space-evenly;
+}
+
+
+.space-between {
+    justify-content: space-between;
+}
 
 .john {
     font-size: 1.475rem;
@@ -12588,6 +12632,13 @@ pre.prism-code {
     width: 100px;
     margin: auto;
 }
+
+.checkoutimage {
+    width: 30px;
+    margin-right: 10px;
+   
+}
+
 
 .muted {
     color: rgba(0, 0, 0, 0.768);
@@ -12628,4 +12679,9 @@ pre.prism-code {
 
   .mt-2 {
     margin-top: 5px;
+  }
+
+
+  .checkout-container {
+    height: 1810px;
   }
