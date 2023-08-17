@@ -75,8 +75,10 @@ export const Hero: FC<OwnProps> = (props) => {
             //vendor: 7439,
             
             eventCallback: function(data: any) {
-               
+               if(data?.eventData?.checkout?.prices?.customer?.total){
                 updatePrices(data);
+               }
+               
              
               //...
               if (data.event === 'Checkout.Complete') {
@@ -174,7 +176,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                         </div>
 
                                         <div>
-                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{subtotal?.toFixed(2)}/month</h2> 
+                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{subtotal ? subtotal?.toFixed(2) : null}/month</h2> 
                                         </div>
 
 
@@ -189,7 +191,7 @@ export const Hero: FC<OwnProps> = (props) => {
                                         </div>
 
                                         <div>
-                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{tax?.toFixed(2)}/month</h2> 
+                                        <h2 className="mt-20px mx-auto max-tablet:px-[14px] typography-p3-medium tablet:typography-p2-medium text-typography-light-secondary max-w-[550px]  slide-down animation-delay-[300ms]">{currency === "USD" ? "$" : currency}{tax ? tax : null}/month</h2> 
                                         </div>
 
 
