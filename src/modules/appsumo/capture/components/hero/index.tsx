@@ -189,7 +189,7 @@ export const Hero: FC<OwnProps> = (props) => {
 
                                     <div className="john-container-w">
                                   
-                                        <input type="appsumocode" onChange={(e)=>setPassword(e.target.value)}  className="john" placeholder="Appsumo code"/>
+                                        <input type="appsumocode" onChange={(e)=>setCompany(e.target.value)}  className="john" placeholder="Appsumo code"/>
                                     </div>
 
                                     

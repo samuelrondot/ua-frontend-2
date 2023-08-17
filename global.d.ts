@@ -11,6 +11,7 @@ declare global {
 
 declare global {
   var Paddle: {
+    Environment: any;
     Checkout: any;
     Setup: (params: any) => void;
   };
