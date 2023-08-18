@@ -1,5 +1,5 @@
 // React
-import React, { FC, useState } from "react"
+import React, { FC, useEffect, useState } from "react"
 // Components
 import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
@@ -33,9 +33,33 @@ export const Hero: FC<OwnProps> = (props) => {
 
 
 
+    async function getGeoInfo () {
+        try {
+          const response = await axios.get("https://ipapi.co/json/");
+          const data = response.data;
+          console.log(data);
+          setCountrycode(data.country_code)
+          setCountry(data.country_name)
+  
+          return { country: data.country_name, countrycode: data.country_code };
+        } catch (error) {
+          console.error(error);
+          // Handle the error as needed
+        }
+      };
+  
+  
+      useEffect(() => {
+          getGeoInfo ()
+      }, [])
+      
+
+
+
+
     async function handleRegister  ()  {
         setIsLoading(true)
-        const geoInfo: any = await getGeoInfo();
+        //const geoInfo: any = await getGeoInfo();
     
     
   
@@ -44,8 +68,8 @@ export const Hero: FC<OwnProps> = (props) => {
           lastname: lastname,
           email: email,
           password: password,
-          locale: geoInfo.countrycode,
-        countryname: geoInfo.country
+          locale: countrycode,
+          countryname: country
       }
     
       await fetch(`${baseurl}/register`, {
@@ -75,20 +99,7 @@ export const Hero: FC<OwnProps> = (props) => {
         
     })
     
-   
-    
-      async function getGeoInfo () {
-      try {
-        const response = await axios.get("https://ipapi.co/json/");
-        const data = response.data;
-        console.log(data);
-        return { country: data.country_name, countrycode: data.country_code };
-      } catch (error) {
-        console.error(error);
-        // Handle the error as needed
-      }
-    };
-    
+  
     }
 
     return (

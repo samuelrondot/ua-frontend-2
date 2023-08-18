@@ -1,5 +1,6 @@
-// React
-import React, { FC, useState } from "react"
+"use client";
+
+import React, { FC, useEffect, useState } from "react"
 // Components
 import { Video } from "./video"
 import Screenshot from 'assets/images/screen2.png'
@@ -27,28 +28,47 @@ export const Hero: FC<OwnProps> = (props) => {
     const [loginerror, setLoginerror] = React.useState(null)
     const [company,setCompany] = useState("")
 
-
     const router = useRouter()
     const { plan } = router.query;
   
 
+    
 
+       
+    
+    async function getGeoInfo () {
+        try {
+          const response = await axios.get("https://ipapi.co/json/");
+          const data = response.data;
+          console.log(data);
+          setCountrycode(data.country_code)
+          setCountry(data.country_name)
+  
+          return { country: data.country_name, countrycode: data.country_code };
+        } catch (error) {
+          console.error(error);
+          // Handle the error as needed
+        }
+      };
+  
+  
+      useEffect(() => {
+          getGeoInfo ()
+      }, [])
+      
 
 
     async function handleRegister  ()  {
         setIsLoading(true)
-        const geoInfo: any = await getGeoInfo();
-    
-    
-  
-        const user =  {
+
+         const user =  {
           firstname: firstname,
           lastname: lastname,
           email: email,
           password: password,
-          locale: geoInfo.countrycode,
-        countryname: geoInfo.country,
-        company: company,
+          locale: countrycode,
+          countryname: country,
+          company: company,
       }
     
       await fetch(`${baseurl}/appsumo`, {
@@ -66,7 +86,7 @@ export const Hero: FC<OwnProps> = (props) => {
     
       function Success () {
         setIsLoading(false)
-        window.location.replace("https://app.useartemis.co/")
+        window.location.href = "https://app.useartemis.co/"
       }
     
       function Fail () {
@@ -78,19 +98,7 @@ export const Hero: FC<OwnProps> = (props) => {
         
     })
     
-   
-    
-      async function getGeoInfo () {
-      try {
-        const response = await axios.get("https://ipapi.co/json/");
-        const data = response.data;
-        console.log(data);
-        return { country: data.country_name, countrycode: data.country_code };
-      } catch (error) {
-        console.error(error);
-        // Handle the error as needed
-      }
-    };
+
     
     }
 
