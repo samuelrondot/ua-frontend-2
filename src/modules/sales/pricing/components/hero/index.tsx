@@ -452,22 +452,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                             4 running campaigns
                                         </li>
-                                        <li className="flex flex-row gap-8px">
-                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
-                                                <svg
-                                                    height={20}
-                                                    width={20}
-                                                    className="stroke-greyscale-light-08"
-                                                >
-                                                    <use
-                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
-                                                        height={20}
-                                                        width={20}
-                                                    />
-                                                </svg>
-                                            </div>
-                                            10 campaign actions / day
-                                        </li>
+                                      
                                        
                                     </ul>
                                 </div>
@@ -584,22 +569,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                            6 running campaigns
                                         </li>
-                                        <li className="flex flex-row gap-8px">
-                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
-                                                <svg
-                                                    height={20}
-                                                    width={20}
-                                                    className="stroke-greyscale-light-08"
-                                                >
-                                                    <use
-                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
-                                                        height={20}
-                                                        width={20}
-                                                    />
-                                                </svg>
-                                            </div>
-                                            30 campaign actions / day
-                                        </li>
+                                        
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
                                                 <svg
@@ -734,22 +704,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                             15 running campaigns
                                         </li>
-                                        <li className="flex flex-row gap-8px">
-                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
-                                                <svg
-                                                    height={20}
-                                                    width={20}
-                                                    className="stroke-greyscale-light-03"
-                                                >
-                                                    <use
-                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
-                                                        height={20}
-                                                        width={20}
-                                                    />
-                                                </svg>
-                                            </div>
-                                            70 campaign actions / day
-                                        </li>
+                                       
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
                                                 <svg
@@ -872,23 +827,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                             50 running campaigns
                                         </li>
-                                        <li className="flex flex-row gap-8px">
-                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
-                                                <svg
-                                                    height={20}
-                                                    width={20}
-                                                    className="stroke-greyscale-light-08"
-                                                >
-                                                    <use
-                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
-                                                        height={20}
-                                                        width={20}
-                                                    />
-                                                </svg>
-                                            </div>
-                                           500 campaign actions / day
-                                        </li>
-
+                                       
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
                                                 <svg

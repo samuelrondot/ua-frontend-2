@@ -30,43 +30,7 @@ export const SalesPricingOfferGridDataSources: FC = () => {
                 <div data-orientation="vertical">
                     <table className="table-fixed border-separate w-full desktop:w-auto">
                         <tbody>
-                            <tr className="typography-p6-medium hidden desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary">
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[222px] text-typography-light-secondary py-[18px] desktop:py-20px max-desktop:gap-[10px]">
-                                    Number of daily actions
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Starter
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        10
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Plus
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        30
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Pro
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        70
-                                    </div>
-                                </td>
-                                <td className="border-b border-greyscale-light-05 flex flex-row items-start justify-start desktop:justify-between w-full desktop:w-[212px] py-12px desktop:py-20px max-desktop:flex max-desktop:items-center max-desktop:flex-row">
-                                    <div className="w-[120px] flex-none block desktop:hidden">
-                                        Enterprise
-                                    </div>
-                                    <div className="flex justify-between desktop:contents flex-1">
-                                        200
-                                    </div>
-                                </td>
-                            </tr>
+                           
                             <tr
                                 className="typography-p6-medium hidden max-desktop:flex flex-col desktop:flex-row desktop:gap-24px text-typography-light-quaternary desktop:text-typography-light-secondary"
                                 data-state="closed"
