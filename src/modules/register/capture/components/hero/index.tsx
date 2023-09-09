@@ -201,11 +201,11 @@ export const Hero: FC<OwnProps> = (props) => {
                             {loginerror && <p className="error">{loginerror}</p>}
                             <div className="relative z-10 mt-32px flex flex-row justify-center gap-12px pb-10px slide-down animation-delay-[750ms] ">
                            
-                            <button
+                            <button onClick={()=> handleRegister()}
                                 
                                 className="w-full rounded-12px inline-flex flex-row items-center justify-center transition-all preserve-3d px-16px py-12px gap-8px typography-p5-medium text-buttonNew-primary  active:text-buttonNew-primary-active disabled:text-buttonNew-primary-disabled bg-buttonNew-primary  active:bg-buttonNew-primary-active  border-[1px] border-buttonNew-primary before:bg-button-gradient-primary before:z-[0] before:opacity-0 hover:before:opacity-100 before:transition-opacity text-center"
                             >
-                                <span className="z-1 flex" onClick={()=> handleRegister()}>{isLoading && <Loader className="mr-2 icn-spinner"/>}Sign up with email</span>
+                                <span className="z-1 flex" >{isLoading && <Loader className="mr-2 icn-spinner"/>}Sign up with email</span>
                             </button>
 
 
