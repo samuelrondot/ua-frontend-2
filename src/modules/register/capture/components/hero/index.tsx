@@ -59,10 +59,7 @@ export const Hero: FC<OwnProps> = (props) => {
 
     async function handleRegister  ()  {
         setIsLoading(true)
-        //const geoInfo: any = await getGeoInfo();
-    
-    
-  
+      
         const user =  {
           firstname: firstname,
           lastname: lastname,

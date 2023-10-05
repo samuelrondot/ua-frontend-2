@@ -450,6 +450,54 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
+                                            Multiple sending accounts
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Send unlimited emails
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Automated LinkedIn prospection
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
                                             4 running campaigns
                                         </li>
                                       
@@ -567,6 +615,54 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
+                                            Multiple sending accounts
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Send unlimited emails
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Automated LinkedIn prospection
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
                                            6 running campaigns
                                         </li>
                                         
@@ -584,7 +680,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                           AI for LinkedIn Invites
+                                            AI campaign and icebreakers
                                         </li>
                                       
                                     </ul>
@@ -688,6 +784,61 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                             35 000 enrichment credits
                                         </li>
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-03"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Multiple sending accounts
+                                        </li>
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-03"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Send unlimited emails
+                                        </li>
+
+                                       
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-03"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Automated LinkedIn prospection
+                                        </li>
+
+                                      
+                                        
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-attio-blue-02">
                                                 <svg
@@ -719,7 +870,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                            AI for LinkedIn Invites
+                                            AI campaign and icebreakers
                                         </li>
                                     </ul>
                                 </div>
@@ -811,6 +962,57 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                             </div>
                                             Unlimited enrichment
                                         </li>
+
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Multiple sending accounts
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Send unlimited emails
+                                        </li>
+                                        <li className="flex flex-row gap-8px">
+                                            <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
+                                                <svg
+                                                    height={20}
+                                                    width={20}
+                                                    className="stroke-greyscale-light-08"
+                                                >
+                                                    <use
+                                                        href="https://attio.com/build/_assets/checkmark-ALLBUTYC.svg#icon"
+                                                        height={20}
+                                                        width={20}
+                                                    />
+                                                </svg>
+                                            </div>
+                                            Automated LinkedIn prospection
+                                        </li>
+
+
                                         <li className="flex flex-row gap-8px">
                                             <div className="inline-block rounded-6px w-20px h-20px bg-greyscale-light-04">
                                                 <svg
@@ -842,7 +1044,7 @@ export const SalesPricingHero: FC<OwnProps> = (props) => {
                                                     />
                                                 </svg>
                                             </div>
-                                          AI for LinkedIn Invites
+                                          AI campaign and icebreakers
                                         </li>
 
                                         <li className="flex flex-row gap-8px">
