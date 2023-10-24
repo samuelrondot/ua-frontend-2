@@ -107,12 +107,12 @@ export const CmsContentPostShowHeader: FC<OwnProps> = (props) => {
 
                             
                             {post.primary_tag && (
-                                <a
+                                <p
                                     className="bf-badge bf-badge-flow"
-                                    href={getTagPath(post.primary_tag)}
+                                   
                                 >
                                     {post.primary_tag?.name}
-                                </a>
+                                </p>
                             )}
                         </div>
                         <div className="gh-author-card" >

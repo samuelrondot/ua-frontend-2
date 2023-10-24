@@ -5,6 +5,7 @@ import { PostModel } from "modules/cms/content/models";
 // Utils
 import { getPostPath, getTagPath } from "modules/cms/content/utils";
 import moment from 'moment'
+import Link from "next/link";
 
 
 type OwnProps = {
@@ -13,7 +14,7 @@ type OwnProps = {
 
 export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
     const relatedPosts = props.relatedPosts;
-
+    
     return (
         <>
             <div className="bf-related">
@@ -25,7 +26,7 @@ export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
                                 className="bf-relatedcard post tag-flow tag-content-2 tag-research featured"
                                 key={post.id}
                             >
-                                <a
+                                <Link
                                     className="bf-relatedcard-link"
                                     href={getPostPath(post)}
                                 >
@@ -37,15 +38,15 @@ export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
                                             loading="lazy"
                                         />
                                     </div>
-                                </a>
+                                </Link>
                                 <div className="bf-relatedcard-content">
-                                    <a
+                                    <Link
                                         href={getPostPath(post)}
                                     >
                                         <h4 className="bf-relatedcard-title">
                                             {post.title}
                                         </h4>
-                                    </a>
+                                    </Link>
                                     <footer className="bf-relatedcard-meta">
                                      
                                         {moment(post.published_at).format('MMMM DD, YYYY')}
@@ -93,12 +94,12 @@ export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
                                             {post.reading_time} min read
                                         </span>
                                         {post.primary_tag?.name && (
-                                            <a
+                                            <p
                                                 className="bf-badge bf-badge-flow"
-                                                href={getTagPath(post.primary_tag)}
+                                            
                                             >
                                                 {post.primary_tag.name}
-                                            </a>
+                                            </p>
                                         )}
                                     </footer>
                                 </div>
