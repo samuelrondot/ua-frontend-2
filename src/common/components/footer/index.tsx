@@ -7,7 +7,7 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FooterAccordion } from "./accordion";
 import Logo from "assets/images/logo-dark.png"
-
+import Image from "next/image"
 
 export const Footer: FC = () => {
 
@@ -16,9 +16,15 @@ export const Footer: FC = () => {
             <div className="bg-background-dark-primary text-white relative">
                 <div className="flex flex-col gap-40px phablet:gap-32px pt-40px pb-20px phablet:py-64px px-24px mx-auto w-full max-w-page">
                     <div className="flex flex-row justify-between">
-                        <a href="#/" aria-label="Home">
-                           <img className="logo" src={Logo.src}/>
-                        </a>
+                        <Link aria-label="Home" href="/" passHref>
+       
+                            <Image 
+                            src={Logo} 
+                            alt="useartemis-logo" 
+                            width={160} 
+                            height={0} 
+                        />
+                        </Link>
                         <div className="block phablet:hidden">
                             <div className="flex flex-row items-center">
                                 <a
@@ -236,9 +242,10 @@ export const Footer: FC = () => {
                                         type="button"
                                         aria-haspopup="dialog"
                                         aria-expanded="false"
-                                        aria-controls="radix-:R1ahpp:"
+                                        aria-controls="radix-:R19hhp:"
                                         data-state="closed"
-                                    >
+                                        id="my_custom_link"
+                                        >
                                         <span className="z-1 relative">Talk to sales</span>
                                     </button>
                                 </div>

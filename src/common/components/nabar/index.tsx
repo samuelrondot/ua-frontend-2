@@ -14,6 +14,7 @@ import { BannerRaises } from "./banner-raises";
 import { NavMenu } from "./navmenu";
 import Logo from 'assets/images/useartemis-logo.png'
 import Link from "next/link";
+import Image from "next/image";
 // Styles
 import style from "./style.module.scss";
 
@@ -76,8 +77,14 @@ const Navbar: FC<OwnProps> = (props) => {
         />
         }
         <div className="flex items-center py-16px">
-          <Link aria-label="Home" href="/">
-            <img className="logo" src={Logo.src}></img>
+          <Link aria-label="Home" href="/" passHref>
+       
+            <Image 
+            src={Logo} 
+            alt="useartemis-logo" 
+            width={160} 
+            height={0} 
+          />
           </Link>
           <NavMenu />
           {gContext?.isloggedin === true ?  
