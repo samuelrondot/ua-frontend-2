@@ -655,7 +655,7 @@ export const CrmTabSlider: FC = () => {
                         <div className="mt-24px tablet:mt-0 order-2 col-start-5 col-end-11 flex items-center gap-[18px]">
                             <img
                                 className="w-60px h-60px rounded-12px"
-                                src='https://media.licdn.com/dms/image/D4D03AQEYBWSFCdPX_A/profile-displayphoto-shrink_800_800/0/1675964244936?e=1694044800&v=beta&t=k9UAr19bb5GrBwY8V5oqR8lSAKV1OG6x8vafLT9HxGo'
+                                src='https://images.g2crowd.com/uploads/avatar/image/1882833/thumb_square_264d9fe56dedf992467a54a12e9e7e0d.jpeg'
                                 alt=""
                             />
                             <div>
