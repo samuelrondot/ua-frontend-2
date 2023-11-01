@@ -110,28 +110,22 @@ useEffect(() => {
       <Component {...pageProps} />
       </main>
       <div>
-        <Script
-          id='tagmanager'
-          strategy="afterInteractive"
+       
 
-          src={`https://www.googletagmanager.com/gtag/js?id=G-K29KX46KCP`}
-        />
-        <Script
-          id='googletag'
-          strategy="afterInteractive"
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
 
-              gtag('config', 'G-K29KX46KCP', {
-                page_path: window.location.pathname,
-              });
-              gtag('config', 'AW-1004009503');
-          `,
-          }}
-        />
+<Script id='tagmanager' src="https://www.googletagmanager.com/gtag/js?id=G-K29KX46KCP" />
+      <Script id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-K29KX46KCP', {
+            page_path: window.location.pathname,
+          });
+          gtag('config', 'AW-1004009503');
+        `}
+      </Script>
 
 { /*
 <Script

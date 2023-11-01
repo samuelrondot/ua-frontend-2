@@ -29,6 +29,7 @@ export const CmsContentPostShowRelated: FC<OwnProps> = (props) => {
                                 <Link
                                     className="bf-relatedcard-link"
                                     href={getPostPath(post)}
+                                    aria-label={`Read more about ${post.title}`}
                                 >
                                     <div className="bf-relatedcard-imgbox">
                                         <img

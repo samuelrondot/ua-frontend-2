@@ -115,7 +115,7 @@ const Navbar: FC<OwnProps> = (props) => {
             </Link>
           </div>}
           <div className="ml-auto flex items-center gap-12px tablet:hidden">
-            <button className="humberger-btn"
+            <button aria-label="navigation-menu" className="humberger-btn"
               onClick={() => setHamburgerExpanded(!isHamburgerExpanded)}>
               <svg
                 width={32}

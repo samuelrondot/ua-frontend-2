@@ -4460,11 +4460,12 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 
 .gh-header-meta {
     display: flex;
+    font-size: 17px;
     align-items: center;
     flex-wrap: wrap;
     margin: 20px 0 0;
     font-family: 'circular';
-    color: #8f8a8a;
+    color: #575454;
     letter-spacing: 0.3px;
     justify-content: space-evenly;
 
@@ -4488,7 +4489,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 .gh-author-card-image-wrap {
     flex: 0 0 auto;
     position: relative;
-    border: 2px solid #666cff;
+   
     margin-right: 18px;
     border-radius: 100%;
 
@@ -4501,7 +4502,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
         bottom: 2px;
         left: 2px;
         z-index: 10;
-        border: 2px solid #fff;
+        
         border-radius: 100%;
     }
 }
@@ -4527,7 +4528,7 @@ body:not(.gh-head-open) .gh-burger:hover .gh-burger-inner {
 
 .gh-author-card-bio {
     line-height: 1.4em;
-    color: #7f7c7c;
+    color: #575454;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;

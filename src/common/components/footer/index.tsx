@@ -35,8 +35,8 @@ export const Footer: FC = () => {
                                     rel="noopener"
                                 >
                                     <svg
-                                        width={16}
-                                        height={17}
+                                        width={20}
+                                        height={20}
                                         className=""
                                         viewBox="0 0 16 17"
                                         fill="none"
@@ -53,15 +53,15 @@ export const Footer: FC = () => {
                                 </a>
                               
                                 <a
-                                    className="py-[6px] px-[6px] -mr-[6px] hover:text-white"
+                                    className="py-[6px] px-[6px] ml-20px hover:text-white"
                                     href="https://www.linkedin.com/company/86274280/"
                                     target="_blank"
                                     aria-label="LinkedIn"
                                     rel="noopener"
                                 >
                                     <svg
-                                        width={16}
-                                        height={17}
+                                        width={20}
+                                        height={20}
                                         className=""
                                         viewBox="0 0 16 17"
                                         fill="none"
@@ -301,7 +301,7 @@ export const Footer: FC = () => {
                                     </a>
                                   
                                     <a
-                                        className="py-[6px] px-[6px] -mr-[6px] hover:text-white"
+                                        className="py-[6px] px-[6px]  hover:text-white"
                                         href="https://www.linkedin.com/company/86274280/"
                                         target="_blank"
                                         aria-label="LinkedIn"
