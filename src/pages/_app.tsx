@@ -113,8 +113,8 @@ useEffect(() => {
        
 
 
-<Script id='tagmanager' src="https://www.googletagmanager.com/gtag/js?id=G-K29KX46KCP" />
-      <Script id="google-analytics">
+<Script strategy="afterInteractive" id='tagmanager' src="https://www.googletagmanager.com/gtag/js?id=G-K29KX46KCP" />
+      <Script strategy="lazyOnload" id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
