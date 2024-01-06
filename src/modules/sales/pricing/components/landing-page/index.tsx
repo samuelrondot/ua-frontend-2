@@ -18,7 +18,7 @@ export const SalesPricingLandingPage: FC = () => {
                     <SalesPricingHero
                         billingPeriod={billingPeriod}
                         onChange={(period) => setBillingPeriod(period)} />
-                    <SalesPricingBrands />
+                   {/* <SalesPricingBrands /> */}
                     <SalesPricingOfferGrid
                         billingPeriod={billingPeriod}
                         onChange={(period) => setBillingPeriod(period)} />

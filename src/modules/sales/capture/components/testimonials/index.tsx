@@ -282,15 +282,7 @@ export const Testimonials: FC = () => {
                                                 <path d="M30.3,39.8a9.8,9.8,0,0,1,0-19.6l3.4-7a18.7,18.7,0,0,0-3.4-.3,17.1,17.1,0,0,0,0,34.2,17.3,17.3,0,0,0,10.1-3.2l-3.7-6.5A9.7,9.7,0,0,1,30.3,39.8Z" fill="#fff" />
                                             </svg>
                                         </div>
-                                        <div className="flex flex-col gap-[14px]">
-                                            <p className="typography-p5-medium text-[#BCC3CE]">
-                                                We use our CRM @attio for sales, fundraising, and recruiting.
-                                                It&apos;s awesome
-                                            </p>
-                                            <p className="typography-c1-medium text-[#505967]">
-                                                1:32 PM · Jan 4, 2023
-                                            </p>
-                                        </div>
+                                       
                                     </div>
                                     <div className="rounded-[20px] overflow-hidden w-full tablet:w-[calc(100%/3-16px)] phablet:w-[calc(50%-12px)] p-[24px] flex flex-col gap-[16px] flex-shrink-0 hover:[--iconColor:#266DF0] max-tablet:hidden max-phablet:hidden bg-[#26282D] card-dark-shadow border border-transparent box-border transition-colors">
                                         <div className="flex flex-row items-center gap-[10px]">
@@ -317,51 +309,9 @@ export const Testimonials: FC = () => {
                                                 <path d="M30.3,39.8a9.8,9.8,0,0,1,0-19.6l3.4-7a18.7,18.7,0,0,0-3.4-.3,17.1,17.1,0,0,0,0,34.2,17.3,17.3,0,0,0,10.1-3.2l-3.7-6.5A9.7,9.7,0,0,1,30.3,39.8Z" fill="#fff" />
                                             </svg>
                                         </div>
-                                        <div className="flex flex-col gap-[14px]">
-                                            <p className="typography-p5-medium text-[#BCC3CE]">
-                                                I&apos;ve been using @attio to track applicants, manage my deal
-                                                pipeline and manage the associated notes/tasks. The use-cases
-                                                are unlimited; it truly feels like the Notion of CRM.
-                                            </p>
-                                            <p className="typography-c1-medium text-[#505967]">
-                                                10:17 PM · Jan 3, 2023
-                                            </p>
-                                        </div>
+                                      
                                     </div>
-                                    <div className="rounded-[20px] overflow-hidden w-full tablet:w-[calc(100%/3-16px)] phablet:w-[calc(50%-12px)] p-[24px] flex flex-col gap-[16px] flex-shrink-0 hover:[--iconColor:#266DF0] max-tablet:hidden max-phablet:hidden bg-[#26282D] card-dark-shadow border border-transparent box-border transition-colors">
-                                        <div className="flex flex-row items-center gap-[10px]">
-                                            <img
-                                                src="https://media.graphassets.com/VafhvNR1SnGjecn5zVNT"
-                                                alt="Fabian"
-                                                loading="lazy"
-                                                className="rounded-full w-[34px] h-[34px]"
-                                            />
-                                            <div className="flex flex-col gap-[2px]">
-                                                <p className="typography-c1-medium text-[#99A2AF]">Fabian</p>
-                                                <p className="typography-c1-medium text-[#505967]">
-                                                    @FabstheAustrian
-                                                </p>
-                                            </div>
-                                            <svg xmlns="http://www.w3.org/2000/svg" width={25}
-                                                height={24}
-                                                viewBox="0 0 60 60"
-                                                fill="none"
-                                                className="ml-auto mt-[-4px] text-[var(--iconColor,#383E47)] transition-colors">
-                                                <circle cx="30" cy="30" r="30" fill="currentColor" />
-                                                <path d="M43,23H37.9c.1-.8.6-1.3,1.6-1.8l.9-.5c1.7-.8,2.6-1.8,2.6-3.4a3,3,0,0,0-1.1-2.4,5.1,5.1,0,0,0-2.8-.8,4.6,4.6,0,0,0-2.3.6,5.2,5.2,0,0,0-1.6,1.7l1.5,1.5a2.8,2.8,0,0,1,2.5-1.7c1,0,1.5.5,1.5,1.1s-.3,1.1-1.3,1.6l-.6.3A6.7,6.7,0,0,0,36,21.5a6.1,6.1,0,0,0-.8,3.2v.4H43Z" fill="#fff" />
-                                                <polygon points="42.3 27.6 33.8 27.6 29.6 34.9 38.1 34.9 42.3 42.2 46.5 34.9 42.3 27.6" fill="#fff" />
-                                                <path d="M30.3,39.8a9.8,9.8,0,0,1,0-19.6l3.4-7a18.7,18.7,0,0,0-3.4-.3,17.1,17.1,0,0,0,0,34.2,17.3,17.3,0,0,0,10.1-3.2l-3.7-6.5A9.7,9.7,0,0,1,30.3,39.8Z" fill="#fff" />
-                                            </svg>
-                                        </div>
-                                        <div className="flex flex-col gap-[14px]">
-                                            <p className="typography-p5-medium text-[#BCC3CE]">
-                                                For CRM or deal flow, @attio is in a class of its own.
-                                            </p>
-                                            <p className="typography-c1-medium text-[#505967]">
-                                                3:36 PM · Nov 8, 2022
-                                            </p>
-                                        </div>
-                                    </div>
+                                    
                                 </div>
 
                                 {!showAll && (

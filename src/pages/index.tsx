@@ -7,6 +7,8 @@ import { LandingPage } from "modules/sales/capture/components/landing-page";
 import Script from 'next/script'
 
 
+
+
 const Home: FC = () => {
   return (
     <>

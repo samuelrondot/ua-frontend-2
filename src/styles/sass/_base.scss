@@ -8712,7 +8712,7 @@ pre.prism-code {
 
 .hover\:text-buttonNew-primaryOnBlue-hover:hover {
     --tw-text-opacity: 1;
-    color: rgb(38 109 (240 / var(--tw-text-opacity)));
+    color: #666cff
 }
 
 .hover\:text-buttonNew-primaryOnDark-hover:hover {
@@ -12637,4 +12637,22 @@ pre.prism-code {
 
   .checkout-container {
     height: 1810px;
+  }
+
+
+  .bg-primary {
+    background-color: #666cff;
+  }
+
+  .bg-primary-items {
+    background-color: #a4a6ff;
+  }
+
+
+  .hover-text {
+    color: #666cff;
+  }
+
+  .border-primary {
+    border: 1px solid #666cff;
   }

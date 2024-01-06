@@ -6,12 +6,14 @@ import Screenshot from 'assets/images/screen2-min.png'
 import Link from "next/link"
 import Image from 'next/image'
 
+
 type OwnProps = {
     style?: object,
 }
 
 export const Hero: FC<OwnProps> = (props) => {
     const [isVideoPlaying, setIsVideoPlaying] = useState(false)
+
 
     return (
         <>
@@ -27,8 +29,9 @@ export const Hero: FC<OwnProps> = (props) => {
                         >
                             <div className="flex items-center gap-[6px] p-[2px_7px_2px_2px] typography-p6-medium text-typography-light-secondary">
                                 <span className="h-[26px] align-middle p-[3px_9px_3px_10px] rounded-20px bg-greyscale-light-12 text-greyscale-light-01">
-                                    New
+                                    New 
                                 </span>
+                               
                                 <div className="flex items-center ">
                                     Auto write Invite notes with ChatGPT
                                     <svg

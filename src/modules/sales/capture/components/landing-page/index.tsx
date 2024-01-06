@@ -23,7 +23,7 @@ export const LandingPage: FC<OwnProps> = (props) => {
             <Layout>
             
                 <Hero />
-                <Brands />
+                
                 <Features />
                
                { /* <Features2 /> */   }
