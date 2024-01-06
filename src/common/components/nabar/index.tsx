@@ -15,7 +15,7 @@ import { NavMenu } from "./navmenu";
 import Logo from 'assets/images/useartemis-logo.png'
 import Link from "next/link";
 import Image from "next/image";
-// Styles
+import { createPortal } from 'react-dom';
 import style from "./style.module.scss";
 
 type OwnProps = {
@@ -52,7 +52,7 @@ const Navbar: FC<OwnProps> = (props) => {
     }
   }, [scrollY]);
 
-
+/*
   useEffect(() => {
     if (isHamburgerExpanded) {
       document.body.style.overflow = "hidden";
@@ -67,6 +67,17 @@ const Navbar: FC<OwnProps> = (props) => {
     }
 
   }, [isHamburgerExpanded]);
+  */
+
+
+  useEffect(() => {
+    document.body.style.overflow = isHamburgerExpanded ? "hidden" : "auto";
+    // No need to use render or unmountComponentAtNode here
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [isHamburgerExpanded]);
 
   return (
     <div className={`sticky top-0 z-50 transition-shadow duration-300 bg-background-light-primary ${showShadow ? "shadow-[0_1px_0_0_#E4E7EB]" : null}`}>
@@ -76,6 +87,8 @@ const Navbar: FC<OwnProps> = (props) => {
           isDesktopMedia={isDesktopMedia}
         />
         }
+
+{isHamburgerExpanded && <HambergerNavMenu />}
         <div className="flex items-center py-16px">
           <Link aria-label="Home" href="/" passHref>
        
